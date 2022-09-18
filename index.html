@@ -26,7 +26,7 @@
                 <a class="navbar-brand" href="#">
                     <img
                         class="nav__img"
-                        src="assets/imgs/logo.png"
+                        src="img/logo.png"
                         alt="Logo fundación valoarte"
                     />
                 </a>
@@ -55,19 +55,24 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Quienes somos</a>
+                            <a class="nav-link" href="pages/quienes-somos.html"
+                                >Quienes somos</a
+                            >
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">Eventos</a>
+                            <a class="nav-link" href="pages/eventos-valo.html"
+                                >Eventos</a
+                            >
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">Actividades</a>
+                            <a class="nav-link" href="pages/actividades.html"
+                                >Actividades</a
+                            >
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">Espacios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link">Tienda</a>
+                            <a class="nav-link" href="pages/espacios.html"
+                                >Espacios</a
+                            >
                         </li>
                     </ul>
                 </div>
@@ -80,18 +85,225 @@
             <section class="main__firstSection">
                 <div class="firstSection__partOne">
                     <p class="firstSection__text">
-                        Somos una <span class="bold">fundación</span> dedicada a promover la educación
-                        emocional en <span class="bold">igualdad de oportunidades</span> a través de
-                        dinámicas innovadoras y objetos de diseño.
+                        Somos una <span class="bold">fundación</span> dedicada a
+                        promover la educación emocional en
+                        <span class="bold">igualdad de oportunidades</span> a
+                        través de dinámicas innovadoras y objetos de diseño.
                     </p>
-                    <a  class="firstSection__button" href="">¡Conócenos!</a>
+                    <a class="firstSection__button" href="">¡Conócenos!</a>
                 </div>
                 <div class="firstSection__partTwo">
-                    <img class="firtsSection__img" src="assets/imgs/Imagen portada.png" alt="Imagen portada, chicas felices">
+                    <img
+                        class="firtsSection__img"
+                        src="img/Imagen portada.png"
+                        alt="Imagen portada, chicas felices"
+                    />
                 </div>
+            </section>
+
+            <section class="main__secondSection">
+                <div class="secondSection__carouselContainer">
+                    <div
+                        id="carouselExampleDark"
+                        class="carousel carousel-dark slide"
+                        data-bs-ride="carousel"
+                    >
+                        <div class="carousel-indicators">
+                            <button
+                                type="button"
+                                data-bs-target="#carouselExampleDark"
+                                data-bs-slide-to="0"
+                                class="active"
+                                aria-current="true"
+                                aria-label="Slide 1"
+                            ></button>
+                            <button
+                                type="button"
+                                data-bs-target="#carouselExampleDark"
+                                data-bs-slide-to="1"
+                                aria-label="Slide 2"
+                            ></button>
+                            <button
+                                type="button"
+                                data-bs-target="#carouselExampleDark"
+                                data-bs-slide-to="2"
+                                aria-label="Slide 3"
+                            ></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div
+                                class="carousel-item active"
+                                data-bs-interval="10000"
+                            >
+                                <img
+                                    src="img/fondo eventos.png"
+                                    class="d-block w-100"
+                                    alt="..."
+                                />
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="carouselTitle">
+                                        Titulo primer evento
+                                    </h5>
+                                    <p class="carouselText">
+                                        Descripción del evento
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img
+                                    src="img/fondo eventos.png"
+                                    class="d-block w-100"
+                                    alt="..."
+                                />
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="carouselTitle">
+                                        Titulo segundo evento
+                                    </h5>
+                                    <p class="carouselText">
+                                        Descripción del evento
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img
+                                    src="img/fondo eventos.png"
+                                    class="d-block w-100"
+                                    alt="..."
+                                />
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="carouselTitle">
+                                        Titulo tercer evento
+                                    </h5>
+                                    <p class="carouselText">
+                                        Descripción del evento
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#carouselExampleDark"
+                            data-bs-slide="prev"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="100"
+                                height="100"
+                                fill="currentColor"
+                                class="bi bi-arrow-left-short"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"
+                                />
+                            </svg>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#carouselExampleDark"
+                            data-bs-slide="next"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="100"
+                                height="100"
+                                fill="currentColor"
+                                class="bi bi-arrow-right-short"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main__thirdSection">
+                <div class="thirdSection__titleContainer">
+                    <h1 class="thirdSection__title">#Nuestros programas</h1>
+                </div>
+
+                <div class="thirdSection__textContainer">
+                    <p class="thirdSection__text">
+                        Conocé mas acerca de nuestros ejes de trabajo
+                        comunitario
+                    </p>
+                </div>
+
+                <div class="thirdSection__cardsContainer">
+                    <div class="thirdSection__card">
+                        <img class="card__img" src="IMG/card1.png" alt="" />
+                        <div class="card__container">
+                            <div class="card__titleContainer">
+                                <h3 class="card__title">Card titulo</h3>
+                            </div>
+                        </div>
+                        <div class="card__textContainer">
+                            <p class="card__text">
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Quas voluptates quibusdam
+                                explicabo, culpa velit corporis inventore nam
+                                obcaecati molestiae, ullam temporibus voluptatem
+                                dolorum perspiciatis assumenda eaque incidunt
+                                architecto sapiente quo repellat aut fuga. Quo
+                                dolores iste assumenda laboriosam. Autem,
+                                excepturi!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="thirdSection__card">
+                        <img class="card__img" src="IMG/card1.png" alt="" />
+                        <div class="card__container">
+                            <div class="card__titleContainer">
+                                <h3 class="card__title">Card titulo</h3>
+                            </div>
+                        </div>
+                        <div class="card__textContainer">
+                            <p class="card__text">
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Quas voluptates quibusdam
+                                explicabo, culpa velit corporis inventore nam
+                                obcaecati molestiae, ullam temporibus voluptatem
+                                dolorum perspiciatis assumenda eaque incidunt
+                                architecto sapiente quo repellat aut fuga. Quo
+                                dolores iste assumenda laboriosam. Autem,
+                                excepturi!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="thirdSection__card">
+                        <img class="card__img" src="IMG/card1.png" alt="" />
+                        <div class="card__container">
+                            <div class="card__titleContainer">
+                                <h3 class="card__title">Card titulo</h3>
+                            </div>
+                        </div>
+                        <div class="card__textContainer">
+                            <p class="card__text">
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Quas voluptates quibusdam
+                                explicabo, culpa velit corporis inventore nam
+                                obcaecati molestiae, ullam temporibus voluptatem
+                                dolorum perspiciatis assumenda eaque incidunt
+                                architecto sapiente quo repellat aut fuga. Quo
+                                dolores iste assumenda laboriosam. Autem,
+                                excepturi!
+                            </p>
+                        </div>
+                    </div>
             </section>
         </main>
         <!-- Finaliza main section -->
+
         <!-- Bootstrap script -->
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
