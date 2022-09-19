@@ -185,7 +185,7 @@ body {
 }
 
 .bold {
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .firstSection__partTwo {
@@ -359,7 +359,7 @@ body {
 }
 
 .thirdSection__cardsContainer {
-    margin-inline: 50px;
+    margin-inline: 80px;
     display: flex;
     justify-content: space-between;
 }
@@ -368,6 +368,12 @@ body {
     position: relative;
     max-width: 350px;
     border-radius: 10px;
+}
+
+.thirdSection__card:hover {
+    transform: scale(1.06);
+    transition: 0.4s;
+    cursor: pointer;
 }
 .card__imgContainer {
     width: 100%;
@@ -424,4 +430,278 @@ body {
     color: var(--white);
     font-weight: 300;
     line-height: 26px;
+}
+
+/* Seccion Se parte! */
+
+.main__fourthSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fourthSection__separteContainer {
+    width: 60%;
+    height: max-content;
+    background-image: url(../IMG/pngwing.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-clip: border-box;
+    padding-inline: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "titulo" "." "."
+        "dato dato dato"
+        "dato dato  dato";
+    gap: 30px;
+}
+
+.separte__container {
+    position: relative;
+    height: fit-content;
+}
+
+.separte__titleContainer {
+    width: 400px;
+    padding: 5px 0px;
+    background-color: var(--orange);
+    position: absolute;
+    transform: rotate(-10deg);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.separte__title {
+    text-align: center;
+    font-family: var(--thirdFont);
+    color: white;
+}
+
+.separte__textContainer {
+    margin-left: 140px;
+    min-height: 400px;
+    grid-row: 2/4;
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.separte__text {
+    width: 80%;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.separte__subtitle {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.separte__datosContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 70%;
+    height: 100%;
+    align-self: center;
+    justify-self: center;
+    grid-row: 3/4;
+    grid-column: 1/3;
+}
+.separte__dato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text__quantity {
+    font-size: 76px;
+    line-height: 60px;
+    font-family: var(--thirdFont);
+    color: var(--orange);
+    text-align: center;
+    font-weight: 400;
+}
+
+.text__quantity:hover {
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+
+.separte__btnContainer {
+    grid-row: 4/5;
+    grid-column: 1/3;
+    width: 60%;
+    align-self: end;
+    justify-self: center;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 40px;
+}
+
+.separte__btn {
+    padding: 10px 20px;
+    background: #7b3b8b;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.main__fifthSection {
+    margin-top: 40px;
+    padding-inline: 60px;
+    display: flex;
+    justify-content: center;
+}
+.fifthSection__container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    align-items: center;
+    width: 80%;
+}
+.fifthSection__text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+    /* or 200% */
+    width: 40%;
+    letter-spacing: -0.015em;
+}
+
+.fifthSection__imgPart {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 40%;
+}
+
+.bluerectangle {
+    float: right;
+    height: 60px;
+    width: 50%;
+    background-color: var(--lightblue);
+}
+
+.oveja {
+    position: absolute;
+    left: 70px;
+}
+
+@media (max-width: 1730px) {
+    .fourthSection__separteContainer {
+        width: 70%;
+        height: max-content;
+        background-image: url(../IMG/pngwing.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .separte__textContainer {
+        gap: 20px;
+    }
+
+    .separte__datosContainer {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 1590px) {
+    .fourthSection__separteContainer {
+        width: 100%;
+        height: 900px;
+        background-image: url(../IMG/pngwing.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .separte__textContainer {
+        gap: 20px;
+    }
+
+    .separte__datosContainer {
+        margin-left: 30px;
+    }
+
+    .separte__btnContainer {
+        margin-top: 80px;
+        justify-content: space-between;
+        width: fit-content;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 1240px) {
+    .fourthSection__separteContainer {
+        padding-inline: 0;
+        width: 80%;
+        height: 700px;
+        background-image: url(../IMG/pngwing.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .separte__textContainer {
+        gap: 20px;
+    }
+
+    .separte__datosContainer {
+        margin-left: 30px;
+    }
+
+    .separte__btnContainer {
+        width: fit-content;
+        margin-right: 10px;
+    }
+
+    .separte__textContainer{
+        min-height: 200px;
+    }
+
+    .separte__text {
+        width: 60%;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    .separte__subtitle {
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 20px;
+    }
+
+    .separte__datosContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        width: 70%;
+        height: 100%;
+        align-self: center;
+        justify-self: center;
+        grid-row: 3/4;
+        grid-column: 1/3;
+        margin-left: 0;
+    }
+    .separte__dato {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .text__quantity {
+        font-size: 50px;
+        line-height: 60px;
+        font-family: var(--thirdFont);
+        color: var(--orange);
+        text-align: center;
+        font-weight: 400;
+    }
 }
