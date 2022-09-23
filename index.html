@@ -17,83 +17,533 @@
         <!-- Stylesheets -->
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/stylesAux.css" />
     </head>
 
     <body>
-        <header class="row">
-            <div class="col-3">
-                <a href="#">
-                    <img src="img/logo.png" alt="Logo fundación Valoarte">
+        <!-- Comienza NavBar -->
+        <nav class="navbar navbar-expand-lg bg-light nav">
+            <div
+                class="container-fluid nav__container d-flex justify-content-between"
+            >
+                <a class="navbar-brand" href="#">
+                    <img
+                        class="nav__img"
+                        src="img/logo.png"
+                        alt="Logo fundación valoarte"
+                    />
                 </a>
+                <button
+                    class="nav__toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="23"
+                        height="24"
+                        fill="currentColor"
+                        class="bi bi-list nav-icon"
+                        viewBox="0 0 16 16"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                        />
+                    </svg>
+                </button>
+                <div
+                    class="collapse navbar-collapse nav__ulContainer"
+                    id="navbarSupportedContent"
+                >
+                    <ul class="navbar-nav nav__ul">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                aria-current="page"
+                                href="#"
+                                >Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/quienes-somos.html"
+                                >Quienes somos</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/eventos-valo.html"
+                                >Eventos</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/actividades.html"
+                                >Actividades</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/espacios.html"
+                                >Espacios</a
+                            >
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <nav class="col-9">
-                <ul>
-                    <li><a href="#"></a>Home</li>
-                    <li><a href="./pages/quienes-somos.html">Quienes somos</a></li>
-                    <li><a href="./pages/actividades.html">Actividades</a></li>
-                    <li><a href="./pages/espacios.html"></a>Espacios</li>
-                    <li><a href="https://valoarte.mitiendanube.com/productos/"></a>Tienda</li>
-                </ul>
-            </nav>
-        </header>
+        </nav>
+        <!-- Finaliza navBar -->
         <div class="container">
             <main>
                 <article>
-                    <title>Section: Hero</title>
-                    <h3>
-                        Somos una fundación dedicada a promover la educación
-                        emocional en igualdad de oportunidades a través de
-                        dinámicas innovadoras y objetos de diseño.
-                    </h3>
-                    <button>¡CONÓCENOS!</button>
+                    <section class="main__firstSection">
+                        <div class="firstSection__partOne">
+                            <p class="firstSection__text">
+                                Somos una
+                                <span class="bold">fundación</span> dedicada a
+                                promover la educación emocional en
+                                <span class="bold"
+                                    >igualdad de oportunidades</span
+                                >
+                                a través de dinámicas innovadoras y objetos de
+                                diseño.
+                            </p>
+                            <a class="firstSection__button" href=""
+                                >¡Conócenos!</a
+                            >
+                        </div>
+                        <div class="firstSection__partTwo">
+                            <img
+                                class="firtsSection__img"
+                                src="img/Imagen portada.png"
+                                alt="Imagen portada, chicas felices"
+                            />
+                        </div>
+                    </section>
+                </article>
+                <article class="noPadding">
+                    <section class="main__secondSection">
+                        <div class="secondSection__carouselContainer">
+                            <div
+                                id="carouselExampleDark"
+                                class="carousel carousel-dark slide"
+                                data-bs-ride="carousel"
+                            >
+                                <div class="carousel-indicators">
+                                    <button
+                                        type="button"
+                                        data-bs-target="#carouselExampleDark"
+                                        data-bs-slide-to="0"
+                                        class="active"
+                                        aria-current="true"
+                                        aria-label="Slide 1"
+                                    ></button>
+                                    <button
+                                        type="button"
+                                        data-bs-target="#carouselExampleDark"
+                                        data-bs-slide-to="1"
+                                        aria-label="Slide 2"
+                                    ></button>
+                                    <button
+                                        type="button"
+                                        data-bs-target="#carouselExampleDark"
+                                        data-bs-slide-to="2"
+                                        aria-label="Slide 3"
+                                    ></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div
+                                        class="carousel-item active"
+                                        data-bs-interval="10000"
+                                    >
+                                        <img
+                                            src="img/fondo eventos.png"
+                                            class="d-block w-100"
+                                            alt="..."
+                                        />
+                                        <div
+                                            class="carousel-caption d-none d-md-block"
+                                        >
+                                            <h5 class="carouselTitle">
+                                                Titulo primer evento
+                                            </h5>
+                                            <p class="carouselText">
+                                                Descripción del evento
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="carousel-item"
+                                        data-bs-interval="2000"
+                                    >
+                                        <img
+                                            src="img/fondo eventos.png"
+                                            class="d-block w-100"
+                                            alt="..."
+                                        />
+                                        <div
+                                            class="carousel-caption d-none d-md-block"
+                                        >
+                                            <h5 class="carouselTitle">
+                                                Titulo segundo evento
+                                            </h5>
+                                            <p class="carouselText">
+                                                Descripción del evento
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img
+                                            src="img/fondo eventos.png"
+                                            class="d-block w-100"
+                                            alt="..."
+                                        />
+                                        <div
+                                            class="carousel-caption d-none d-md-block"
+                                        >
+                                            <h5 class="carouselTitle">
+                                                Titulo tercer evento
+                                            </h5>
+                                            <p class="carouselText">
+                                                Descripción del evento
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button
+                                    class="carousel-control-prev"
+                                    type="button"
+                                    data-bs-target="#carouselExampleDark"
+                                    data-bs-slide="prev"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="100"
+                                        height="100"
+                                        fill="currentColor"
+                                        class="bi bi-arrow-left-short"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"
+                                        />
+                                    </svg>
+                                    <span class="visually-hidden"
+                                        >Previous</span
+                                    >
+                                </button>
+                                <button
+                                    class="carousel-control-next"
+                                    type="button"
+                                    data-bs-target="#carouselExampleDark"
+                                    data-bs-slide="next"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="100"
+                                        height="100"
+                                        fill="currentColor"
+                                        class="bi bi-arrow-right-short"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                                        />
+                                    </svg>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+                <article class="noPadding">
+                    <section class="main__thirdSection">
+                        <div class="thirdSection__titleContainer">
+                            <h1 class="thirdSection__title">#Nuestros programas</h1>
+                        </div>
+
+                        <div class="thirdSection__textContainer">
+                            <p class="thirdSection__text">
+                                Conocé mas acerca de nuestros ejes de trabajo
+                                comunitario
+                            </p>
+                        </div>
+
+                        <div class="thirdSection__cardsContainer">
+                            <div class="thirdSection__card">
+                                <img class="card__img" src="IMG/card1.png" alt="" />
+                                <div class="card__container">
+                                    <div class="card__titleContainer">
+                                        <h3 class="card__title">Card titulo</h3>
+                                    </div>
+                                </div>
+                            <div class="card__textContainer">
+                                <p class="card__text">
+                                    Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Quas voluptates quibusdam
+                                    explicabo, culpa velit corporis inventore nam
+                                    obcaecati molestiae, ullam temporibus voluptatem
+                                    dolorum perspiciatis assumenda eaque incidunt
+                                    architecto sapiente quo repellat aut fuga. Quo
+                                    dolores iste assumenda laboriosam. Autem,
+                                    excepturi!
+                                    
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="thirdSection__card">
+                            <img class="card__img" src="IMG/card1.png" alt="" />
+                            <div class="card__container">
+                                <div class="card__titleContainer">
+                                    <h3 class="card__title">Card titulo</h3>
+                                </div>
+                            </div>
+                            <div class="card__textContainer">
+                                <p class="card__text">
+                                    Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Quas voluptates quibusdam
+                                    explicabo, culpa velit corporis inventore nam
+                                    obcaecati molestiae, ullam temporibus voluptatem
+                                    dolorum perspiciatis assumenda eaque incidunt
+                                    architecto sapiente quo repellat aut fuga. Quo
+                                    dolores iste assumenda laboriosam. Autem,
+                                    excepturi!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="thirdSection__card">
+                            <img class="card__img" src="IMG/card1.png" alt="" />
+                            <div class="card__container">
+                                <div class="card__titleContainer">
+                                    <h3 class="card__title">Card titulo</h3>
+                                </div>
+                            </div>
+                            <div class="card__textContainer">
+                                <p class="card__text">
+                                    Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Quas voluptates quibusdam
+                                    explicabo, culpa velit corporis inventore nam
+                                    obcaecati molestiae, ullam temporibus voluptatem
+                                    dolorum perspiciatis assumenda eaque incidunt
+                                    architecto sapiente quo repellat aut fuga. Quo
+                                    dolores iste assumenda laboriosam. Autem,
+                                    excepturi!
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                </article>
+                <article class="mobile">
+                    <section class="main__fourthSection">
+                        <div class="fourthSection__separteContainer">
+                            <div class="separte__container">
+                                <h1 class="separte__title">¡Se parte!</h1>
+                            </div>
+
+                            <div class="separte__textContainer">
+                                <p class="separte__text">A través de nuestros servicios y productos nos ayudás a hacer posible la educación emocional en igualdad de oportunidades.</p>
+                                <span class="separte__subtitle">Ya hemos impactado en:</span>
+                            </div>
+
+                            <div class="separte__datosContainer">
+                                    <div class="separte__dato">
+                                        <span class="text__quantity">2</span>
+                                        <p class="text__desc">Escuelas</p>
+                                    </div>
+                                    <div class="separte__dato">
+                                        <span class="text__quantity">80</span>
+                                        <p class="text__desc">Docentes</p>
+                                    </div>
+                                    <div class="separte__dato">
+                                        <span class="text__quantity">350</span>
+                                        <p class="text__desc">Alumnos</p>
+                                    </div>
+                                    <div class="separte__dato">
+                                        <span class="text__quantity">50</span>
+                                        <p class="text__desc">Emprendimientos</p>
+                                    </div>
+                                    <div class="separte__dato">
+                                        <span class="text__quantity">480</span>
+                                        <p class="text__desc">Familias</p>
+                                    </div>
+                            </div>
+                            <div class="separte__btnContainer">
+                                <button class="separte__btn">¡Convertite en voluntario!</button>
+                                <button class="separte__btn">¡Hace tu aporte!</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="separte__mobile">
+                        <div class="separte__mobile">
+                            <img src="img/responsive-separet.png" alt="">
+                        </div>
+                        <div class="separte__btnContainer">
+                            <button class="separte__btn">¡Convertite en voluntario!</button>
+                            <button class="separte__btn">¡Hace tu aporte!</button>
+                        </div>
+                    </section>
                 </article>
                 <article>
-                    <title>Section: ¡Cumplimos Años! (Slider?)</title>
-                    <h2>Section: ¡Cumplimos Años! (Slider?)</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Reiciendis facilis iste dignissimos debitis quaerat
-                        similique! Neque laborum blanditiis fugiat, nemo
-                        voluptatem molestias ex esse amet a, nam, eaque quis
-                        magni!
-                    </p>
+                    <section class="main__fifthSection">
+                        <div class="fifthSection__container">
+                            <p class="fifthSection__text">
+                                Somos una comunidad creativa. Creemos en la magia de los nuevos comienzos, somos soñadores, y hacedores, innovamos y nos animamos. Creamos lo imposible,aprendemos todo el tiempo.
+                                    En nuestro equipo todas compartimos el mismo sentimiento: ser las <span class="bold">ovejas negras</span>  de nuestro entorno. Lejos de frustrarnos por ser diferentes, tomamos impulso y nos unimos para generar ofertas innovadoras y creativas para todos.
+                            </p>
+                            <div class="fifthSection__imgPart">
+                                <div class="bluerectangle"></div>
+                                <img class="oveja" src="img/oveja.png" alt="">
+                            </div>
+                        </div>
+                    </section>
                 </article>
-                <article>
-                    <title>Section: #NuestrosProgramas</title>
-                    <h2>Section: #NuestrosProgramas</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Reiciendis facilis iste dignissimos debitis quaerat
-                        similique! Neque laborum blanditiis fugiat, nemo
-                        voluptatem molestias ex esse amet a, nam, eaque quis
-                        magni!
-                    </p>
-                </article>
-                <article>
-                    <title>Section: ¡Sé parte!</title>
-                    <h2>Section: ¡Sé parte!</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Reiciendis facilis iste dignissimos debitis quaerat
-                        similique! Neque laborum blanditiis fugiat, nemo
-                        voluptatem molestias ex esse amet a, nam, eaque quis
-                        magni!
-                    </p>
-                </article>
-                <article>
-                    <title>Section: #LoQueDicenDeValo</title>
-                    <h2>Section: #LoQueDicenDeValo</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Reiciendis facilis iste dignissimos debitis quaerat
-                        similique! Neque laborum blanditiis fugiat, nemo
-                        voluptatem molestias ex esse amet a, nam, eaque quis
-                        magni!
-                    </p>
+                <article class="noPadding">
+                    <section class="main__secondSection">
+                        <div class="thirdSection__titleContainer mb-5">
+                            <h1 class="thirdSection__title">#Opiniones?</h1>
+                        </div>
+                        <div class="secondSection__carouselContainer">
+                            <div
+                                id="carouselExampleDark1"
+                                class="carousel carousel-dark slide"
+                                data-bs-ride="carousel"
+                            >
+                                <div class="carousel-indicators">
+                                    <button
+                                        type="button"
+                                        data-bs-target="#carouselExampleDark1"
+                                        data-bs-slide-to="0"
+                                        class="active"
+                                        aria-current="true"
+                                        aria-label="Slide 1"
+                                    ></button>
+                                    <button
+                                        type="button"
+                                        data-bs-target="#carouselExampleDark1"
+                                        data-bs-slide-to="1"
+                                        aria-label="Slide 2"
+                                    ></button>
+                                    <button
+                                        type="button"
+                                        data-bs-target="#carouselExampleDark1"
+                                        data-bs-slide-to="2"
+                                        aria-label="Slide 3"
+                                    ></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="d-flex w-100 justify-content-center opinionsContainer">
+                                            <img
+                                                src="img/testimonio1.png"
+                                                class="d-inline w-30"
+                                                alt="..."
+                                            />
+                                            <img
+                                                src="img/testimonio2.png"
+                                                class="d-inline w-30 "
+                                                alt="..."
+                                            />
+                                            <img
+                                                src="img/testimonio3.png"
+                                                class="d-inline  w-30"
+                                                alt="..."
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="d-flex w-100 justify-content-center opinionsContainer">
+                                            <img
+                                                src="img/testimonio4.png"
+                                                class="d-inline w-30"
+                                                alt="..."
+                                            />
+                                            <img
+                                                src="img/testimonio5.png"
+                                                class="d-inline w-30"
+                                                alt="..."
+                                            />
+                                            <img
+                                                src="img/testimonio6.png"
+                                                class="d-inline w-30"
+                                                alt="..."
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="d-flex w-100 justify-content-center opinionsContainer"  >
+                                            <img
+                                                src="img/testimonio7.png"
+                                                class="d-inline w-30 "
+                                                alt="..."
+                                            />
+                                            <img
+                                                src="img/testimonio8.png"
+                                                class="d-inline w-30 "
+                                                alt="..."
+                                            />
+                                            <img
+                                                src="img/testimonio9.png"
+                                                class="d-inline w-30 "
+                                                alt="..."
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <button
+                                    class="carousel-control-prev"
+                                    type="button"
+                                    data-bs-target="#carouselExampleDark1"
+                                    data-bs-slide="prev"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="50"
+                                        height="50"
+                                        fill="currentColor"
+                                        class="bi bi-arrow-left-short carousel-control"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"
+                                        />
+                                    </svg>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button
+                                    class="carousel-control-next"
+                                    type="button"
+                                    data-bs-target="#carouselExampleDark1"
+                                    data-bs-slide="next"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="50"
+                                        height="50"
+                                        fill="currentColor"
+                                        class="bi bi-arrow-right-short carousel-control"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                                        />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </section>
                 </article>
             </main>
         </div>
-        <footer class="row">
+        <!-- <footer class="row">
             <section class="col">
                 <title>Seguinos en las redes</title>
                 <a href="#">
@@ -134,7 +584,7 @@
                 <p>¡COLABORÁ CON LA FUNDACIÓN!</p>
                 <button>DONAR ONLINE</button>
             </section>
-        </footer>
+        </footer> -->
 
         <!--
         <div class="container">
@@ -156,7 +606,6 @@
             </div>
         </div>
         -->
-        
     </body>
     <!-- Bootstrap script -->
     <script

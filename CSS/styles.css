@@ -18,6 +18,7 @@
 
 body {
     background-color: var(--background-color);
+    overflow-x: hidden;
 }
 
 header,
@@ -38,9 +39,14 @@ header div,
 header nav,
 article,
 footer section {
-    border: solid 2px #000;
+    /* border: solid 2px #000; */
     border-radius: 15px;
-    background-color: #eee;
     margin: 1rem 0;
     padding: 1rem 2rem;
 }
+
+.noPadding {
+    padding: 0;
+}
+
+
