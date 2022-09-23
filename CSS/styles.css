@@ -1,6 +1,5 @@
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 /* Variables */
@@ -17,302 +16,31 @@
     --secondaryFont: "Ubuntu", sans-serif;
 }
 
-/* Normalize */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body styles*/
 body {
-    font-family: var(--mainFont);
     background-color: var(--background-color);
 }
 
-/* NavBar styles */
-.nav {
-    height: 70px;
-    width: 100%;
-    background-color: var(--violet) !important;
-    padding-right: 0;
-}
-
-.nav__container {
-    display: flex;
-    padding-right: 0;
-    padding-left: 0;
-}
-
-.nav__img {
-    margin-left: 40px;
-}
-
-.nav__ulContainer {
-    display: flex;
+header,
+footer {
     background-color: var(--violet);
-    width: 100% !important;
-    max-height: 100%;
+    padding: 1rem 2rem;
 }
 
-.nav__toggler {
-    margin-right: 20px;
-    border-radius: 1px solid var(--white);
-}
-.navbar-toggler-icon {
-    fill: var(--white) !important;
-}
-
-.nav__ul {
-    width: 95%;
+header nav ul {
     display: flex;
-    gap: 70px;
+    flex-flow: row wrap;
+    gap: 1rem;
+    align-items: center;
     justify-content: flex-end;
 }
 
-.nav-item {
-    cursor: pointer;
-}
-
-.nav-item:hover {
-    transition: 0.3s;
-    transform: translateX(5px);
-    cursor: pointer;
-}
-
-.nav-link {
-    color: var(--white);
-    font-family: var(--secondaryFont) !important;
-    text-transform: uppercase;
-    font-weight: 500;
-    line-height: 22px;
-    font-size: 18px;
-}
-
-.nav-link:hover {
-    color: var(--white);
-    font-family: var(--secondaryFont) !important;
-    cursor: pointer;
-}
-
-.active {
-    color: var(--white) !important;
-    font-weight: 800;
-}
-
-/* NavBar responsive */
-@media (max-width: 992px) {
-    .nav__img {
-        margin-left: 20px;
-    }
-    .nav__ul {
-        padding: 20px 30px;
-        width: 95%;
-        display: flex;
-        gap: 2px;
-        justify-content: flex-end;
-    }
-
-    .nav-link {
-        color: var(--white);
-        font-family: var(--secondaryFont) !important;
-        text-transform: none;
-        font-weight: 500;
-        line-height: 22px;
-        font-size: 20px;
-        cursor: pointerr;
-    }
-}
-
-@media (min-width: 993px) and (max-width: 1300px) {
-    .nav__ul {
-        gap: 20px;
-    }
-    .nav-link {
-        font-size: 16px;
-        line-height: 20px;
-    }
-}
-
-/* Comienza main */
-
-.main__firstSection {
-    padding-inline: 100px;
-    margin-top: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: fit-content;
-    gap: 20px;
-}
-
-.firstSection__partOne {
-    padding-top: 50px;
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 50px;
-    height: 100%;
-    margin-left: 50px;
-}
-
-.firstSection__text {
-    width: 90%;
-    font-weight: 400;
-    font-size: 40px;
-}
-
-.firstSection__button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    text-decoration: none;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 32px;
-    background-color: var(--violet);
-    color: var(--white);
-    width: 330px;
-    height: 60px;
-    border-radius: 10px;
-}
-
-.bold {
-    font-weight: 600;
-}
-
-.firstSection__partTwo {
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.firtsSection__img {
-    height: 870px;
-    width: 800px;
-}
-
-/* Responsive section  */
-
-@media (max-width: 1660px) {
-    .firstSection__partOne {
-        width: 55%;
-        height: 90%;
-    }
-
-    .firstSection__text {
-        width: 100%;
-        font-weight: 400;
-        font-size: 40px;
-    }
-    .firtsSection__img {
-        height: 750px;
-        width: 700px;
-    }
-}
-
-@media (max-width: 1495px) {
-    .firsSection {
-        padding-inline: 60px;
-    }
-    .firstSection__partOne {
-        width: 70%;
-        margin-left: 0;
-        height: 100%;
-    }
-
-    .firstSection__text {
-        font-size: 35px;
-    }
-    .firtsSection__img {
-        height: 600px;
-        width: 600px;
-    }
-
-    .firstSection__button {
-        font-size: 25px;
-        line-height: 32px;
-        background-color: var(--violet);
-        color: var(--white);
-        width: 300px;
-        height: 60px;
-        border-radius: 10px;
-    }
-}
-
-@media (max-width: 1190px) {
-    .firsSection {
-        padding-inline: 40px;
-    }
-    .firstSection__partOne {
-        width: 70%;
-        margin-left: 0;
-        height: 100%;
-    }
-
-    .firstSection__text {
-        font-size: 27px;
-    }
-    .firtsSection__img {
-        height: 500px;
-        width: 500px;
-    }
-
-    .firstSection__button {
-        width: 280px;
-    }
-}
-
-@media (max-width: 994px) {
-    .firsSection{
-        padding-inline: 30px;
-    }
-    .main__firstSection {
-        flex-direction: column-reverse;
-        height: fit-content;
-    }
-    .firstSection__partOne {
-        width: 100%;
-        margin-left: 0;
-        height: 100%;
-    }
-}
-
-/* Carousel section */
-
-.main__secondSection{
-  margin-top: 200px;
-}
-.secondSection__carouselContainer{
-  max-height: 600px;
-  margin: auto;
-}
-
-.carouselImg{
-  height: 700px;
-}
-
-.carousel-control-prev-icon{
-  fill: white;
-}
-
-.carouselText{
-  color: var(--white);
-  font-weight: 500;
-}
-
-.carousel-dark .carousel-indicators [data-bs-target]{
-  background-color: white !important;
-}
-
-.carouselTitle{
-  color: var(--white);
-  font-size: 45px;
-  margin-bottom: 20px;
+header div,
+header nav,
+article,
+footer section {
+    border: solid 2px #000;
+    border-radius: 15px;
+    background-color: #eee;
+    margin: 1rem 0;
+    padding: 1rem 2rem;
 }
