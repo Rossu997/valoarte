@@ -1,0 +1,247 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mansalva&display=swap");
+
+/* Variables */
+:root {
+    /* Colors */
+    --background-color: #f7edda;
+    --orange: #f17a5e;
+    --violet: #7b3b8b;
+    --lightblue: #41d5b8;
+    --white: #fff;
+    --black: #000;
+    --whatsApp-color: #25d366;
+    --facebook-color: #4267b2;
+    --linkedIn-color: #0072b1;
+
+    /* Fonts */
+    --mainFont: "Montserrat", sans-serif;
+    --secondaryFont: "Ubuntu", sans-serif;
+    --thirdFont: "Mansalva", cursive;
+    /* Sizes */
+
+
+    /* Mobile */
+    --mobile-text-size: 16px;
+    --mobile-title-size: 35px;
+    --mobile--subtitle-size: 25px;
+}
+
+/*******************************************************************/
+/* Styles (Mobile First) Extra Small devices (phones, 575px and below) */
+/*******************************************************************/
+
+/* General Styles */
+body {
+    background-color: var(--background-color);
+    font-size: 16px;
+}
+
+._bold {
+    font-weight: 700;
+}
+
+/* Header Styles */
+._header {
+    background-color: var(--violet);
+}
+
+._navBar__brandImage {
+    width: 100px;
+}
+
+._navBar__toggler {
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: var(--white);
+    background-color: transparent;
+    border: none;
+}
+
+._navBar__container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem;
+}
+
+._navBar__list {
+    display: flex;
+    gap: 1rem;
+}
+
+._navBar__link:hover {
+    color: var(--white);
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+._navBar__link {
+    color: var(--white);
+}
+
+._mr-1 {
+    margin-right: 1rem;
+}
+
+._tienda ._navBar__link {
+    color: var(--orange);
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+._tienda__icon {
+    margin-right: 0.5rem;
+}
+
+._currentPage {
+    border-bottom: solid 2px var(--white);
+    padding-bottom: 0.25rem;
+    width: fit-content;
+}
+
+/* Footer Styles */
+._footer {
+    margin-top: 5rem;
+    padding-bottom: 3rem;
+    box-shadow: 0 -5px 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+._footer__sectionBrand {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+._socialNav__list {
+    display: flex;
+    gap: 2rem;
+}
+
+._socialNav__link,
+._sectionContacto__link {
+    color: var(--black);
+}
+
+._socialNav__link:hover,
+._sectionContacto__link:hover {
+    color: var(--black);
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+._socialNav__link,
+._socialNav__link svg {
+    width: 40px;
+    height: auto;
+}
+
+._footer__sectionContacto {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+._sectionContacto__title,
+._sectionColabora__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+._footer__sectionColabora {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+._sectionColabora__button {
+    padding: 1rem 2rem;
+    background-color: var(--violet);
+    color: var(--white);
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+._sectionColabora__button:hover {
+    color: var(--white);
+    background-color: var(--violet);
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+/*******************************************************************/
+/* Media Querys - Responsive Breakpoints */
+/*******************************************************************/
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query for 'xs' since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    ._navBar__container {
+        justify-content: flex-end;
+    }
+
+    ._navBar__brandImage {
+        width: auto;
+    }
+
+    ._footer__sectionBrand,
+    ._footer__sectionContacto,
+    ._footer__sectionColabora {
+        align-items: flex-start;
+    }
+
+    ._sectionColabora__title {
+        text-align: left;
+    }
+
+    ._navbar_toggler{
+        display: none;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    ._header {
+        padding: 0 2rem;
+    }
+
+    ._footer {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    ._navBar__list {
+        gap: 2rem;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    ._header {
+        padding: 0 4rem;
+    }
+
+    ._footer {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
