@@ -1,28 +1,28 @@
-/* Article _articleHero Styles */
-._articleHero {
+/* _articleOne Styles */
+._articleOne {
     margin: 3rem 0;
 }
 
-._articleHero__textContainer {
+._articleOne__textContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-._articleHero__text {
+._articleOne__text {
     font-size: 2rem;
     text-align: center;
     margin-bottom: 2rem;
     line-height: 2.5rem;
 }
 
-._articleHero__image {
+._articleOne__image {
     max-width: 700px;
     width: 100%;
     height: auto;
 }
 
-._articleHero__button {
+._articleOne__button {
     margin: 0 auto;
     padding: 1rem 2rem;
     background-color: var(--orange);
@@ -33,8 +33,92 @@
     text-align: center;
 }
 
-._articleHero__button:hover {
+._articleOne__button:hover {
     color: var(--white);
     opacity: 0.6;
     transition: 0.2s;
+}
+
+/* _articleTwo Styles */
+._carousel__arrowLeft {
+    padding-right: 6rem;
+}
+
+._carousel__arrowRight {
+    padding-left: 6rem;
+}
+
+/* _articleTree Styles */
+._articleTree {
+    align-items: center;
+}
+
+._articleTree__title {
+    font-family: var(--displayFont);
+    font-size: 60px;
+    background-color: var(--lightblue);
+    width: fit-content;
+    padding: 0 2rem;
+}
+
+._articleTree__text {
+    font-size: 30px;
+}
+
+._articleTree__cardsContainer {
+    margin-top: 3rem;
+    justify-content: center;
+}
+
+._articleTree__card {
+    padding: 1rem;
+}
+
+._articleTree__cardWrapper {
+    background-color: var(--violet);
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+._card__descriptionContainer {
+    padding: 2rem;
+    width: fit-content;
+}
+
+._card__text {
+    width: fit-content;
+}
+
+._card__imgage {
+    width: 100%;
+}
+
+/*******************************************************************/
+/* Media Querys - Responsive Breakpoints */
+/*******************************************************************/
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query for 'xs' since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    ._articleTree__cardWrapper {
+        flex-direction: row;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    ._articleTree__cardWrapper {
+        flex-flow: column wrap;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }

@@ -115,42 +115,255 @@
 
     <!-- Main Starts -->
     <!-------------------------------------------------------------------------->
-    <main class="main container-lg">
-        <article class="_articleHero row row-cols-md-2">
+    <main class="_main container-lg">
+        <article class="_articleOne row row-cols-md-2">
             <title>Article: Hero</title>
-            <section class="_articleHero__textContainer col-md-6">
-                <h3 class="_articleHero__text">
+            <section class="_articleOne__textContainer col-md-6">
+                <h3 class="_articleOne__text">
                     Somos una <span class="_bold">fundación</span> dedicada a promover la educación
                     emocional en <span class="_bold">igualdad de oportunidades</span> a través de
                     dinámicas innovadoras y objetos de diseño.
                 </h3>
-                <a class="_articleHero__button" href="https://wa.me/543794769014" target="_blank">¡CONÓCENOS!</a>
+                <a class="_articleOne__button" href="https://wa.me/543794769014" target="_blank">¡CONÓCENOS!</a>
             </section>
-            <section class="_articleHero__imageContainer col-md-6">
-                <img class="_articleHero__image" src="./IMG/imagen-portada.png" alt="Dos chicas felices levantando los brazos">
+            <section class="_articleOne__imageContainer col-md-6">
+                <img class="_articleOne__image" src="./IMG/imagen-portada.png" alt="Dos chicas felices levantando los brazos">
             </section>
         </article>
-        <article class="_articleCumplimosAnios">
-            <title>Article: ¡Cumplimos Años! (Slider?)</title>
-            <h2>Article: ¡Cumplimos Años! (Slider?)</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Reiciendis facilis iste dignissimos debitis quaerat
-                similique! Neque laborum blanditiis fugiat, nemo
-                voluptatem molestias ex esse amet a, nam, eaque quis
-                magni!
-            </p>
+
+        <article class="_articleTwo">
+            <title>Article: Carousel Eventos</title>
+            <div
+                id="carouselEventosHome"
+                class="carousel slide"
+                data-bs-ride="carousel"
+                >
+
+                <!-- Indicadores con la posición del carousel (- - -) -->
+                <div class="carousel-indicators">
+                    <button
+                        type="button"
+                        data-bs-target="#carouselEventosHome"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                    ></button>
+                    <button
+                        type="button"
+                        data-bs-target="#carouselEventosHome"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"
+                    ></button>
+                    <button
+                        type="button"
+                        data-bs-target="#carouselEventosHome"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"
+                    ></button>
+                </div>
+
+                <!-- Divs con contenido del carousel -->
+                <div class="carousel-inner">
+                    <div
+                        class="carousel-item active"
+                        data-bs-interval="10000"
+                    >
+                        <img
+                            src="./IMG/fondo-eventos.png"
+                            class="d-block w-100"
+                            alt="..."
+                        />
+                        <div class="carousel-caption d-none d-md-block" >
+                            <h3 class="_carousel__Title">
+                                Titulo Primer Evento
+                            </h3>
+                            <p class="_carousel__Text">
+                                Descripción del evento
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="carousel-item"
+                        data-bs-interval="10000"
+                    >
+                        <img
+                            src="./IMG/fondo-eventos.png"
+                            class="d-block w-100"
+                            alt="..."
+                        />
+                        <div class="carousel-caption d-none d-md-block" >
+                            <h3 class="_carousel__Title">
+                                Titulo Segundo Evento
+                            </h3>
+                            <p class="_carousel__Text">
+                                Descripción del evento
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="carousel-item"
+                        data-bs-interval="10000"
+                    >
+                        <img
+                            src="./IMG/fondo-eventos.png"
+                            class="d-block w-100"
+                            alt="..."
+                        />
+                        <div class="carousel-caption d-none d-md-block" >
+                            <h3 class="_carousel__Title">
+                                Titulo Tercer Evento
+                            </h3>
+                            <p class="_carousel__Text">
+                                Descripción del evento
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flechas laterales para navegar en el carousel (<- ->) -->
+                <button
+                    class="_carousel__arrowLeft carousel-control-prev d-none d-md-block"
+                    type="button"
+                    data-bs-target="#carouselEventosHome"
+                    data-bs-slide="prev"
+                >
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="50"
+                    height="50"
+                    fill="currentColor"
+                    class="bi bi-arrow-bar-left"
+                    viewBox="0 0 16 16"
+                    >
+                        <path fill-rule="evenodd" d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5zM10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5z"/>
+                    </svg>
+
+                    <!-- <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="50"
+                        height="50"
+                        fill="currentColor"
+                        class="bi bi-arrow-left-short"
+                        viewBox="0 0 16 16"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"
+                        />
+                    </svg> -->
+                    <!-- <span class="sr-only">Previous</span> -->
+                </button>
+                <button
+                    class="_carousel__arrowRight carousel-control-next d-none d-md-block"
+                    type="button"
+                    data-bs-target="#carouselEventosHome"
+                    data-bs-slide="next"
+                >
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="50"
+                    height="50"
+                    fill="currentColor"
+                    class="bi bi-arrow-bar-right" viewBox="0 0 16 16"
+                    >
+                        <path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5z"/>
+                    </svg>
+                    <!-- <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="50"
+                        height="50"
+                        fill="currentColor"
+                        class="bi bi-arrow-right-short"
+                        viewBox="0 0 16 16"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                        />
+                    </svg> -->
+                    <!-- <span class="sr-only">Next</span> -->
+                </button>
+            </div>
         </article>
-        <article class="_articleNuestrosProgramas">
+
+        <article class="_articleTree">
             <title>Article: #NuestrosProgramas</title>
-            <h2>Article: #NuestrosProgramas</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Reiciendis facilis iste dignissimos debitis quaerat
-                similique! Neque laborum blanditiis fugiat, nemo
-                voluptatem molestias ex esse amet a, nam, eaque quis
-                magni!
+            <!-- Encabezado del artículo -->
+            <h4 class="_articleTree__title">#NuestrosProgramas</h4>
+            <p class="_articleTree__text">
+                Conocé más acerca de nuestros ejes de trabajo comunitario:
             </p>
+            
+            <!-- Contenedor de cards -->
+            <section class="_articleTree__cardsContainer row row-cols-lg-3">
+                <!-- Card 1 -->
+                <div class="_articleTree__card col-lg-4">
+                    <div class="_articleTree__cardWrapper">
+                        <img class="_card__imgage" src="IMG/card-programas.png" alt="..." />
+                        <div class="_card__descriptionContainer">
+                            <div class="_card__titleContainer">
+                                <h3 class="_card__title">Card titulo</h3>
+                            </div>
+                            <p class="_card__text">
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Quas voluptates quibusdam
+                                explicabo, culpa velit corporis inventore nam
+                                obcaecati molestiae, ullam temporibus voluptatem
+                                dolorum perspiciatis assumenda eaque incidunt
+                                architecto sapiente quo repellat aut fuga. Quo
+                                dolores iste assumenda laboriosam. Autem,
+                                excepturi!
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="_articleTree__card col-lg-4">
+                    <div class="_articleTree__cardWrapper">
+                        <img class="_card__imgage" src="IMG/card-programas.png" alt="..." />
+                        <div class="_card__descriptionContainer">
+                            <div class="_card__titleContainer">
+                                <h3 class="_card__title">Card titulo</h3>
+                            </div>
+                            <p class="_card__text">
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Quas voluptates quibusdam
+                                explicabo, culpa velit corporis inventore nam
+                                obcaecati molestiae, ullam temporibus voluptatem
+                                dolorum perspiciatis assumenda eaque incidunt
+                                architecto sapiente quo repellat aut fuga. Quo
+                                dolores iste assumenda laboriosam. Autem,
+                                excepturi!
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="_articleTree__card col-lg-4">
+                    <div class="_articleTree__cardWrapper">
+                        <img class="_card__imgage" src="IMG/card-programas.png" alt="..." />
+                        <div class="_card__descriptionContainer">
+                            <div class="_card__titleContainer">
+                                <h3 class="_card__title">Card titulo</h3>
+                            </div>
+                            <p class="_card__text">
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Quas voluptates quibusdam
+                                explicabo, culpa velit corporis inventore nam
+                                obcaecati molestiae, ullam temporibus voluptatem
+                                dolorum perspiciatis assumenda eaque incidunt
+                                architecto sapiente quo repellat aut fuga. Quo
+                                dolores iste assumenda laboriosam. Autem,
+                                excepturi!
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>       
         </article>
         <article class="_articleSeParte">
             <title>Article: ¡Sé parte!</title>

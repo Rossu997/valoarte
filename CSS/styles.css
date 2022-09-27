@@ -12,13 +12,11 @@
     --lightblue: #41d5b8;
     --white: #fff;
     --black: #000;
-    --whatsApp-color: #25d366;
-    --facebook-color: #4267b2;
-    --linkedIn-color: #0072b1;
 
     /* Fonts */
     --mainFont: "Montserrat", sans-serif;
     --secondaryFont: "Ubuntu", sans-serif;
+    --displayFont: "Mansalva", display;
 }
 
 /*******************************************************************/
@@ -29,6 +27,18 @@
 body {
     background-color: var(--background-color);
     font-size: 16px;
+}
+
+body,
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
+._main {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
 }
 
 ._bold {
