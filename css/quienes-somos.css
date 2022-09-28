@@ -645,8 +645,23 @@
         align-items: start;
         justify-content: center;
     }
-    .data__img{
+    .data__img {
         height: 80px;
         width: 80px;
     }
+}
+
+.lightViolet {
+    padding-block: 50px;
+    background-color: var(--white);
+}
+
+.gradient {
+    padding-block: 50px;
+    background: rgb(238, 229, 227);
+    background: linear-gradient(
+        0deg,
+        rgba(238, 229, 227, 1) 69%,
+        rgba(238, 224, 232, 1) 100%
+    );
 }
