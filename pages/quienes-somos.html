@@ -1,149 +1,580 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="../IMG/favicon.png" type="image/x-icon">
-  <title>Quienes Somos | ValoArte</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="./IMG/favicon.png"
+            type="image/x-icon"
+        />
+        <title>Inicio | ValoArte</title>
 
-  <!-- Bootstrap CSS -->
-  <link
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-  rel="stylesheet"
-  integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-  crossorigin="anonymous"
-  />
+        <!-- Bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+            crossorigin="anonymous"
+        />
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="../CSS/normalize.css">
-  <link rel="stylesheet" href="../CSS/grid.css">
-  <link rel="stylesheet" href="../CSS/base.css">
-  <!-- <link rel="stylesheet" href="../CSS/prueba-grid-12.css"> -->
-</head>
+        <!-- Swiper -->
+        <link rel="stylesheet" href="CSS/swiper-bundle.min.css" />
 
-<body id="body">
-<div class="grid">
+        <!-- Animate On Scroll -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
 
-  <!-- Comienza NavBar -->
-  <nav class="navBar">
-    <div class="navBar__wrapper">
-      <a class="navBar__brand" href="../index.html">
-        <img src="../IMG/logo.png" alt="Logo fundación Valoarte"/>
-      </a>
-      <ul class="navBar__ul"> 
-        <li class="navBar__item">
-          <a
-            class="navBar__link"
-            aria-current="page"
-            href="#"
-            >Home
-          </a>
-        </li>
-        <li class="navBar__item">
-          <a
-            class="navBar__link"
-            href="./quienes-somos.html"
-            >Quienes somos
-          </a>
-        </li>
-        <li class="navBar__item">
-          <a
-            class="navBar__link"
-            href="./eventos-valo.html"
-            >Eventos
-          </a>
-        </li>
-        <li class="navBar__item">
-          <a
-            class="navBar__link"
-            href="./actividades.html"
-            >Actividades
-          </a>
-        </li>
-        <li class="navBar__item">
-          <a
-            class="navBar__link"
-            href="./espacios.html"
-            >Espacios
-          </a>
-        </li>
-      </ul>
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="../CSS/normalize.css" />
+        <!-- Normaliza algunos estilos por defecto de CSS -->
+        <link rel="stylesheet" href="../CSS/styles.css" />
+        <!-- Estilos de la plantilla principal -->
+        <link rel="stylesheet" href="../CSS/quienes-somos.css" />
+        <!-- Estilos específicos de la página en cuestión -->
+    </head>
+
+    <body id="body">
+            <header class="_header row" id="header">
+                <nav class="_nav navbar navbar-expand-md">
+                    <div class="_nav__wrapper container-fluid">
+                        <!-- Brand Img -->
+                        <a class="_navBar__brandLink" href="#">
+                            <img
+                                class="_navBar__brandImage"
+                                src="https://i.postimg.cc/rsKPGBGr/image-1-Traced.png"
+                                alt="Logo fundación Valoarte"
+                            />
+                        </a>
+
+                        <!-- Toggle Button (Hamburger)-->
+                        <button
+                            class="_navBar__toggler d-md-none d-lg-none"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="38"
+                                height="38"
+                                fill="currentColor"
+                                class="bi bi-list nav-icon"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                                />
+                            </svg>
+                        </button>
+
+                        <!-- Navbar Content -->
+                        <div
+                            class="_navBar__container collapse navbar-collapse"
+                            id="navbarSupportedContent"
+                        >
+                            <ul class="_navBar__list navbar-nav">
+                                <li class="_navBar__itemList">
+                                    <a
+                                        class="_navBar__link"
+                                        href="../index.html"
+                                        aria-current="page"
+                                        >Home</a
+                                    >
+                                </li>
+                                <li class="_navBar__itemList">
+                                    <a
+                                        class="_navBar__link _currentPage"
+                                        href="quienes-somos.html"
+                                        >Quienes somos</a
+                                    >
+                                </li>
+                                <li class="_navBar__itemList">
+                                    <a
+                                        class="_navBar__link "
+                                        href="actividades.html"
+                                        >Actividades</a
+                                    >
+                                </li>
+                                <li class="_navBar__itemList">
+                                    <a
+                                        class="_navBar__link _mr-1"
+                                        href="espacios.html"
+                                        >Espacios</a
+                                    >
+                                </li>
+                                <li class="_navBar__itemList _tienda">
+                                    <a
+                                        class="_navBar__link"
+                                        href="https://valoarte.mitiendanube.com/productos/"
+                                        target="_blank"
+                                    >
+                                        <svg
+                                            class="_tienda__icon"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-bag-heart-fill"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5ZM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1Zm0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"
+                                            />
+                                        </svg>
+                                        Tienda
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            
+        <div   div class="container-fluid ">
+    <!-- Main Starts -->
+
+        <div class="main container-lg">
+        <article class="_articleHero row row-cols-md-12">
+            <section class="firstSection">
+                <div class="firstSection__container1">
+                    <div class="firstSection__container">
+                        <h1 class="firstSection__title">#Quienes somos</h1>
+                    </div>
+                    <p class="text-center mb-5 firstSection__text">
+                        somos una <span class="bold">fundación</span> dedicada a
+                        promover la educación emocional en
+                        <span class="bold">igualdad de oportunidades </span>a
+                        través de dinamicas innovadoras y objetos de diseño.
+                    </p>
+                </div>
+
+                <div class="firstSection__imgContainer d-flex justify-content-center">
+                    <img
+                        class="firstSection__img"
+                        src="https://i.postimg.cc/zvH1Dbc6/Portada.png"
+                        alt=""
+                    />
+                </div>
+            </section>
+        </article>
     </div>
-  </nav>
-  <!-- Finaliza navBar -->
-  
-  <!-- Comienza header -->
-  <header class="hero">
-    <h2>Hero / Header</h2>
-  </header>
-  <!-- Finaliza header -->
+</div>
+<div class=" container-fluid lightViolet">
+    <div class="main container-lg">
+        <article class="_articleQueHacemos">
+            <section class="secondSection">
+                <div class="secondSection__titleContainer">
+                    <h2 class="secondSection__title">#Que hacemos</h2>
+                </div>
 
-  <!-- Comienza section1 -->
-  <section class="section1">
-    <h2>Actividades</h2>
-  </section>
-  <!-- Finaliza section1 -->
+                <div class="secondSection__data1">
+                    <div class="data1__container1">
+                        <div class="posRelative">
+                            <h3 class="data1__title">Historia</h3>
+                        </div>
+                        <p class="data1__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Mollis dignissim sed tellus commodo maecenas
+                            gravida consectetur cras. Vulputate nunc congue
+                            elementum, feugiat commodo aliquam phasellus semper.
+                            Diam in nam sit. Mollis dignissim sed tellus commodo
+                            maecenas gravida consectetur cras. Vulputate nunc
+                            congue elementum, feugiat commodo aliquam phasellus
+                            semper. Diam in nam sit. Mollis dignissim sed tellus
+                            commodo maecenas gravida consectetur cras.
+                        </p>
+                    </div>
+                    <div class="data1__imgContainer">
+                        <img
+                            class="data1__img"
+                            src="https://i.postimg.cc/k5RGZGn1/Group-1.png"
+                            alt=""
+                        />
+                    </div>
+                </div>
 
-  <!-- Comienza section2 -->
-  <section class="section2">
-    <h2>Espacios</h2>
-  </section>
-  <!-- Finaliza section2 -->
-
-  <!-- Comienza section3 -->
-  <section class="section3">
-    <h2>Eventos ValoArte</h2>
-  </section>
-  <!-- Finaliza section3 -->
-
-  <!-- Comienza section4 -->
-  <section class="section4">
-    <h2>Quienes Somos</h2>
-  </section>
-  <!-- Finaliza section4 -->
-
-  <!-- Comienza section5 -->
-  <section class="section5">
-    <h2>Donaciones</h2>
-  </section>
-  <!-- Finaliza section5 -->
-
-  <!-- Comienza footer -->
-  <footer class="footer">
-    <div class="footer__wrapper">
-      <section class="footer__about">
-        <h5>About</h5>
-        <p>Lorem ipsum dolor sit amet consectetur</p>
-      </section>
-      <section class="footer__navigation">
-        <h5>Navigation</h5>
-        <p>Lorem ipsum dolor sit amet consectetur</p>
-      </section>
-      <section class="footer__contact">
-        <h5>Contact</h5>
-        <p>Lorem ipsum dolor sit amet consectetur</p>
-      </section>
+                <div class="secondSection__data1">
+                    <div class="data1__container1">
+                        <div class="posRelative">
+                            <h3 class="data1__title">Actualidad</h3>
+                        </div>
+                        <p class="data1__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Mollis dignissim sed tellus commodo maecenas
+                            gravida consectetur cras. Vulputate nunc congue
+                            elementum, feugiat commodo aliquam phasellus semper.
+                            Diam in nam sit. Mollis dignissim sed tellus commodo
+                            maecenas gravida consectetur cras. Vulputate nunc
+                            congue elementum, feugiat commodo aliquam phasellus
+                            semper. Diam in nam sit. Mollis dignissim sed tellus
+                            commodo maecenas gravida consectetur cras.
+                        </p>
+                    </div>
+                    <div class="data1__imgContainer">
+                        <img
+                            class="data1__img"
+                            src="https://i.postimg.cc/cHQHxztf/Group-24.png"
+                            alt=""
+                        />
+                    </div>
+                </div>
+            </section>
+        </article>
+    
+        <article class="_articleNuestrosEventos">
+            <section class="thirdSection">
+                <div
+                    class="secondSection__titleContainer thirdSection__titleContainer"
+                >
+                    <h2 class="secondSection__title thirdSection__title">
+                        #Nuestros eventos
+                    </h2>
+                </div>
+                <div>
+                    <div class="mt-4">
+                        <section class="main__secondSection">
+                            <div class="secondSection__carouselContainer">
+                                <div
+                                    id="carouselExampleDark1"
+                                    class="carousel carousel-dark slide"
+                                    data-bs-ride="carousel"
+                                >
+                                    <div class="carousel-indicators mt-5">
+                                        <button
+                                            type="button"
+                                            data-bs-target="#carouselExampleDark1"
+                                            data-bs-slide-to="0"
+                                            class="active"
+                                            aria-current="true"
+                                            aria-label="Slide 1"
+                                        ></button>
+                                        <button
+                                            type="button"
+                                            data-bs-target="#carouselExampleDark1"
+                                            data-bs-slide-to="1"
+                                            aria-label="Slide 2"
+                                        ></button>
+                                        <button
+                                            type="button"
+                                            data-bs-target="#carouselExampleDark1"
+                                            data-bs-slide-to="2"
+                                            aria-label="Slide 3"
+                                        ></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="d-flex w-100 justify-content-center gap-2">
+                                                <img
+                                                    src="../IMG/evento1.png"
+                                                    class="d-inline w-30"
+                                                    alt="..."
+                                                />
+                                                <img
+                                                    src="../img/evento2.png"
+                                                    class="d-inline w-30"
+                                                    alt="..."
+                                                />
+                                                <img
+                                                    src="../img/evento3.png"
+                                                    class="d-inline w-30"
+                                                    alt="..."
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="d-flex w-100 justify-content-center gap-2">
+                                                <img
+                                                    src="../img/evento4.png"
+                                                    class="d-inline w-30"
+                                                    alt="..."
+                                                />
+                                                <img
+                                                    src="../img/evento5.png"
+                                                    class="d-inline w-30"
+                                                    alt="..."
+                                                />
+                                                <img
+                                                    src="../img/evento6.png"
+                                                    class="d-inline w-30"
+                                                    alt="..."
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item"> 
+                                            <div class="d-flex w-100 justify-content-center gap-2">
+                                                <img
+                                                    src="../img/evento7.png"
+                                                    class="d-inline w-30"
+                                                    alt="..."
+                                                />
+                                                <img
+                                                    src="../img/evento8.png"
+                                                    class="d-inline w-30"
+                                                    alt="..."
+                                                />
+                                                <img
+                                                    src="../img/evento9.png"
+                                                    class="d-inline w-30"
+                                                    alt="..."
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="carousel-control-prev  carousel-control-section"
+                                        type="button"
+                                        data-bs-target="#carouselExampleDark1"
+                                        data-bs-slide="prev"
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="50"
+                                            height="50"
+                                            fill="currentColor"
+                                            class="bi bi-arrow-left-short carousel-control"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"
+                                            />
+                                        </svg>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button
+                                        class="carousel-control-next carousel-control-section"
+                                        type="button"
+                                        data-bs-target="#carouselExampleDark1"
+                                        data-bs-slide="next"
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="50"
+                                            height="50"
+                                            fill="currentColor"
+                                            class="bi bi-arrow-right-short carousel-control"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                                            />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <p class="thirdSection__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Mollis dignissim sed tellus commodo maecenas gravida
+                        consectetur cras. Vulputate nunc congue elementum,
+                        feugiat commodo aliquam phasellus semper. Diam in nam
+                        sit.
+                    </p>
+                </div>
+            </section>
+        </article>
     </div>
-  </footer>
-  <!-- Finaliza footer -->
-
 </div>
 
-<!-- <div class="grid">
-    <div class="column1">Columna</div>
-    <div class="column2">Columna</div>
-    <div class="column3">Columna</div>
-    <div class="column4">Columna</div>
-    <div class="column5">Columna</div>
-    <div class="column6">Columna</div>
-    <div class="column7">Columna</div>
-    <div class="column8">Columna</div>
-    <div class="column9">Columna</div>
-    <div class="column10">Columna</div>
-    <div class="column11">Columna</div>
-    <div class="column12">Columna</div>
-</div> -->
+<div class="container-fluid gradient">
+    <div class=" main container-lg">
+        <article class="_articleSeParte mt-5">
+                        <section class="fourthSection">
+                <div class="fourhSection__titleContainer">
+                    <img
+                        class="fourthSection__img1"
+                        src="https://i.postimg.cc/VsJwWpkg/pngwing-2.png"
+                        alt=""
+                    />
+                    <h3 class="fourthSection__title">¡Se parte!</h3>
+                </div>
 
+                <div class="divider">
+                    <p class="fourthSection__text">
+                        Si crees como nosotros que la educación emocional y de
+                        calidad es prioridad para el desarrollo integral de
+                        nuestras comunidades, y queres reducir la brecha de que
+                        hoy en Argentina 6 de cada 10 niñxs están bajo la línea
+                        de la pobreza sumate a la transformación.
+                    </p>
+                </div>
+                <div class="divider">
+                    <p class="fourthSection__text">
+                        Cada granito de arena suma, podés aportar a que podamos
+                        seguir. <span class="bold">¿Cómo?</span>
+                    </p>
+                </div>
+                <div class="fourthSection__dataContainer">
+                    <div class="data">
+                        <img class="data__img" src="https://i.postimg.cc/HkRXjfnN/vector3.png" alt="" />
+                        
+                        <span class="data__desc"
+                            >Comprando nuestros productos.</span
+                        >
+                    </div>
+                    <div class="data">
+                        <img class="data__img" src="https://i.postimg.cc/13nNxJBr/vecto2.png" alt="" />
+                        <span class="data__desc"
+                            >Tomando alguno de nuestros cursos.</span
+                        >
+                    </div>
+                    <div class="data">
+                        <img class="data__img" src="https://i.postimg.cc/HkRXjfnN/vector3.png" alt="" />
+                        <span class="data__desc"
+                            >Usando nuestros espacios para desarrollarte.</span
+                        >
+                    </div>
+                </div>
+                <div class="divider">
+                    <p class="fourthSection__text">
+                        Haces posible que podamos dictar talleres de Educación
+                        emocional, trabajando codo a codo con Escuelas de
+                        nuestro país.
+                    </p>
+                </div>
+
+                <div class="fourhSection__titleContainer">
+                    <h3 class="fourthSection__subtitle">
+                        ¡Te necesitamos para transformar el futuro!
+                    </h3>
+                    <img
+                        class="fourthSection__img2"
+                        src="https://i.postimg.cc/TYnZk6MV/pngwing-1.png"
+                        alt=""
+                    />
+                </div>
+
+                <div class="fourthSection__dataContainer">
+                    <div class="data">
+                        <img
+                            class="data__img"
+                            src="https://i.postimg.cc/85K1zVPJ/icono1.png"
+                            alt=""
+                        />
+                        <span class="data__title"> Donación Online</span>
+                        <p class="data__desc1">
+                            Haces posible que podamos dictar talleres de
+                            Educación emocional, trabajando codo a codo con
+                            Escuelas de nuestro país.
+                        </p>
+                        <button class="data__btn">Donación online</button>
+                    </div>
+                    <div class="data">
+                        <img
+                            class="data__img"
+                            src="https://i.postimg.cc/L8L6B7vw/icono2.png"
+                            alt=""
+                        />
+                        <span class="data__title">
+                            Deposito o Transferencia Bancaria</span
+                        >
+                        <p class="data__desc1">
+                            Haces posible que podamos dictar talleres de
+                            Educación emocional, trabajando codo a codo con
+                            Escuelas de nuestro país.
+                        </p>
+                    </div>
+                    <div class="data">
+                        <img
+                            class="data__img"
+                            src="https://i.postimg.cc/W3X4qkS4/icono3.png"
+                            alt=""
+                        />
+                        <span class="data__title"> Voluntariado</span>
+                        <p class="data__desc1">
+                            Haces posible que podamos dictar talleres de
+                            Educación emocional, trabajando codo a codo con
+                            Escuelas de nuestro país.
+                        </p>
+                        <button class="data__btn">Voluntariado</button>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </div>
+</div>
+        
+    <!-- Main Ends -->
+
+    <!-- Footer Starts -->
+    <!-------------------------------------------------------------------------->
+    <div class="container-fluid">
+            <footer class="_footer row row-cols-md-3">
+                <section class="_footer__sectionBrand col-sm-6 d-flex flex-column  gap-2  align-items-center ">
+                    <title>Seguinos en las redes</title>
+                    <a class="_sectionBrand__link" href="#">
+                        <img class="_sectionBrand__image" src="https://i.postimg.cc/GhGhCVYK/image-1-Traced-1.png" alt="Logo fundación Valoarte" />
+                    </a>
+                    <p class="_sectionBrand__title">¡SEGUINOS EN LAS REDES!</p>
+                    <nav class="_sectionBrand__socialNav">
+                        <ul class="_socialNav__list">
+                            <li class="_socialNav__itemList">
+                                <a class="_socialNav__link" href="https://www.instagram.com/" target="_blank">
+                                    
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram footerIcon" viewBox="0 0 16 16">
+                                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            
+                            <li class="_socialNav__itemList">
+                                <a class="_socialNav__link" href="https://es-la.facebook.com/" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook footerIcon" viewBox="0 0 16 16">
+                                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                                    </svg>          
+                                </a>
+                            </li>
+                            <li class="_socialNav__itemList">
+                                <a class="_socialNav__link" href="https://www.linkedin.com/login/es" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin footerIcon" viewBox="0 0 16 16">
+                                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+                <section class="_footer__sectionContacto col-sm-6 d-flex flex-column justify-content-center align-items-center">
+                    <title>Contacto</title>
+                    <p class="_sectionContacto__title">CONTACTO</p>
+                    <a class="_sectionContacto__link" href="https://wa.me/543794769014" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp footerIcon" viewBox="0 0 20 20"">
+                            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                        </svg>
+                        <span class="_sectionContacto__data">+54 379 476-9014</span>
+                    </a>
+                    <a class="_sectionContacto__link" href="https://goo.gl/maps/WvZMqYTgCnnrXZFWA" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill footerIcon"  viewBox="0 0 20 20">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                        </svg>
+                        <span class="_sectionContacto__data">San Martín 616 - Corrientes</span>
+                    </a>
+                </section>
+                <section class="_footer__sectionColabora col-12 d-flex flex-column justify-content-center align-items-center">
+                    <title>Colabora con la fundación</title>
+                    <p class="_sectionColabora__title">¡COLABORÁ CON LA FUNDACIÓN!</p>
+                    <a class="_sectionColabora__button" href="#">DONAR ONLINE</a>
+                </section>
+            </footer>
+    </div>
+    <!-- Footer Ends -->
+    
 </body>
+    <!-- Bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    <!-- Animate On Scroll script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({});</script>
 </html>
