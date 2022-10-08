@@ -69,6 +69,14 @@
 .creamBg {
     background-color: var(--background-color);
 }
+.backImgActividades{
+    background-image: url("https://i.postimg.cc/d392z70P/286237102-1232047897535020-1415191494195911565-n-1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+}
+
 .underlined {
     padding: 2px 5px;
     background-color: #816797;
@@ -76,6 +84,22 @@
 }
 .textWhite {
     color: var(--white);
+}
+
+/* Hero section */
+
+.heroContainer{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-block: 30px;
+}
+.actividades__title{
+    margin: 0;
+    color: white;
+    font-family: var(--thirdFont);
+    text-align: center;
 }
 
 /* Accordion items */
