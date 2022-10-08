@@ -41,6 +41,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom:60px;
 }
 
 .firstSection__container {
@@ -187,12 +188,15 @@
     justify-content: center;
     gap: 15px;
     margin-block: 30px;
+    position: relative;
 }
 
 .fourthSection__img1 {
     width: 50px;
     height: 60px;
     margin-bottom: 4px;
+    position: absolute;
+    left: 0;
 }
 
 .fourthSection__title {
@@ -206,6 +210,7 @@
 }
 .divider {
     margin-block: 10px;
+    margin-bottom: 40px;
 }
 .fourthSection__text {
     font-size: var(--mobile-text-size);
@@ -244,6 +249,9 @@
     width: 70px;
     object-fit: contain;
     transform: rotate(10deg);
+    position: absolute;
+    right: 0;
+    top: -70px;
 }
 
 .fourthSection__subtitle {
