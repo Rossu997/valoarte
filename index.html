@@ -1,249 +1,292 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./IMG/favicon.png" type="image/x-icon">
-    <title>Inicio | ValoArte</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="./IMG/favicon.png"
+            type="image/x-icon"
+        />
+        <title>Inicio | ValoArte</title>
 
-    <!-- Bootstrap -->
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-        crossorigin="anonymous"
-    />
+        <!-- Bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+            crossorigin="anonymous"
+        />
 
-    <!-- Swiper -->
-    <link rel="stylesheet" href="CSS/swiper-bundle.min.css">
+        <!-- Swiper -->
+        <link rel="stylesheet" href="CSS/swiper-bundle.min.css" />
 
-    <!-- Animate On Scroll -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- Animate On Scroll -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="CSS/normalize.css" /> <!-- Normaliza algunos estilos por defecto de CSS -->
-    <link rel="stylesheet" href="CSS/styles.css" /> <!-- Estilos de la plantilla principal -->
-    <link rel="stylesheet" href="CSS/home.css" /> <!-- Estilos específicos de la página en cuestión -->
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="CSS/normalize.css" />
+        <!-- Normaliza algunos estilos por defecto de CSS -->
+        <link rel="stylesheet" href="CSS/styles.css" />
+        <!-- Estilos de la plantilla principal -->
+        <link rel="stylesheet" href="CSS/home.css" />
+        <!-- Estilos específicos de la página en cuestión -->
+    </head>
 
+    <!-- TODO README -->
+    <!-- Usamos el sistema de Grid de Bootstrap para hacer un sistema modular -->
+    <!-- Solo usamos sus propiedades (como "col-2") para acomodar estos módulos en la grilla -->
+    <!-- Usamos iconos de Bootstrap en formato SVG. Si hay que modificarlo, lo hacemos localmente mediante una clase nueva -->
+    <!-- Hay un archivo CSS que normaliza estilos y uno general, con estilos del header y footer principalmente -->
+    <!-- Estos dos tienen que estar en todos los archivos HTML -->
+    <!-- Además, cada HTML tiene su archivo CSS con los estilos del contenido particular de la página -->
+    <!-- Hay que tratar de eliminar clases de Bootstrap predefinidas que no nos sirvan y tener bien definidas nuestras clases -->
+    <!-- Se me ocurrió usar un guión bajo adelante para diferenciarlas a simple vista "_nav__wrapper" -->
+    <!-- Así evitamos conflictos con nuestros estilos y el uso del !important ⛔ (prohibido) -->
+    <!-- Como habíamos hablado, diseñamos mobile first -->
+    <!-- Los breakpoints ya los tenemos definidos por Bootstrap y se pueden sacar de styles.css -->
+    <!-- TODO  -->
 
-</head>
-
-
-<!-- TODO README -->
-<!-- Usamos el sistema de Grid de Bootstrap para hacer un sistema modular -->
-<!-- Solo usamos sus propiedades (como "col-2") para acomodar estos módulos en la grilla -->
-<!-- Usamos iconos de Bootstrap en formato SVG. Si hay que modificarlo, lo hacemos localmente mediante una clase nueva -->
-<!-- Hay un archivo CSS que normaliza estilos y uno general, con estilos del header y footer principalmente -->
-<!-- Estos dos tienen que estar en todos los archivos HTML -->
-<!-- Además, cada HTML tiene su archivo CSS con los estilos del contenido particular de la página -->
-<!-- Hay que tratar de eliminar clases de Bootstrap predefinidas que no nos sirvan y tener bien definidas nuestras clases -->
-<!-- Se me ocurrió usar un guión bajo adelante para diferenciarlas a simple vista "_nav__wrapper" -->
-<!-- Así evitamos conflictos con nuestros estilos y el uso del !important ⛔ (prohibido) -->
-<!-- Como habíamos hablado, diseñamos mobile first -->
-<!-- Los breakpoints ya los tenemos definidos por Bootstrap y se pueden sacar de styles.css -->
-<!-- TODO  -->
-
-<body>
-    <header class="_header row" id="header">
-        <nav class="_nav navbar navbar-expand-md">
-            <div class="_nav__wrapper container-fluid">
-
-                <!-- Brand Img -->
-                <a class="_navBar__brandLink p-2" href="#">
-                    <img class="_navBar__brandImage" src="https://i.postimg.cc/rsKPGBGr/image-1-Traced.png" alt="Logo fundación Valoarte"/>
-                </a>
-
-                <!-- Toggle Button (Hamburger)-->
-                <button
-                    class="_navBar__toggler d-md-none d-lg-none p-2"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="38"
-                        height="38"
-                        fill="currentColor"
-                        class="bi bi-list nav-icon"
-                        viewBox="0 0 16 16"
-                    >
-                        <path
-                            fill-rule="evenodd"
-                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+    <body>
+        <header class="_header row" id="header">
+            <nav class="_nav navbar navbar-expand-md">
+                <div class="_nav__wrapper container-fluid">
+                    <!-- Brand Img -->
+                    <a class="_navBar__brandLink p-2" href="#">
+                        <img
+                            class="_navBar__brandImage"
+                            src="https://i.postimg.cc/rsKPGBGr/image-1-Traced.png"
+                            alt="Logo fundación Valoarte"
                         />
-                    </svg>
-                </button>
+                    </a>
 
-                <!-- Navbar Content -->
-                <div class="_navBar__container collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="_navBar__list navbar-nav">
-                        <li class="_navBar__itemList">
-                            <a class="_navBar__link _currentPage" href="#" aria-current="page">Home</a>
-                        </li>
-                        <li class="_navBar__itemList">
-                            <a class="_navBar__link" href="pages/quienes-somos.html">Quienes somos</a>
-                        </li>
-                        <li class="_navBar__itemList">
-                            <a class="_navBar__link" href="pages/actividades.html">Actividades</a>
-                        </li>
-                        <li class="_navBar__itemList">
-                            <a class="_navBar__link _mr-1" href="pages/espacios.html">Espacios</a>
-                        </li>
-                        <li class="_navBar__itemList _tienda">
-                            <a class="_navBar__link" href="https://valoarte.mitiendanube.com/productos/" target="_blank">
-                                <svg
-                                class="_tienda__icon"
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="16"
-                                height="16"
-                                fill="currentColor"
-                                class="bi bi-bag-heart-fill"
-                                viewBox="0 0 16 16"
+                    <!-- Toggle Button (Hamburger)-->
+                    <button
+                        class="_navBar__toggler d-md-none d-lg-none p-2"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="38"
+                            height="38"
+                            fill="currentColor"
+                            class="bi bi-list nav-icon"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                            />
+                        </svg>
+                    </button>
+
+                    <!-- Navbar Content -->
+                    <div
+                        class="_navBar__container collapse navbar-collapse"
+                        id="navbarSupportedContent"
+                    >
+                        <ul class="_navBar__list navbar-nav">
+                            <li class="_navBar__itemList">
+                                <a
+                                    class="_navBar__link _currentPage"
+                                    href="#"
+                                    aria-current="page"
+                                    >Home</a
                                 >
-                                    <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5ZM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1Zm0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
-                                </svg>
-                                Tienda
-                            </a>
-                        </li>
-                    </ul>
+                            </li>
+                            <li class="_navBar__itemList">
+                                <a
+                                    class="_navBar__link"
+                                    href="pages/quienes-somos.html"
+                                    >Quienes somos</a
+                                >
+                            </li>
+                            <li class="_navBar__itemList">
+                                <a
+                                    class="_navBar__link"
+                                    href="pages/actividades.html"
+                                    >Actividades</a
+                                >
+                            </li>
+                            <li class="_navBar__itemList">
+                                <a
+                                    class="_navBar__link _mr-1"
+                                    href="pages/espacios.html"
+                                    >Espacios</a
+                                >
+                            </li>
+                            <li class="_navBar__itemList _tienda">
+                                <a
+                                    class="_navBar__link"
+                                    href="https://valoarte.mitiendanube.com/productos/"
+                                    target="_blank"
+                                >
+                                    <svg
+                                        class="_tienda__icon"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-bag-heart-fill"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5ZM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1Zm0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"
+                                        />
+                                    </svg>
+                                    Tienda
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
             </nav>
         </header>
         <!-- Header Ends -->
 
-    <!-- Main Starts -->
-    <!-------------------------------------------------------------------------->
-    <main class="_main"><!-- container-lg -->
-        <article class="_articleOne row row-cols-md-2 container-lg">
-            <title>Article: Hero</title>
-            <section class="_articleOne__textContainer col-md-6">
-                <h3 class="_articleOne__text">
-                    Somos una <span class="_bold">fundación</span> dedicada a promover la educación
-                    emocional en <span class="_bold">igualdad de oportunidades</span> a través de
-                    dinámicas innovadoras y objetos de diseño.
-                </h3>
-                <a class="_articleOne__button" href="https://wa.me/543794769014" target="_blank">¡CONÓCENOS!</a>
-            </section>
-            <section class="_articleOne__imageContainer col-md-6">
-                <img class="_articleOne__image" src="./IMG/imagen-portada.png" alt="Dos chicas felices levantando los brazos">
-            </section>
-        </article>
+        <!-- Main Starts -->
+        <!-------------------------------------------------------------------------->
+        <main class="_main">
+            <!-- container-lg -->
+            <article class="_articleOne row row-cols-md-2 container-lg">
+                <title>Article: Hero</title>
+                <section class="_articleOne__textContainer col-md-6">
+                    <h3 class="_articleOne__text">
+                        Somos una <span class="_bold">fundación</span> dedicada
+                        a promover la educación emocional en
+                        <span class="_bold">igualdad de oportunidades</span> a
+                        través de dinámicas innovadoras y objetos de diseño.
+                    </h3>
+                    <a
+                        class="_articleOne__button"
+                        href="https://wa.me/543794769014"
+                        target="_blank"
+                        >¡CONÓCENOS!</a
+                    >
+                </section>
+                <section class="_articleOne__imageContainer col-md-6">
+                    <img
+                        class="_articleOne__image"
+                        src="./IMG/imagen-portada.png"
+                        alt="Dos chicas felices levantando los brazos"
+                    />
+                </section>
+            </article>
 
-        <article class="_articleTwo ">
-            <title>Article: Carousel Eventos</title>
-            <div
-                id="carouselEventosHome"
-                class="carousel slide"
-                data-bs-ride="carousel"
+            <article class="_articleTwo">
+                <title>Article: Carousel Eventos</title>
+                <div
+                    id="carouselEventosHome"
+                    class="carousel slide"
+                    data-bs-ride="carousel"
                 >
+                    <!-- Indicadores con la posición del carousel (- - -) -->
+                    <div class="carousel-indicators">
+                        <button
+                            type="button"
+                            data-bs-target="#carouselEventosHome"
+                            data-bs-slide-to="0"
+                            class="active"
+                            aria-current="true"
+                            aria-label="Slide 1"
+                        ></button>
+                        <button
+                            type="button"
+                            data-bs-target="#carouselEventosHome"
+                            data-bs-slide-to="1"
+                            aria-label="Slide 2"
+                        ></button>
+                        <button
+                            type="button"
+                            data-bs-target="#carouselEventosHome"
+                            data-bs-slide-to="2"
+                            aria-label="Slide 3"
+                        ></button>
+                    </div>
 
-                <!-- Indicadores con la posición del carousel (- - -) -->
-                <div class="carousel-indicators">
-                    <button
-                        type="button"
-                        data-bs-target="#carouselEventosHome"
-                        data-bs-slide-to="0"
-                        class="active"
-                        aria-current="true"
-                        aria-label="Slide 1"
-                    ></button>
-                    <button
-                        type="button"
-                        data-bs-target="#carouselEventosHome"
-                        data-bs-slide-to="1"
-                        aria-label="Slide 2"
-                    ></button>
-                    <button
-                        type="button"
-                        data-bs-target="#carouselEventosHome"
-                        data-bs-slide-to="2"
-                        aria-label="Slide 3"
-                    ></button>
-                </div>
-
-                <!-- Divs con contenido del carousel -->
-                <div class="carousel-inner">
-                    <div
-                        class="carousel-item active"
-                        data-bs-interval="10000"
-                    >
-                        <img
-                            src="./IMG/fondo-eventos.png"
-                            class="d-block w-100"
-                            alt="..."
-                        />
-                        <div class="carousel-caption d-none d-md-block" >
-                            <h3 class="_carousel__Title">
-                                Titulo Primer Evento
-                            </h3>
-                            <p class="_carousel__Text">
-                                Descripción del evento
-                            </p>
+                    <!-- Divs con contenido del carousel -->
+                    <div class="carousel-inner">
+                        <div
+                            class="carousel-item active"
+                            data-bs-interval="10000"
+                        >
+                            <img
+                                src="./IMG/fondo-eventos.png"
+                                class="d-block w-100"
+                                alt="..."
+                            />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3 class="_carousel__Title">
+                                    Titulo Primer Evento
+                                </h3>
+                                <p class="_carousel__Text">
+                                    Descripción del evento
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                            <img
+                                src="./IMG/fondo-eventos.png"
+                                class="d-block w-100"
+                                alt="..."
+                            />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3 class="_carousel__Title">
+                                    Titulo Segundo Evento
+                                </h3>
+                                <p class="_carousel__Text">
+                                    Descripción del evento
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                            <img
+                                src="./IMG/fondo-eventos.png"
+                                class="d-block w-100"
+                                alt="..."
+                            />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3 class="_carousel__Title">
+                                    Titulo Tercer Evento
+                                </h3>
+                                <p class="_carousel__Text">
+                                    Descripción del evento
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div
-                        class="carousel-item"
-                        data-bs-interval="10000"
-                    >
-                        <img
-                            src="./IMG/fondo-eventos.png"
-                            class="d-block w-100"
-                            alt="..."
-                        />
-                        <div class="carousel-caption d-none d-md-block" >
-                            <h3 class="_carousel__Title">
-                                Titulo Segundo Evento
-                            </h3>
-                            <p class="_carousel__Text">
-                                Descripción del evento
-                            </p>
-                        </div>
-                    </div>
-                    <div
-                        class="carousel-item"
-                        data-bs-interval="10000"
-                    >
-                        <img
-                            src="./IMG/fondo-eventos.png"
-                            class="d-block w-100"
-                            alt="..."
-                        />
-                        <div class="carousel-caption d-none d-md-block" >
-                            <h3 class="_carousel__Title">
-                                Titulo Tercer Evento
-                            </h3>
-                            <p class="_carousel__Text">
-                                Descripción del evento
-                            </p>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Flechas laterales para navegar en el carousel (<- ->) -->
-                <button
-                    class="_carousel__arrowLeft carousel-control-prev d-none d-md-block"
-                    type="button"
-                    data-bs-target="#carouselEventosHome"
-                    data-bs-slide="prev"
-                >
-                    <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="50"
-                    height="50"
-                    fill="currentColor"
-                    class="bi bi-arrow-bar-left"
-                    viewBox="0 0 16 16"
+                    <!-- Flechas laterales para navegar en el carousel (<- ->) -->
+                    <button
+                        class="_carousel__arrowLeft carousel-control-prev d-none d-md-block"
+                        type="button"
+                        data-bs-target="#carouselEventosHome"
+                        data-bs-slide="prev"
                     >
-                        <path fill-rule="evenodd" d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5zM10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5z"/>
-                    </svg>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="50"
+                            height="50"
+                            fill="currentColor"
+                            class="bi bi-arrow-bar-left"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5zM10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5z"
+                            />
+                        </svg>
 
-                    <!-- <svg
+                        <!-- <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="50"
                         height="50"
@@ -256,24 +299,28 @@
                             d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"
                         />
                     </svg> -->
-                    <!-- <span class="sr-only">Previous</span> -->
-                </button>
-                <button
-                    class="_carousel__arrowRight carousel-control-next d-none d-md-block"
-                    type="button"
-                    data-bs-target="#carouselEventosHome"
-                    data-bs-slide="next"
-                >
-                    <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="50"
-                    height="50"
-                    fill="currentColor"
-                    class="bi bi-arrow-bar-right" viewBox="0 0 16 16"
+                        <!-- <span class="sr-only">Previous</span> -->
+                    </button>
+                    <button
+                        class="_carousel__arrowRight carousel-control-next d-none d-md-block"
+                        type="button"
+                        data-bs-target="#carouselEventosHome"
+                        data-bs-slide="next"
                     >
-                        <path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5z"/>
-                    </svg>
-                    <!-- <svg
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="50"
+                            height="50"
+                            fill="currentColor"
+                            class="bi bi-arrow-bar-right"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5z"
+                            />
+                        </svg>
+                        <!-- <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="50"
                         height="50"
@@ -286,291 +333,452 @@
                             d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
                         />
                     </svg> -->
-                    <!-- <span class="sr-only">Next</span> -->
-                </button>
-            </div>
-        </article>
+                        <!-- <span class="sr-only">Next</span> -->
+                    </button>
+                </div>
+            </article>
 
-        <article class="_articleTree container-lg">
-            <title>Article: #Nuestros Programas</title>
-            <!-- Encabezado del artículo -->
+            <article class="_articleTree container-lg">
+                <title>Article: #Nuestros Programas</title>
+                <!-- Encabezado del artículo -->
                 <h4 class="_articleTree__title">#NuestrosProgramas</h4>
                 <p class="_articleTree__text">
                     Conocé más acerca de nuestros ejes de trabajo comunitario:
                 </p>
-            
-            <!-- Contenedor de cards -->
-            <section class="_articleTree__cardsContainer row row-cols-lg-3">
-                <!-- Card 1 -->
-                <div class="_articleTree__card col-lg-4">
-                    <div class="_articleTree__cardWrapper">
-                        <img class="_card__imgage" src="IMG/card-programas.png" alt="..." />
-                        <div class="_card__descriptionContainer">
-                            <div class="_card__titleContainer">
-                                <h3 class="_card__title">Intervención en organizaciones</h3>
-                            </div>
-                            <p class="_card__text">
-                                ¡Vamos a tu organización y trabajamos de forma integral la educación emocional a través de diagnósticos psicosociales!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 2 -->
-                <div class="_articleTree__card col-lg-4">
-                    <div class="_articleTree__cardWrapper">
-                        <img class="_card__imgage" src="IMG/card-programas.png" alt="..." />
-                        <div class="_card__descriptionContainer">
-                            <div class="_card__titleContainer">
-                                <h3 class="_card__title">Ellas al frente</h3>
-                            </div>
-                            <p class="_card__text">
-                                ¡Promovemos la reducción de la brecha de género a través de formaciones integrales para mujeres!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 3 -->
-                <div class="_articleTree__card col-lg-4">
-                    <div class="_articleTree__cardWrapper">
-                        <img class="_card__imgage" src="IMG/card-programas.png" alt="..." />
-                        <div class="_card__descriptionContainer">
-                            <div class="_card__titleContainer">
-                                <h3 class="_card__title">Economia naranja</h3>
-                            </div>
-                            <p class="_card__text">
-                                ¡Trabajamos la profesionalización y formalidad de emprendedores creativos!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>       
-        </article>
-        
-        <article class="_articleFour container-lg">
-            <title>Article: ¡Sé parte!</title>
-            <section class="_articleFour__upperSection">
-                <h4 class="_upperSection__title">¡Sé parte!</h4>
-                <div class="_upperSection__imgageContainer">
-                    <img class="_upperSection__imgage" src="./IMG/se-parte-datos-desktop.png" alt="">
-                </div>
-                <div class="_upperSection__cta">
-                    <a class="_upperSection__ctaButton" href="https://wa.me/543794769014">¡CONVERTITE EN VOLUNTARIO!</a>
-                    <a class="_upperSection__ctaButton" href="https://wa.me/543794769014">¡HACÉ TU APORTE!</a>
-                </div>
-            </section>
 
-            <section class="_articleFour__bottomSection container row row-cols-lg-2">
-                <p class="_bottomSection__text col-12">Somos una comunidad creativa. Creemos en la magia de los nuevos comienzos,somos soñadores, y hacedores, innovamos y nos animamos. Creamos lo imposible,aprendemos todo el tiempo.
-                En nuestro equipo todas compartimos el mismo sentimiento: ser las <span class="_bold">ovejas negras</span> de nuestro entorno. Lejos de frustrarnos por ser diferentes, tomamos impulso y nos unimos para generar ofertas innovadoras y creativas para todos.
-                </p>
-                <div class="_bottomSection__ovejasContainer col-12">
-                    <div class="_ovejasContainer__background"></div>
-                    <div class="ovejasContainer__decoration">
-                        <img class="_decoration__image" src="./IMG/decoration-1.png" alt="...">
-                    </div>
-                    <img class="ovejasContainer__oveja3" src="./IMG/oveja.png" alt="...">
-                    <img class="ovejasContainer__oveja2" src="./IMG/oveja.png" alt="...">
-                    <img class="ovejasContainer__oveja1" src="./IMG/oveja.png" alt="...">
-                </div>
-            </section>
-        </article>
-
-        <article class="_articleFive">
-            <title>Article: #LoQueDicenDeValo</title>
-            <div class="container-xl" >
-                <h4 class="_articleFive__title">#Lo que dicen de Valo</h4>
-                <div class="swiper mySwiper swiper-container">
-                    
-                    <div class="swiper-wrapper card-wrapper">
-                        <div class="swiper-slide card">
-                            <div class="card-content">
-                                <p class="card-text">
-                                    Educación emocional, que importante lo que dan, gracias x la entrega 💖
+                <!-- Contenedor de cards -->
+                <section class="_articleTree__cardsContainer row row-cols-lg-3">
+                    <!-- Card 1 -->
+                    <div class="_articleTree__card col-lg-4">
+                        <div class="_articleTree__cardWrapper">
+                            <img
+                                class="_card__imgage"
+                                src="IMG/card-programas.png"
+                                alt="..."
+                            />
+                            <div class="_card__descriptionContainer">
+                                <div class="_card__titleContainer">
+                                    <h3 class="_card__title">
+                                        Intervención en organizaciones
+                                    </h3>
+                                </div>
+                                <p class="_card__text">
+                                    ¡Vamos a tu organización y trabajamos de
+                                    forma integral la educación emocional a
+                                    través de diagnósticos psicosociales!
                                 </p>
-                                <p class="_bold card-text">Yamile</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide card">
-                            <div class="card-content">
-                                <p class="card-text">
-                                    Amo Valoarte 💛 Que siga la magia. Fuerza chicas 💪💪🙌
-                                </p>
-                                <p class="_bold card-text">Ana Paula</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide card">
-                            <div class="card-content">
-                                <p class="card-text">
-                                    Educación emocional, que importante lo que dan, gracias x la entrega ♥️
-                                </p>
-                                <p class="_bold card-text">Lucas</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide card">
-                            <div class="card-content">
-                                <p class="card-text">
-                                    Un lugar especial donde se vive el espiritu emprendedor y te desafian a trabajar las emociones para superarte!!
-                                </p>
-                                <p class="_bold card-text">Cecilia</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide card">
-                            <div class="card-content">
-                                <p class="card-text">
-                                    Un espacio de crecimiento y capacitación constante en un clima de armonía y paz
-                                </p>
-                                <p class="_bold card-text">Violeta</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide card">
-                            <div class="card-content">
-                                <p class="card-text">
-                                    Cálido lugar, que invita a visitarlo siempre y no querer irse del mismo.
-Gracias por su maravillosa atención. 👏👏❤❤❤
-
-                                </p>
-                                <p class="_bold card-text">Norma</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide card">
-                            <div class="card-content">
-                                <p class="card-text">
-                                    Es la primera vez que voy y me encantó la atención, todo el tiempo preguntando si necesitabamos algo, la energía muy buena. Gracias, mil gracias.
-                                </p>
-                                <p class="_bold card-text">Aitana Deco Shop</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide card">
-                            <div class="card-content">
-                                <p class="card-text">
-                                    Excelente la organización, volvería a participar mil veces. Felicitaciones y muchas gracias.
-                                </p>
-                                <p class="_bold card-text">Maena</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide card">
-                            <div class="card-content">
-                                <p class="card-text">
-                                    Excelente equipo de trabajo, todos muy amables. Muchas gracias por las atenciones, la predisposición, la propuesta innovadora y la buena onda de siempre.
-                                </p>
-                                <p class="_bold card-text">Sinclair Creaciones</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide card">
-                            <div class="card-content">
-                                <p class="card-text">
-                                    Esta es la segunda vez que participo, y como siempre todo perfecto. Gracias por el espacio.
-                                </p>
-                                <p class="_bold card-text">Bonita Adicción Velas</p>
                             </div>
                         </div>
                     </div>
+                    <!-- Card 2 -->
+                    <div class="_articleTree__card col-lg-4">
+                        <div class="_articleTree__cardWrapper">
+                            <img
+                                class="_card__imgage"
+                                src="IMG/card-programas.png"
+                                alt="..."
+                            />
+                            <div class="_card__descriptionContainer">
+                                <div class="_card__titleContainer">
+                                    <h3 class="_card__title">
+                                        Ellas al frente
+                                    </h3>
+                                </div>
+                                <p class="_card__text">
+                                    ¡Promovemos la reducción de la brecha de
+                                    género a través de formaciones integrales
+                                    para mujeres!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="_articleTree__card col-lg-4">
+                        <div class="_articleTree__cardWrapper">
+                            <img
+                                class="_card__imgage"
+                                src="IMG/card-programas.png"
+                                alt="..."
+                            />
+                            <div class="_card__descriptionContainer">
+                                <div class="_card__titleContainer">
+                                    <h3 class="_card__title">
+                                        Economia naranja
+                                    </h3>
+                                </div>
+                                <p class="_card__text">
+                                    ¡Trabajamos la profesionalización y
+                                    formalidad de emprendedores creativos!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
 
-                    <div class="swiper-button-prev swiper-btn-prev"></div>
-                    <div class="swiper-button-next swiper-btn-next"></div>
+            <article class="_articleFour container-lg">
+                <title>Article: ¡Sé parte!</title>
+                <section class="_articleFour__upperSection">
+                    <h4 class="_upperSection__title">¡Sé parte!</h4>
+                    <div class="_upperSection__imgageContainer">
+                        <img
+                            class="_upperSection__imgage"
+                            src="./IMG/se-parte-datos-desktop.png"
+                            alt=""
+                        />
+                    </div>
+                    <div class="_upperSection__cta">
+                        <a
+                            class="_upperSection__ctaButton"
+                            href="https://wa.me/543794769014"
+                            >¡CONVERTITE EN VOLUNTARIO!</a
+                        >
+                        <a
+                            class="_upperSection__ctaButton"
+                            href="https://wa.me/543794769014"
+                            >¡HACÉ TU APORTE!</a
+                        >
+                    </div>
+                </section>
+
+                <section
+                    class="_articleFour__bottomSection container row row-cols-lg-2"
+                >
+                    <p class="_bottomSection__text col-12">
+                        Somos una comunidad creativa. Creemos en la magia de los
+                        nuevos comienzos,somos soñadores, y hacedores, innovamos
+                        y nos animamos. Creamos lo imposible,aprendemos todo el
+                        tiempo. En nuestro equipo todas compartimos el mismo
+                        sentimiento: ser las
+                        <span class="_bold">ovejas negras</span> de nuestro
+                        entorno. Lejos de frustrarnos por ser diferentes,
+                        tomamos impulso y nos unimos para generar ofertas
+                        innovadoras y creativas para todos.
+                    </p>
+                    <div class="_bottomSection__ovejasContainer col-12">
+                        <div class="_ovejasContainer__background"></div>
+                        <div class="ovejasContainer__decoration">
+                            <img
+                                class="_decoration__image"
+                                src="./IMG/decoration-1.png"
+                                alt="..."
+                            />
+                        </div>
+                        <img
+                            class="ovejasContainer__oveja3"
+                            src="./IMG/oveja.png"
+                            alt="..."
+                        />
+                        <img
+                            class="ovejasContainer__oveja2"
+                            src="./IMG/oveja.png"
+                            alt="..."
+                        />
+                        <img
+                            class="ovejasContainer__oveja1"
+                            src="./IMG/oveja.png"
+                            alt="..."
+                        />
+                    </div>
+                </section>
+            </article>
+
+            <article class="_articleFive">
+                <title>Article: #LoQueDicenDeValo</title>
+                <div class="container-xl">
+                    <h4 class="_articleFive__title">#Lo que dicen de Valo</h4>
+                    <div class="swiper mySwiper swiper-container">
+                        <div class="swiper-wrapper card-wrapper">
+                            <div class="swiper-slide card">
+                                <div class="card-content">
+                                    <p class="card-text">
+                                        Educación emocional, que importante lo
+                                        que dan, gracias x la entrega 💖
+                                    </p>
+                                    <p class="_bold card-text">Yamile</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide card">
+                                <div class="card-content">
+                                    <p class="card-text">
+                                        Amo Valoarte 💛 Que siga la magia.
+                                        Fuerza chicas 💪💪🙌
+                                    </p>
+                                    <p class="_bold card-text">Ana Paula</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide card">
+                                <div class="card-content">
+                                    <p class="card-text">
+                                        Educación emocional, que importante lo
+                                        que dan, gracias x la entrega ♥️
+                                    </p>
+                                    <p class="_bold card-text">Lucas</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide card">
+                                <div class="card-content">
+                                    <p class="card-text">
+                                        Un lugar especial donde se vive el
+                                        espiritu emprendedor y te desafian a
+                                        trabajar las emociones para superarte!!
+                                    </p>
+                                    <p class="_bold card-text">Cecilia</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide card">
+                                <div class="card-content">
+                                    <p class="card-text">
+                                        Un espacio de crecimiento y capacitación
+                                        constante en un clima de armonía y paz
+                                    </p>
+                                    <p class="_bold card-text">Violeta</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide card">
+                                <div class="card-content">
+                                    <p class="card-text">
+                                        Cálido lugar, que invita a visitarlo
+                                        siempre y no querer irse del mismo.
+                                        Gracias por su maravillosa atención.
+                                        👏👏❤❤❤
+                                    </p>
+                                    <p class="_bold card-text">Norma</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide card">
+                                <div class="card-content">
+                                    <p class="card-text">
+                                        Es la primera vez que voy y me encantó
+                                        la atención, todo el tiempo preguntando
+                                        si necesitabamos algo, la energía muy
+                                        buena. Gracias, mil gracias.
+                                    </p>
+                                    <p class="_bold card-text">
+                                        Aitana Deco Shop
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide card">
+                                <div class="card-content">
+                                    <p class="card-text">
+                                        Excelente la organización, volvería a
+                                        participar mil veces. Felicitaciones y
+                                        muchas gracias.
+                                    </p>
+                                    <p class="_bold card-text">Maena</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide card">
+                                <div class="card-content">
+                                    <p class="card-text">
+                                        Excelente equipo de trabajo, todos muy
+                                        amables. Muchas gracias por las
+                                        atenciones, la predisposición, la
+                                        propuesta innovadora y la buena onda de
+                                        siempre.
+                                    </p>
+                                    <p class="_bold card-text">
+                                        Sinclair Creaciones
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide card">
+                                <div class="card-content">
+                                    <p class="card-text">
+                                        Esta es la segunda vez que participo, y
+                                        como siempre todo perfecto. Gracias por
+                                        el espacio.
+                                    </p>
+                                    <p class="_bold card-text">
+                                        Bonita Adicción Velas
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-button-prev swiper-btn-prev"></div>
+                        <div class="swiper-button-next swiper-btn-next"></div>
+                    </div>
                 </div>
-            </div>
-        </article>
+            </article>
             <!-- Swiper -->
-    
-    </main>
-    <!-- Main Ends -->
+        </main>
+        <!-- Main Ends -->
 
-    <!-- Footer Starts -->
-    <!-------------------------------------------------------------------------->
-    <footer class="_footer row row-cols-md-3">
-        <section class="_footer__sectionBrand col-sm-6">
-            <title>Seguinos en las redes</title>
-            <a class="_sectionBrand__link" href="#">
-                <img class="_sectionBrand__image" src="https://i.postimg.cc/GhGhCVYK/image-1-Traced-1.png" alt="Logo fundación Valoarte" />
-            </a>
-            <p class="_sectionBrand__title">¡SEGUINOS EN LAS REDES!</p>
-            <nav class="_sectionBrand__socialNav">
-                <ul class="_socialNav__list">
-                    <li class="_socialNav__itemList">
-                        <a class="_socialNav__link" href="https://www.instagram.com/" target="_blank">
-                            
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram footerIcon" viewBox="0 0 16 16">
-                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="_socialNav__itemList">
-                        <a class="_socialNav__link" href="https://es-la.facebook.com/" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook footerIcon" viewBox="0 0 16 16">
-                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-                            </svg>          
-                        </a>
-                    </li>
-                    <li class="_socialNav__itemList">
-                        <a class="_socialNav__link" href="https://www.linkedin.com/login/es" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-linkedin footerIcon" viewBox="0 0 16 16">
-                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
-        <section class="_footer__sectionContacto col-sm-6">
-            <title>Contacto</title>
-            <p class="_sectionContacto__title">CONTACTO</p>
-            <a class="_sectionContacto__link" href="https://wa.me/543794769014" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp footerIcon" viewBox="0 0 20 20"">
-                    <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
-                </svg>
-                <span class="_sectionContacto__data">+54 379 476-9014</span>
-            </a>
-            <a class="_sectionContacto__link" href="https://goo.gl/maps/WvZMqYTgCnnrXZFWA" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill footerIcon"  viewBox="0 0 20 20">
-                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                </svg>
-                <span class="_sectionContacto__data">San Martín 616 - Corrientes</span>
-            </a>
-        </section>
-        <section class="_footer__sectionColabora col-12">
-            <title>Colabora con la fundación</title>
-            <p class="_sectionColabora__title">¡COLABORÁ CON LA FUNDACIÓN!</p>
-            <a class="_sectionColabora__button" href="#">DONAR ONLINE</a>
-        </section>
-    </footer>
-    <!-- Footer Ends -->
-</body>
-<!-- Bootstrap script -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+        <!-- Footer Starts -->
+        <!-------------------------------------------------------------------------->
+        <footer class="_footer row row-cols-md-3">
+            <section class="_footer__sectionBrand col-sm-6">
+                <title>Seguinos en las redes</title>
+                <a class="_sectionBrand__link" href="#">
+                    <img
+                        class="_sectionBrand__image"
+                        src="https://i.postimg.cc/GhGhCVYK/image-1-Traced-1.png"
+                        alt="Logo fundación Valoarte"
+                    />
+                </a>
+                <p class="_sectionBrand__title">¡SEGUINOS EN LAS REDES!</p>
+                <nav class="_sectionBrand__socialNav">
+                    <ul class="_socialNav__list">
+                        <li class="_socialNav__itemList">
+                            <a
+                                class="_socialNav__link"
+                                href="https://www.instagram.com/"
+                                target="_blank"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="20"
+                                    height="20"
+                                    fill="currentColor"
+                                    class="bi bi-instagram footerIcon"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="_socialNav__itemList">
+                            <a
+                                class="_socialNav__link"
+                                href="https://es-la.facebook.com/"
+                                target="_blank"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="20"
+                                    height="20"
+                                    fill="currentColor"
+                                    class="bi bi-facebook footerIcon"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="_socialNav__itemList">
+                            <a
+                                class="_socialNav__link"
+                                href="https://www.linkedin.com/login/es"
+                                target="_blank"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="20"
+                                    height="20"
+                                    fill="currentColor"
+                                    class="bi bi-linkedin footerIcon"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="_footer__sectionContacto col-sm-6">
+                <title>Contacto</title>
+                <p class="_sectionContacto__title">CONTACTO</p>
+                <a
+                    class="_sectionContacto__link"
+                    href="https://wa.me/543794769014"
+                    target="_blank"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        class="bi bi-whatsapp footerIcon"
+                        viewBox="0 0 20 20"
+                    >
+                        <path
+                            d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+                        />
+                    </svg>
+                    <span class="_sectionContacto__data">+54 379 476-9014</span>
+                </a>
+                <a
+                    class="_sectionContacto__link"
+                    href="https://goo.gl/maps/WvZMqYTgCnnrXZFWA"
+                    target="_blank"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        class="bi bi-geo-alt-fill footerIcon"
+                        viewBox="0 0 20 20"
+                    >
+                        <path
+                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                        />
+                    </svg>
+                    <span class="_sectionContacto__data"
+                        >San Martín 616 - Corrientes</span
+                    >
+                </a>
+            </section>
+            <section class="_footer__sectionColabora col-12">
+                <title>Colabora con la fundación</title>
+                <p class="_sectionColabora__title">
+                    ¡COLABORÁ CON LA FUNDACIÓN!
+                </p>
+                <a class="_sectionColabora__button" href="#">DONAR ONLINE</a>
+            </section>
+        </footer>
+        <!-- Footer Ends -->
+    </body>
+    <!-- Bootstrap script -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"
+    ></script>
 
-<!-- Animate On Scroll script -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>AOS.init({});</script>
+    <!-- Animate On Scroll script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({});
+    </script>
 
-<!-- Swiper scipt -->
-<script src="./JS/swiper-bundle.min.js"></script>
-<script>
-    var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 5,
-    loop: true,
-    centerSlide: "true",
-    fade: "true",
-    grabCursor: "true",
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-        0: {
-            slidesPerView: 1,
-        },
-        768: {
-            slidesPerView: 2,
-        },
-        1200: {
+    <!-- Swiper scipt -->
+    <script src="./JS/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
             slidesPerView: 3,
-        }
-    }
-});
-</script>
+            spaceBetween: 5,
+            loop: true,
+            centerSlide: "true",
+            fade: "true",
+            grabCursor: "true",
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                1200: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+    </script>
 
-<!-- JavaScript local -->
-<script src="./JS/main.js"></script>
+    <!-- JavaScript local -->
+    <script src="./JS/main.js"></script>
 </html>

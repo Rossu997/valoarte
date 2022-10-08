@@ -58,6 +58,7 @@ html {
     z-index:100;
 }
 ._navBar__brandImage {
+    padding-left: 20px;
     width: 100px;
 }
 
@@ -67,6 +68,7 @@ html {
     border: none;
     color: var(--white);
     background-color: transparent;
+    padding-right: 20px;
 }
 
 ._navBar__container {
