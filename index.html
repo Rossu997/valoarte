@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./IMG/favicon.png" type="image/x-icon">
     <title>Inicio | ValoArte</title>
 
     <!-- Bootstrap -->
@@ -14,6 +15,9 @@
         crossorigin="anonymous"
     />
 
+    <!-- Swiper -->
+    <link rel="stylesheet" href="CSS/swiper-bundle.min.css">
+
     <!-- Animate On Scroll -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -21,13 +25,14 @@
     <link rel="stylesheet" href="CSS/normalize.css" /> <!-- Normaliza algunos estilos por defecto de CSS -->
     <link rel="stylesheet" href="CSS/styles.css" /> <!-- Estilos de la plantilla principal -->
     <link rel="stylesheet" href="CSS/home.css" /> <!-- Estilos específicos de la página en cuestión -->
+
+
 </head>
 
 
 <!-- TODO README -->
 <!-- Usamos el sistema de Grid de Bootstrap para hacer un sistema modular -->
 <!-- Solo usamos sus propiedades (como "col-2") para acomodar estos módulos en la grilla -->
-<!-- El body está wrappeado en un contenedor que ocupa 100vw "container-flow" -->
 <!-- Usamos iconos de Bootstrap en formato SVG. Si hay que modificarlo, lo hacemos localmente mediante una clase nueva -->
 <!-- Hay un archivo CSS que normaliza estilos y uno general, con estilos del header y footer principalmente -->
 <!-- Estos dos tienen que estar en todos los archivos HTML -->
@@ -40,7 +45,6 @@
 <!-- TODO  -->
 
 <body>
-<div class="container-fluid">
 
     <!-- Header Starts -->
     <!-------------------------------------------------------------------------->
@@ -115,8 +119,8 @@
 
     <!-- Main Starts -->
     <!-------------------------------------------------------------------------->
-    <main class="_main container-lg">
-        <article class="_articleOne row row-cols-md-2">
+    <main class="_main"><!-- container-lg -->
+        <article class="_articleOne row row-cols-md-2 container-lg">
             <title>Article: Hero</title>
             <section class="_articleOne__textContainer col-md-6">
                 <h3 class="_articleOne__text">
@@ -131,7 +135,7 @@
             </section>
         </article>
 
-        <article class="_articleTwo">
+        <article class="_articleTwo ">
             <title>Article: Carousel Eventos</title>
             <div
                 id="carouselEventosHome"
@@ -287,13 +291,13 @@
             </div>
         </article>
 
-        <article class="_articleTree">
-            <title>Article: #NuestrosProgramas</title>
+        <article class="_articleTree container-lg">
+            <title>Article: #Nuestros Programas</title>
             <!-- Encabezado del artículo -->
-            <h4 class="_articleTree__title">#NuestrosProgramas</h4>
-            <p class="_articleTree__text">
-                Conocé más acerca de nuestros ejes de trabajo comunitario:
-            </p>
+                <h4 class="_articleTree__title">#NuestrosProgramas</h4>
+                <p class="_articleTree__text">
+                    Conocé más acerca de nuestros ejes de trabajo comunitario:
+                </p>
             
             <!-- Contenedor de cards -->
             <section class="_articleTree__cardsContainer row row-cols-lg-3">
@@ -303,18 +307,10 @@
                         <img class="_card__imgage" src="IMG/card-programas.png" alt="..." />
                         <div class="_card__descriptionContainer">
                             <div class="_card__titleContainer">
-                                <h3 class="_card__title">Card titulo</h3>
+                                <h3 class="_card__title">Intervención en organizaciones</h3>
                             </div>
                             <p class="_card__text">
-                                Lorem ipsum dolor, sit amet consectetur
-                                adipisicing elit. Quas voluptates quibusdam
-                                explicabo, culpa velit corporis inventore nam
-                                obcaecati molestiae, ullam temporibus voluptatem
-                                dolorum perspiciatis assumenda eaque incidunt
-                                architecto sapiente quo repellat aut fuga. Quo
-                                dolores iste assumenda laboriosam. Autem,
-                                excepturi!
-                                
+                                ¡Vamos a tu organización y trabajamos de forma integral la educación emocional a través de diagnósticos psicosociales!
                             </p>
                         </div>
                     </div>
@@ -325,18 +321,10 @@
                         <img class="_card__imgage" src="IMG/card-programas.png" alt="..." />
                         <div class="_card__descriptionContainer">
                             <div class="_card__titleContainer">
-                                <h3 class="_card__title">Card titulo</h3>
+                                <h3 class="_card__title">Ellas al frente</h3>
                             </div>
                             <p class="_card__text">
-                                Lorem ipsum dolor, sit amet consectetur
-                                adipisicing elit. Quas voluptates quibusdam
-                                explicabo, culpa velit corporis inventore nam
-                                obcaecati molestiae, ullam temporibus voluptatem
-                                dolorum perspiciatis assumenda eaque incidunt
-                                architecto sapiente quo repellat aut fuga. Quo
-                                dolores iste assumenda laboriosam. Autem,
-                                excepturi!
-                                
+                                ¡Promovemos la reducción de la brecha de género a través de formaciones integrales para mujeres!
                             </p>
                         </div>
                     </div>
@@ -347,46 +335,144 @@
                         <img class="_card__imgage" src="IMG/card-programas.png" alt="..." />
                         <div class="_card__descriptionContainer">
                             <div class="_card__titleContainer">
-                                <h3 class="_card__title">Card titulo</h3>
+                                <h3 class="_card__title">Economia naranja</h3>
                             </div>
                             <p class="_card__text">
-                                Lorem ipsum dolor, sit amet consectetur
-                                adipisicing elit. Quas voluptates quibusdam
-                                explicabo, culpa velit corporis inventore nam
-                                obcaecati molestiae, ullam temporibus voluptatem
-                                dolorum perspiciatis assumenda eaque incidunt
-                                architecto sapiente quo repellat aut fuga. Quo
-                                dolores iste assumenda laboriosam. Autem,
-                                excepturi!
-                                
+                                ¡Trabajamos la profesionalización y formalidad de emprendedores creativos!
                             </p>
                         </div>
                     </div>
                 </div>
             </section>       
         </article>
-        <article class="_articleSeParte">
+        
+        <article class="_articleFour container-lg">
             <title>Article: ¡Sé parte!</title>
-            <h2>Article: ¡Sé parte!</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Reiciendis facilis iste dignissimos debitis quaerat
-                similique! Neque laborum blanditiis fugiat, nemo
-                voluptatem molestias ex esse amet a, nam, eaque quis
-                magni!
-            </p>
+            <section class="_articleFour__upperSection">
+                <h4 class="_upperSection__title">¡Sé parte!</h4>
+                <div class="_upperSection__imgageContainer">
+                    <img class="_upperSection__imgage" src="./IMG/se-parte-datos-desktop.png" alt="">
+                </div>
+                <div class="_upperSection__cta">
+                    <a class="_upperSection__ctaButton" href="https://wa.me/543794769014">¡CONVERTITE EN VOLUNTARIO!</a>
+                    <a class="_upperSection__ctaButton" href="https://wa.me/543794769014">¡HACÉ TU APORTE!</a>
+                </div>
+            </section>
+
+            <section class="_articleFour__bottomSection container row row-cols-lg-2">
+                <p class="_bottomSection__text col-12">Somos una comunidad creativa. Creemos en la magia de los nuevos comienzos,somos soñadores, y hacedores, innovamos y nos animamos. Creamos lo imposible,aprendemos todo el tiempo.
+                En nuestro equipo todas compartimos el mismo sentimiento: ser las <span class="_bold">ovejas negras</span> de nuestro entorno. Lejos de frustrarnos por ser diferentes, tomamos impulso y nos unimos para generar ofertas innovadoras y creativas para todos.
+                </p>
+                <div class="_bottomSection__ovejasContainer col-12">
+                    <div class="_ovejasContainer__background"></div>
+                    <div class="ovejasContainer__decoration">
+                        <img class="_decoration__image" src="./IMG/decoration-1.png" alt="...">
+                    </div>
+                    <img class="ovejasContainer__oveja3" src="./IMG/oveja.png" alt="...">
+                    <img class="ovejasContainer__oveja2" src="./IMG/oveja.png" alt="...">
+                    <img class="ovejasContainer__oveja1" src="./IMG/oveja.png" alt="...">
+                </div>
+            </section>
         </article>
-        <article class="_articleLoQueDicenDeValo">
+
+        <article class="_articleFive">
             <title>Article: #LoQueDicenDeValo</title>
-            <h2>Article: #LoQueDicenDeValo</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Reiciendis facilis iste dignissimos debitis quaerat
-                similique! Neque laborum blanditiis fugiat, nemo
-                voluptatem molestias ex esse amet a, nam, eaque quis
-                magni!
-            </p>
+            <div class="container-xl" >
+                <h4 class="_articleFive__title">#Lo que dicen de Valo</h4>
+                <div class="swiper mySwiper swiper-container">
+                    
+                    <div class="swiper-wrapper card-wrapper">
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <p class="card-text">
+                                    Educación emocional, que importante lo que dan, gracias x la entrega 💖
+                                </p>
+                                <p class="_bold card-text">Yamile</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <p class="card-text">
+                                    Amo Valoarte 💛 Que siga la magia. Fuerza chicas 💪💪🙌
+                                </p>
+                                <p class="_bold card-text">Ana Paula</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <p class="card-text">
+                                    Educación emocional, que importante lo que dan, gracias x la entrega ♥️
+                                </p>
+                                <p class="_bold card-text">Lucas</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <p class="card-text">
+                                    Un lugar especial donde se vive el espiritu emprendedor y te desafian a trabajar las emociones para superarte!!
+                                </p>
+                                <p class="_bold card-text">Cecilia</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <p class="card-text">
+                                    Un espacio de crecimiento y capacitación constante en un clima de armonía y paz
+                                </p>
+                                <p class="_bold card-text">Violeta</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <p class="card-text">
+                                    Cálido lugar, que invita a visitarlo siempre y no querer irse del mismo.
+Gracias por su maravillosa atención. 👏👏❤❤❤
+
+                                </p>
+                                <p class="_bold card-text">Norma</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <p class="card-text">
+                                    Es la primera vez que voy y me encantó la atención, todo el tiempo preguntando si necesitabamos algo, la energía muy buena. Gracias, mil gracias.
+                                </p>
+                                <p class="_bold card-text">Aitana Deco Shop</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <p class="card-text">
+                                    Excelente la organización, volvería a participar mil veces. Felicitaciones y muchas gracias.
+                                </p>
+                                <p class="_bold card-text">Maena</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <p class="card-text">
+                                    Excelente equipo de trabajo, todos muy amables. Muchas gracias por las atenciones, la predisposición, la propuesta innovadora y la buena onda de siempre.
+                                </p>
+                                <p class="_bold card-text">Sinclair Creaciones</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <p class="card-text">
+                                    Esta es la segunda vez que participo, y como siempre todo perfecto. Gracias por el espacio.
+                                </p>
+                                <p class="_bold card-text">Bonita Adicción Velas</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-prev swiper-btn-prev"></div>
+                    <div class="swiper-button-next swiper-btn-next"></div>
+                </div>
+            </div>
         </article>
+            <!-- Swiper -->
+    
     </main>
     <!-- Main Ends -->
 
@@ -450,7 +536,7 @@
     </footer>
     <!-- Footer Ends -->
     
-</div>
+
 </body>
 <!-- Bootstrap script -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
@@ -458,4 +544,35 @@
 <!-- Animate On Scroll script -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>AOS.init({});</script>
+
+<!-- Swiper scipt -->
+<script src="./JS/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 5,
+    loop: true,
+    centerSlide: "true",
+    fade: "true",
+    grabCursor: "true",
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1200: {
+            slidesPerView: 3,
+        }
+    }
+});
+</script>
+
+<!-- JavaScript local -->
+<script src="./JS/main.js"></script>
 </html>
