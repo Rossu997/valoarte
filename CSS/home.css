@@ -24,10 +24,10 @@
 
 ._articleOne__button {
     margin: 0 auto;
-    padding: 1rem 2rem;
+    padding: 1rem 3rem;
     background-color: var(--orange);
     color: var(--white);
-    border-radius: 10px;
+    border-radius: 20px;
     font-size: 1.2rem;
     font-weight: 600;
     text-align: center;

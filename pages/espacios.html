@@ -4,9 +4,14 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="../IMG/favicon.png"
+            type="image/x-icon"
+        />
         <title>Espacios | ValoArte</title>
 
-        <!-- Bootstrap CSS -->
+        <!-- Bootstrap -->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -14,171 +19,524 @@
             crossorigin="anonymous"
         />
 
+        <!-- Swiper -->
+        <link rel="stylesheet" href="../CSS/swiper-bundle.min.css" />
+
+        <!-- Animate On Scroll -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+
         <!-- Stylesheets -->
-        <link rel="stylesheet" href="CSS/normalize.css" />
-        <link rel="stylesheet" href="CSS/styles.css" />
+        <link rel="stylesheet" href="../CSS/normalize.css" />
+        <!-- Normaliza algunos estilos por defecto de CSS -->
+        <link rel="stylesheet" href="../CSS/styles.css" />
+        <!-- Estilos de la plantilla principal -->
+        <link rel="stylesheet" href="../CSS/espacios.css" />
+        <!-- Estilos específicos de la página en cuestión -->
     </head>
 
     <body>
-        <header class="row header">
-            <div class="col-3">
-                <a href="#">
-                    <img src="img/logo.png" alt="Logo fundación Valoarte">
-                </a>
-            </div>
-            <nav class="col-9">
-                <ul>
-                    <li><a href="#"></a>Home</li>
-                    <li><a href="./pages/quienes-somos.html">Quienes somos</a></li>
-                    <li><a href="./pages/actividades.html">Actividades</a></li>
-                    <li><a href="./pages/espacios.html"></a>Espacios</li>
-                    <li><a href="https://valoarte.mitiendanube.com/productos/"></a>Tienda</li>
-                </ul>
+        <header class="_header row" id="header">
+            <nav class="_nav navbar navbar-expand-md">
+                <div class="_nav__wrapper container-fluid">
+                    <!-- Brand Img -->
+                    <a class="_navBar__brandLink p-2" href="#">
+                        <img
+                            class="_navBar__brandImage"
+                            src="https://i.postimg.cc/rsKPGBGr/image-1-Traced.png"
+                            alt="Logo fundación Valoarte"
+                        />
+                    </a>
+
+                    <!-- Toggle Button (Hamburger)-->
+                    <button
+                        class="_navBar__toggler d-md-none d-lg-none p-2"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="38"
+                            height="38"
+                            fill="currentColor"
+                            class="bi bi-list nav-icon"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                            />
+                        </svg>
+                    </button>
+
+                    <!-- Navbar Content -->
+                    <div
+                        class="_navBar__container collapse navbar-collapse"
+                        id="navbarSupportedContent"
+                    >
+                        <ul class="_navBar__list navbar-nav">
+                            <li class="_navBar__itemList">
+                                <a
+                                    class="_navBar__link"
+                                    href="../index.html"
+                                    aria-current="page"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="_navBar__itemList">
+                                <a
+                                    class="_navBar__link"
+                                    href="pages/quienes-somos.html"
+                                    >Quienes somos</a
+                                >
+                            </li>
+                            <li class="_navBar__itemList">
+                                <a
+                                    class="_navBar__link"
+                                    href="pages/actividades.html"
+                                    >Actividades</a
+                                >
+                            </li>
+                            <li class="_navBar__itemList">
+                                <a
+                                    class="_navBar__link _mr-1 _currentPage"
+                                    href="#"
+                                    >Espacios</a
+                                >
+                            </li>
+                            <li class="_navBar__itemList _tienda">
+                                <a
+                                    class="_navBar__link"
+                                    href="https://valoarte.mitiendanube.com/productos/"
+                                    target="_blank"
+                                >
+                                    <svg
+                                        class="_tienda__icon"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-bag-heart-fill"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5ZM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1Zm0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"
+                                        />
+                                    </svg>
+                                    Tienda
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
-        <div class="container">
-            <main>
-                <article>
-                    <title>Section: Hero</title>
-                    <h3>
-                        Somos una fundación dedicada a promover la educación
-                        emocional en igualdad de oportunidades a través de
-                        dinámicas innovadoras y objetos de diseño.
-                    </h3>
-                    <button>¡CONÓCENOS!</button>
-                </article>
-                <article>
-                    <title>Section: ¡Cumplimos Años! (Slider?)</title>
-                    <h2>Section: ¡Cumplimos Años! (Slider?)</h2>
+        <!-- Header Ends -->
+
+        <!-- Main Starts -->
+        <!-------------------------------------------------------------------------->
+        <main class="_main">
+            <div class="banner">
+                <h3 class="banner__text">
+                    ¡Promovemos el espacio colaborativo!
+                </h3>
+            </div>
+            <article class="articleOne container-lg">
+                <h3 class="article__tag">#COWORKING</h3>
+                <section class="articleOne__coworking">
+                    <div class="article__titleContainer">
+                        <h2 class="article__title">
+                            ¿Por qué promovemos el trabajo coworking?
+                        </h2>
+                        <h2 class="article__titleUnderlineViolet">
+                            ¿Por qué promovemos el trabajo coworking?
+                        </h2>
+                    </div>
+                    <div>
+                        <p class="articleOne__paragraph">
+                            La palabra “coworking” significa en inglés “trabajo
+                            colaborativo” y se define como un espacio que
+                            permite a trabajadores y emprendedores
+                            independientes compartir un espacio de trabajo sin
+                            necesariamente pertenecer al mismo rubro en
+                            determinado tiempo y espacio. Es una forma práctica
+                            y económica de concretar la realidad laboral que
+                            tanto añoras.
+                        </p>
+                        <p class="articleOne__paragraph">
+                            Desde Valo buscamos facilitar estos espacios
+                            cómodos, prácticos y creativos para que quien desee
+                            pueda venir a crear, trabajar y cumplir sus sueños.
+                        </p>
+                    </div>
+                </section>
+                <section class="articleOne__features">
+                    <h4 class="article__subTitleOrange">
+                        Nuestro espacio cuenta con:
+                    </h4>
+                    <ul class="features__list">
+                        <li class="features__listItem">
+                            <span class="features__colored"
+                                >Ubicación céntrica </span
+                            >(Estamos en el corazón del Camba Cua)
+                        </li>
+                        <li class="features__listItem">
+                            <span class="features__colored">WI FI </span>(Pero
+                            nos gusta más conectar con el corazón)
+                        </li>
+                        <li class="features__listItem">
+                            <span class="features__colored"
+                                >Cocina para infusiones </span
+                            >(Un tecito, agua para hidratarnos, siempre viene
+                            bien)
+                        </li>
+                        <li class="features__listItem">
+                            <span class="features__colored"
+                                >Ambiente climatizado </span
+                            >(Y un pulmoncito verde para respirar)
+                        </li>
+                        <li class="features__listItem">
+                            <span class="features__colored"
+                                >Formar parte de nuestra red de profesionales </span
+                            >(¡Hagamos comunidad!)
+                        </li>
+                        <li class="features__listItem">
+                            <span class="features__colored"
+                                >Trabajo amigable y confortable </span
+                            >(¡Queremos verte crecer!)
+                        </li>
+                    </ul>
+                </section>
+                <section class="articleOne__ourSpaces">
+                    <div class="article__titleContainer">
+                        <h2 class="article__title">Nuestros Espacios</h2>
+                        <h2 class="article__titleUnderlineOrange">
+                            Nuestros Espacios
+                        </h2>
+                    </div>
+                    <div class="ourSpaces__cardsContainer row row-cols-lg-3">
+                        <!-- CARD Espacio 1 -->
+                        <div class="ourSpaces__card col-lg-4">
+                            <div class="ourSpaces__wrapper">
+                                <h2 class="card__title">ESPACIO MERAKI</h2>
+                                <div class="card__contentContainer">
+                                    <img
+                                        class="card__image"
+                                        src="../IMG/espacio-meraki.png"
+                                        alt=""
+                                    />
+                                    <p class="card__paragraph">
+                                        Un salón que tiene la capacidad de
+                                        albergar hasta 20 personas, mobiliario
+                                        incluido, pizarrón.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD Espacio 2 -->
+                        <div class="ourSpaces__card col-lg-4">
+                            <div class="ourSpaces__wrapper">
+                                <h2 class="card__title">ESPACIO KAIZEN</h2>
+                                <div class="card__contentContainer">
+                                    <img
+                                        class="card__image"
+                                        src="../IMG/espacio-kaizen.png"
+                                        alt=""
+                                    />
+                                    <p class="card__paragraph">
+                                        Una oficina que tiene posibilidad de ser
+                                        usada para sesiones individuales o
+                                        reuniones de hasta 6 personas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD Espacio 3 -->
+                        <div class="ourSpaces__card col-lg-4">
+                            <div class="ourSpaces__wrapper">
+                                <h2 class="card__title">ESPACIO COLIBRI</h2>
+                                <div class="card__contentContainer">
+                                    <img
+                                        class="card__image"
+                                        src="../IMG/espacio-colibri.png"
+                                        alt=""
+                                    />
+                                    <p class="card__paragraph">
+                                        Un pulmón verde para hasta 12 personas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="articleOne__features">
+                    <h4 class="article__subTitleViolet">
+                        Beneficios planes extendidos:
+                    </h4>
+                    <ul class="features__list">
+                        <li class="features__listItem">
+                            Con la contratación directa de más de 10 horas de
+                            trabajo diario o mensual tenés un 15% de descuento.
+                        </li>
+                        <li class="features__listItem">
+                            Con la contratación directa de más de 30 horas de
+                            trabajo diario o mensual tenés un 30% de descuento.
+                        </li>
+                        <li class="features__listItem">
+                            Ponemos calco de tu servicio en el lugar.
+                        </li>
+                        <li class="features__listItem">
+                            Descuento del 10% off en todos los talleres y
+                            objetos ofrecidos por el espacio.
+                        </li>
+                    </ul>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Reiciendis facilis iste dignissimos debitis quaerat
-                        similique! Neque laborum blanditiis fugiat, nemo
-                        voluptatem molestias ex esse amet a, nam, eaque quis
-                        magni!
+                        Los pagos mensuales deben realizarse del 1 al 10 de cada
+                        mes sin excepción, pueden ser en efectivo, transferencia
+                        bancaria o mercado pago. Las reservas se hacen con el
+                        30% de adelanto y las fechas solo pueden ser cambiadas
+                        con 48 hs de anticipación sin excepción.
                     </p>
-                </article>
-                <article>
-                    <title>Section: #NuestrosProgramas</title>
-                    <h2>Section: #NuestrosProgramas</h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Reiciendis facilis iste dignissimos debitis quaerat
-                        similique! Neque laborum blanditiis fugiat, nemo
-                        voluptatem molestias ex esse amet a, nam, eaque quis
-                        magni!
+                        Los locatarios deben firmar un acuerdo de convivencia,
+                        inventario y plan de trabajo en el caso de planes
+                        personalizados.
                     </p>
-                </article>
-                <article>
-                    <title>Section: ¡Sé parte!</title>
-                    <h2>Section: ¡Sé parte!</h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Reiciendis facilis iste dignissimos debitis quaerat
-                        similique! Neque laborum blanditiis fugiat, nemo
-                        voluptatem molestias ex esse amet a, nam, eaque quis
-                        magni!
+                        Las entradas y salidas son a la hora acordada por
+                        respeto a todos, en caso de exceso de horas, serán
+                        cobradas sin excepción.
                     </p>
+                    <div>
+                        <h1>SIMPLY MEET</h1>
+                        <iframe
+                            src="https://app.simplymeet.me/juanrusso-997-simplymeet?is_widget=1&view=compact"
+                            style="width: 100%; height: 650px"
+                            frameborder="0"
+                            scrolling="yes"
+                        ></iframe>
+                    </div>
+                </section>
+            </article>
+            <div class="_bg-secondary">
+                <article class="articleTwo container-lg">
+                    <h3 class="article__tag">#CURSOS Y TALLERES</h3>
+                    <section class="articleTwo__section">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Nulla cursus turpis malesuada egestas eget
+                            dolor orci, accumsan aliquet. In mollis morbi amet,
+                            turpis quam ac. Interdum integer odio laoreet vitae.
+                            Urna vitae ut sem sed quis eget. Lorem ipsum dolor
+                            sit amet, consectetur adipiscing elit. Nulla cursus
+                            turpis malesuada egestas eget dolor orci.
+                        </p>
+                        <div class="article__titleContainer">
+                            <h2 class="article__title">
+                                ¡Conocé nuestros talleres disponibles!
+                            </h2>
+                            <h2 class="article__titleUnderlineViolet">
+                                ¡Conocé nuestros talleres disponibles!
+                            </h2>
+                        </div>
+                        <div class="cta-container">
+                            <p class="cta-text">
+                                Este link te redirigirá a Whatsapp:
+                            </p>
+                            <a
+                                class="cta-button"
+                                href="https://wa.me/543794769014"
+                                target="_blank"
+                                >Cursos Y Talleres</a
+                            >
+                        </div>
+                    </section>
                 </article>
-                <article>
-                    <title>Section: #LoQueDicenDeValo</title>
-                    <h2>Section: #LoQueDicenDeValo</h2>
+            </div>
+            <article class="articleTree container-lg">
+                <h3 class="article__tag">#PUNTOS DE VENTA</h3>
+                <section class="articleTree__section">
+                    <div class="article__titleContainer">
+                        <h2 class="article__title">
+                            ¡Tu punto de venta es una realidad en Valo!
+                        </h2>
+                        <h2 class="article__titleUnderlineViolet">
+                            ¡Tu punto de venta es una realidad en Valo!
+                        </h2>
+                    </div>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Reiciendis facilis iste dignissimos debitis quaerat
-                        similique! Neque laborum blanditiis fugiat, nemo
-                        voluptatem molestias ex esse amet a, nam, eaque quis
-                        magni!
+                        Hemos conocido a través de el armado de ferias y los
+                        diversos emprendedores que se acercan a nuestro espacio,
+                        que existen un montón de emprendimientos que actualmente
+                        no cuentan con un espacio físico para vender sus
+                        productos, ya sea por falta de tiempos, costos elevados
+                        de mantenimiento y alquiler, a eso sumado la
+                        incertidumbre que nos hizo vivir la pandemia que aún
+                        seguimos transitando.
                     </p>
-                </article>
-            </main>
-        </div>
-<<<<<<< HEAD
-    
-=======
->>>>>>> parent of 24fcb60 (agregando el contenido)
-        <footer class="row">
-            <section class="col">
+                    <h6>condiciones?</h6>
+                    <p>
+                        Por todo eso, desde Valo buscamos compartir nuestro
+                        espacio físico para que les sirva de vidriera y punto de
+                        retiro facilitándoles mayores ventas y conocimiento de
+                        su marca.
+                    </p>
+                    <p class="_italic">¡Codo a codo podemos!</p>
+                    <div class="cta-container">
+                        <p class="cta-text">
+                            Este link te redirigirá a Whatsapp:
+                        </p>
+                        <a
+                            class="cta-button"
+                            href="https://wa.me/543794769014"
+                            target="_blank"
+                            >Formá Parte</a
+                        >
+                    </div>
+                </section>
+            </article>
+        </main>
+        <!-- Main Ends -->
+
+        <!-- Footer Starts -->
+        <!-------------------------------------------------------------------------->
+        <footer class="_footer row row-cols-md-3">
+            <section class="_footer__sectionBrand col-sm-6">
                 <title>Seguinos en las redes</title>
-                <a href="#">
-                    <img src="img/logorojo.png" alt="Logo fundación Valoarte" />
+                <a class="_sectionBrand__link" href="#">
+                    <img
+                        class="_sectionBrand__image"
+                        src="https://i.postimg.cc/GhGhCVYK/image-1-Traced-1.png"
+                        alt="Logo fundación Valoarte"
+                    />
                 </a>
-                <p class="footerText">¡SEGUINOS EN LAS REDES!</p>
-                <nav>
-                    <ul class="footerList">
-                        <li>
-                            <a href="https://www.instagram.com/">
-                                
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram footerIcon" viewBox="0 0 16 16">
-                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                <p class="_sectionBrand__title">¡SEGUINOS EN LAS REDES!</p>
+                <nav class="_sectionBrand__socialNav">
+                    <ul class="_socialNav__list">
+                        <li class="_socialNav__itemList">
+                            <a
+                                class="_socialNav__link"
+                                href="https://www.instagram.com/"
+                                target="_blank"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="20"
+                                    height="20"
+                                    fill="currentColor"
+                                    class="bi bi-instagram footerIcon"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                                    />
                                 </svg>
                             </a>
                         </li>
-                        <li>
-                            <a href="https://es-la.facebook.com/">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook footerIcon" viewBox="0 0 16 16">
-                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-                                </svg>          
+                        <li class="_socialNav__itemList">
+                            <a
+                                class="_socialNav__link"
+                                href="https://es-la.facebook.com/"
+                                target="_blank"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="20"
+                                    height="20"
+                                    fill="currentColor"
+                                    class="bi bi-facebook footerIcon"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                                    />
+                                </svg>
                             </a>
                         </li>
-                        <li>
-                            <a href="https://www.linkedin.com/login/es">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-linkedin footerIcon" viewBox="0 0 16 16">
-                                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                        <li class="_socialNav__itemList">
+                            <a
+                                class="_socialNav__link"
+                                href="https://www.linkedin.com/login/es"
+                                target="_blank"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="20"
+                                    height="20"
+                                    fill="currentColor"
+                                    class="bi bi-linkedin footerIcon"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                                    />
                                 </svg>
                             </a>
                         </li>
                     </ul>
                 </nav>
             </section>
-            <section class="col d-flex flex-column gap-2">
+            <section class="_footer__sectionContacto col-sm-6">
                 <title>Contacto</title>
-                <p class="footerTitle">CONTACTO</p>
-                <a href="https://wa.me/543794769014">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp footerIcon" viewBox="0 0 20 20"">
-                        <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                <p class="_sectionContacto__title">CONTACTO</p>
+                <a
+                    class="_sectionContacto__link"
+                    href="https://wa.me/543794769014"
+                    target="_blank"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        class="bi bi-whatsapp footerIcon"
+                        viewBox="0 0 20 20"
+                    >
+                        <path
+                            d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+                        />
                     </svg>
-                    <span class="footerData">+54 379 476-9014</span>
+                    <span class="_sectionContacto__data">+54 379 476-9014</span>
                 </a>
-                <a href="https://goo.gl/maps/WvZMqYTgCnnrXZFWA">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill footerIcon"  viewBox="0 0 20 20">
-                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                <a
+                    class="_sectionContacto__link"
+                    href="https://goo.gl/maps/WvZMqYTgCnnrXZFWA"
+                    target="_blank"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        class="bi bi-geo-alt-fill footerIcon"
+                        viewBox="0 0 20 20"
+                    >
+                        <path
+                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                        />
                     </svg>
-                    <span class="footerData">San Martín 616 - Corrientes</span>
+                    <span class="_sectionContacto__data"
+                        >San Martín 616 - Corrientes</span
+                    >
                 </a>
             </section>
-            <section class="col">
+            <section class="_footer__sectionColabora col-12">
                 <title>Colabora con la fundación</title>
-                <p class="footerTitle">¡COLABORÁ CON LA FUNDACIÓN!</p>
-                <button class="footerBtn">DONAR ONLINE</button>
+                <p class="_sectionColabora__title">
+                    ¡COLABORÁ CON LA FUNDACIÓN!
+                </p>
+                <a class="_sectionColabora__button" href="#">DONAR ONLINE</a>
             </section>
         </footer>
-<<<<<<< HEAD
-
-=======
->>>>>>> parent of 24fcb60 (agregando el contenido)
-
-        <!--
-        <div class="container">
-            <div class="row">
-                <div class="col" style="background-color: red;">Columna</div>
-                <div class="col" style="background-color: green;">Columna</div>
-                <div class="col" style="background-color: blue;">Columna</div>
-                <div class="col" style="background-color: yellow;">Columna</div>
-            </div>
-            <div class="row">
-                <div class="col" style="background-color: pink;">1 COLUMNA y 1 FILA</div>
-            </div>
-            <div class="row">
-                <div class="col-xl-1" style="background-color: rgb(56, 56, 56); color:aliceblue;">(col-1)</div>
-                <div class="col-10" style="background-color: rgb(159, 156, 255);">
-                    <h2>12 columnas para jugar con la distribución (col-10)</h2>
-                </div>
-                <div class="col-xl-1" style="background-color: rgb(56, 56, 56); color:aliceblue;">(col-1)</div>
-            </div>
-        </div>
-        -->
-        
+        <!-- Footer Ends -->
     </body>
     <!-- Bootstrap script -->
     <script
@@ -186,4 +544,38 @@
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"
     ></script>
+
+    <!-- Animate On Scroll script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({});
+    </script>
+
+    <!-- Swiper scipt -->
+    <script src="../JS/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 5,
+            loop: true,
+            centerSlide: "true",
+            fade: "true",
+            grabCursor: "true",
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                1200: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+    </script>
 </html>

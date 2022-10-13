@@ -2,13 +2,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mansalva&display=swap");
+@font-face {
+    font-family: "OCR A Extended";
+    src: url(../FONTS/OCRAEXT.TTF);
+}
 
 /* Variables */
 :root {
     /* Colors */
     --background-color: #f7edda;
+    --background-colorSecondary: #ada8b6;
     --orange: #f17a5e;
+    --orangeSecond: #f2914a;
     --violet: #7b3b8b;
+    --violetSecond: #816797;
     --lightblue: #41d5b8;
     --white: #fff;
     --black: #000;
@@ -17,16 +24,18 @@
     --mainFont: "Montserrat", sans-serif;
     --secondaryFont: "Ubuntu", sans-serif;
     --displayFont: "Mansalva", display;
+    --monoFont: "OCR A Extended", display;
 }
 
 /*******************************************************************/
 /* Styles (Mobile First) Extra Small devices (phones, 575px and below) */
 /*******************************************************************/
 
-/* General Styles */
+/********/ /* General Styles */ /********/
 body {
     background-color: var(--background-color);
     font-size: 16px;
+    font-family: var(--mainFont);
 }
 
 body,
@@ -47,16 +56,26 @@ html {
     font-weight: 700;
 }
 
-/* Header Styles */
+._italic {
+    font-style: italic;
+}
+
+._bg-secondary {
+    background-color: var(--background-colorSecondary);
+    width: 100vw;
+}
+
+/********/ /* Header Styles */ /********/
 ._header {
     background-color: var(--violet);
-
 }
-#header{
+
+#header {
     position: sticky;
     top: 0;
-    z-index:100;
+    z-index: 100;
 }
+
 ._navBar__brandImage {
     padding-left: 20px;
     width: 100px;
@@ -117,7 +136,7 @@ html {
     width: fit-content;
 }
 
-/* Footer Styles */
+/********/ /* Footer Styles */ /********/
 ._footer {
     margin-top: 5rem;
     padding-bottom: 3rem;
@@ -199,11 +218,11 @@ html {
 /* Extra small devices (portrait phones, less than 576px) */
 /* No media query for 'xs' since this is the default in Bootstrap */
 
-/* Small devices (landscape phones, 576px and up) */
+/********/ /* Small devices (landscape phones, 576px and up) */ /********/
 @media (min-width: 576px) {
 }
 
-/* Medium devices (tablets, 768px and up) */
+/********/ /* Medium devices (tablets, 768px and up) */ /********/
 @media (min-width: 768px) {
     ._navBar__container {
         justify-content: flex-end;
@@ -224,7 +243,7 @@ html {
     }
 }
 
-/* Large devices (desktops, 992px and up) */
+/********/ /* Large devices (desktops, 992px and up) */ /********/
 @media (min-width: 992px) {
     ._header {
         padding: 0 2rem;
@@ -240,7 +259,7 @@ html {
     }
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
+/********/ /* Extra large devices (large desktops, 1200px and up) */ /********/
 @media (min-width: 1200px) {
     ._header {
         padding: 0 4rem;
