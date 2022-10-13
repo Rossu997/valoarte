@@ -45,7 +45,7 @@
     <!-- Los breakpoints ya los tenemos definidos por Bootstrap y se pueden sacar de styles.css -->
     <!-- TODO  -->
 
-    <body class="bodyActividades">
+    <body>
         <header class="_header row">
             <nav class="_nav navbar navbar-expand-md">
                 <div class="_nav__wrapper container-fluid">
@@ -149,200 +149,136 @@
 
         <!-- Main starts -->
         <div class="container-fluid backImgActividades">
-            <div class="container-lg heroContainer">
-                <h1 class="actividades__title">
-                    ¡Conocé mas sobre nuestro trabajo voluntario!
+            <div
+                class="main container-lg d-flex align-items-end justify-content-center h-100"
+            >
+                <h1 class="actividades__title mb-5">
+                    ¡Conocé más sobre nuestro trabajo comunitario!
                 </h1>
             </div>
         </div>
-        <div class="container-fluid mt-4 mb-5">
+
+        <div class="container-fluid titleContainer">
             <div class="container-lg">
-                <div
-                    class="accordion accordion-flush"
-                    id="accordionPanelsStayOpenExample"
-                >
-                    <div class="accordion-item">
-                        <h2
-                            class="accordion-header"
-                            id="panelsStayOpen-headingOne"
-                        >
-                            <button
-                                class="accordion-button w-100"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapseOne"
-                                aria-expanded="true"
-                                aria-controls="panelsStayOpen-collapseOne"
+                <h2 class="actividadesSeccion__title">
+                    Intervención en organizaciones
+                </h2>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="container-lg">
+                <div class="accordionItem__container">
+                    <p class="accordionItem__text mt-4">
+                        Si crees que tu organización necesita
+                        <span class="underlined">cambios reales</span>
+                        , contás con nuestros especialistas para hacerlo
+                        posible. Trabajamos desde la
+                        <span class="underlined">educación emocional</span>, los
+                        valores de tu organización. Para que puedas conocer
+                        <span class="underlined">herramientas</span>
+                        sobre productividad personal, crear espacios diversos e
+                        inclusivos, trabajar en equipo, aplicar técnicas de
+                        innovación y mucho más.
+                    </p>
+                    <img
+                        class="accordionItem__img"
+                        src="https://i.postimg.cc/d0vBf1LR/escuela-2.png"
+                        alt=""
+                    />
+                    <span class="accordionItem__title">¿Como lo hacemos?</span>
+                    <p class="accordionItem__text">
+                        Te visitamos, te contamos sobre nuestro trabajo, y
+                        <span class="underlined">
+                            realizamos un diagnóstico para crear un plan de
+                            trabajo personalizado
+                        </span>
+                        y a tu medida.
+                    </p>
+                    <button class="itemAccordion__ctaBtn">Cta</button>
+                    <p class="italic">
+                        ¡Desde Valo creemos en la mejora continua y te invitamos
+                        a que te animes a renovarte!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid titleContainer mt-3">
+            <div class="container-lg">
+                <h2 class="actividadesSeccion__title">
+                    Intervención en escuelas
+                </h2>
+            </div>
+        </div>
+
+        <div class="container-lg">
+            <div class="accordionItem__container">
+                <p class="accordionItem__text mt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nulla cursus turpis malesuada egestas eget dolor orci,
+                    accumsan aliquet.
+                    <span class="underlined">In mollis morbi amet,</span>
+                    turpis quam ac. Interdum integer odio laoreet vitae. Urna
+                    vitae ut sem sed quis eget.
+                    <span class="underlined">Lorem ipsum dolor sit amet</span>,
+                    consectetur adipiscing elit. Nulla cursus turpis malesuada
+                    egestas eget dolor orci.
+                </p>
+                <div class="container-fluid mt-4 mb-5">
+                    <div
+                        class="accordion accordion-flush"
+                        id="accordionPanelsStayOpenExample"
+                    >
+                        <div class="accordion-item">
+                            <h2
+                                class="accordion-header"
+                                id="panelsStayOpen-headingOne"
                             >
-                                Intervención en organizaciones
-                            </button>
-                        </h2>
-                        <div
-                            id="panelsStayOpen-collapseOne"
-                            class="accordion-collapse collapse show"
-                            aria-labelledby="panelsStayOpen-headingOne"
-                        >
-                            <div class="accordion-body">
-                                <div class="accordionItem__container">
-                                    <p class="accordionItem__text">
-                                        Si crees que tu organización necesita
-                                        <span class="underlined"
-                                            >cambios reales</span
-                                        >
-                                        , contás con nuestros especialistas para
-                                        hacerlo posible. Trabajamos desde la
-                                        <span class="underlined"
-                                            >educación emocional</span
-                                        >, los valores de tu organización. Para
-                                        que puedas conocer
-                                        <span class="underlined"
-                                            >herramientas</span
-                                        >
-                                        sobre productividad personal, crear
-                                        espacios diversos e inclusivos, trabajar
-                                        en equipo, aplicar técnicas de
-                                        innovación y mucho más.
-                                    </p>
-                                    <img
-                                        class="accordionItem__img"
-                                        src="https://i.postimg.cc/d0vBf1LR/escuela-2.png"
-                                        alt=""
-                                    />
-                                    <span class="accordionItem__title"
-                                        >¿Como lo hacemos?</span
-                                    >
-                                    <p class="accordionItem__text">
-                                        Te visitamos, te contamos sobre nuestro
-                                        trabajo, y
-                                        <span class="underlined">
-                                            realizamos un diagnóstico para crear
-                                            un plan de trabajo personalizado
-                                        </span>
-                                        y a tu medida.
-                                    </p>
-                                    <button class="itemAccordion__ctaBtn">
-                                        Cta
-                                    </button>
-                                    <p class="italic">
-                                        ¡Desde Valo creemos en la mejora
-                                        continua y te invitamos a que te animes
-                                        a renovarte!
-                                    </p>
+                                <button
+                                    class="accordion-button w-100"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseOne"
+                                    aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseOne"
+                                >
+                                    Programa acoso escolar
+                                </button>
+                            </h2>
+                            <div
+                                id="panelsStayOpen-collapseOne"
+                                class="accordion-collapse collapse show"
+                                aria-labelledby="panelsStayOpen-headingOne"
+                            >
+                                <div class="accordion-body">
+                                    Info sobre acoso escolar
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2
-                            class="accordion-header"
-                            id="panelsStayOpen-headingTwo"
-                        >
-                            <button
-                                class="accordion-button collapsed"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapseTwo"
-                                aria-expanded="false"
-                                aria-controls="panelsStayOpen-collapseTwo"
+                        <div class="accordion-item">
+                            <h2
+                                class="accordion-header"
+                                id="panelsStayOpen-headingOne"
                             >
-                                Ellas al frente
-                            </button>
-                        </h2>
-                        <div
-                            id="panelsStayOpen-collapseTwo"
-                            class="accordion-collapse collapse"
-                            aria-labelledby="panelsStayOpen-headingTwo"
-                        >
-                            <div class="accordion-body violet">
-                                <div class="accordionItem__container">
-                                    <p class="accordionItem__text">
-                                        Como comunidad estamos comprometidas en
-                                        contribuir con la
-                                        <span class="underlined"
-                                            >reducción de la brecha de
-                                            género</span
-                                        >
-                                        a mujeres y diversidades sexuales, a
-                                        través de la sensibilización y la
-                                        formación en herramientas para el
-                                        desarrollo integral de las mismas. Por
-                                        ello, llevamos a cabo un
-                                        <span class="underlined"
-                                            >ciclo de capacitaciones</span
-                                        >
-                                        sobre: autoestima, imagen personal,
-                                        finanzas personales y profesionales,
-                                        trabajo en red, con el objetivo de
-                                        <span class="underlined">
-                                            promover su liderazgo,
-                                            empoderamiento e independencia.
-                                        </span>
-                                    </p>
-                                    <img
-                                        class="accordionItem__img"
-                                        src="https://i.postimg.cc/4dDNvwvB/272777109-1150843782322099-3452536271106367112-n-2.png"
-                                        alt=""
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2
-                            class="accordion-header"
-                            id="panelsStayOpen-headingThree"
-                        >
-                            <button
-                                class="accordion-button collapsed"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapseThree"
-                                aria-expanded="false"
-                                aria-controls="panelsStayOpen-collapseThree"
+                                <button
+                                    class="accordion-button w-100"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseOne"
+                                    aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseOne"
+                                >
+                                    Programa Educación emocional
+                                </button>
+                            </h2>
+                            <div
+                                id="panelsStayOpen-collapseOne"
+                                class="accordion-collapse collapse show"
+                                aria-labelledby="panelsStayOpen-headingOne"
                             >
-                                Economia naranja
-                            </button>
-                        </h2>
-                        <div
-                            id="panelsStayOpen-collapseThree"
-                            class="accordion-collapse collapse"
-                            aria-labelledby="panelsStayOpen-headingThree"
-                        >
-                            <div class="accordion-body cremeBg">
-                                <div class="accordionItem__container">
-                                    <p class="accordionItem__text">
-                                        ¿Qué tienen en común una actriz, un
-                                        arquitecto, una chef, un fotógrafo, un
-                                        creador de videojuegos, una diseñadora
-                                        aeronáutica, un músico y una artesana?
-                                        Que todos pertenecen a la Economía
-                                        Naranja. El BID ha definido la Economía
-                                        Naranja como el conjunto de
-                                        <span class="underlined"
-                                            >actividades</span
-                                        >
-                                        que de manera encadenada
-                                        <span class="underlined"
-                                            >permiten que las ideas se
-                                            transformen en bienes y servicios
-                                            culturales</span
-                                        >, cuyo valor está determinado por su
-                                        contenido de propiedad intelectual.
-                                    </p>
-                                    <img
-                                        class="accordionItem__img"
-                                        src="https://i.postimg.cc/15SjgwhS/economianaranja-1.png"
-                                        alt=""
-                                    />
-                                    <p class="italic">
-                                        Desde Valo, a través de actividades de
-                                        difusión y capacitación, hacemos posible
-                                        su perfeccionamiento alentando su
-                                        formalización en el rubro.
-                                    </p>
-                                    <button class="itemAccordion__ctaBtn">
-                                        Formulario
-                                    </button>
+                                <div class="accordion-body">
+                                    Info sobre acoso escolar
                                 </div>
                             </div>
                         </div>
@@ -350,7 +286,136 @@
                 </div>
             </div>
         </div>
-        <!-- Main Ends -->
+
+        <div class="container-fluid titleContainer mt-3">
+            <div class="container-lg">
+                <h2 class="actividadesSeccion__title">Ellas al frente</h2>
+            </div>
+        </div>
+
+        <div class="container-fluid violet pb-5">
+            <div class="container-lg">
+                <div class="accordionItem__container">
+                    <div class="accordionItem__container mt-4">
+                        <p class="accordionItem__text">
+                            Como comunidad estamos comprometidas en contribuir
+                            con la
+                            <span class="underlined"
+                                >reducción de la brecha de género</span
+                            >
+                            a mujeres y diversidades sexuales, a través de la
+                            sensibilización y la formación en herramientas para
+                            el desarrollo integral de las mismas. Por ello,
+                            llevamos a cabo un
+                            <span class="underlined"
+                                >ciclo de capacitaciones</span
+                            >
+                            sobre: autoestima, imagen personal, finanzas
+                            personales y profesionales, trabajo en red, con el
+                            objetivo de
+                            <span class="underlined">
+                                promover su liderazgo, empoderamiento e
+                                independencia.
+                            </span>
+                        </p>
+                        <img
+                            class="accordionItem__img"
+                            src="https://i.postimg.cc/W3sDNbkZ/ellas-al-frente.png"
+                            alt=""
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid titleContainer">
+            <div class="container-lg">
+                <h2 class="actividadesSeccion__title">Economia naranja</h2>
+            </div>
+        </div>
+
+        <div class="container-fluid pb-5">
+            <div class="container-lg">
+                <div class="accordionItem__container">
+                    <div class="accordionItem__container mt-4 w-100">
+                        <p class="accordionItem__text">
+                            ¿Qué tienen en común una actriz, un arquitecto, una
+                            chef, un fotógrafo, un creador de videojuegos, una
+                            diseñadora aeronáutica, un músico y una artesana?
+                            Que todos pertenecen a la Economía Naranja. El BID
+                            ha definido la Economía Naranja como el conjunto de
+                            <span class="underlined">actividades</span>
+                            que de manera encadenada
+                            <span class="underlined"
+                                >permiten que las ideas se transformen en bienes
+                                y servicios culturales</span
+                            >, cuyo valor está determinado por su contenido de
+                            propiedad intelectual.
+                        </p>
+                        <img
+                            class="accordionItem__img"
+                            src="https://i.postimg.cc/15SjgwhS/economianaranja-1.png"
+                            alt=""
+                        />
+                        <p class="italic">
+                            Desde Valo, a través de actividades de difusión y
+                            capacitación, hacemos posible su perfeccionamiento
+                            alentando su formalización en el rubro.
+                        </p>
+
+                        <div class="formContainer d-flex flex-column gap-2 w-100">
+                            <h3 class="form__title">¿Estás interesado/a en brindar un taller?</h3>
+                            <p class="form__text">Dejanos tus datos y nos pondremos en contacto</p>
+                            <form action="" class="form" method="POST">
+                                <div>
+                                    <input
+                                        class="form__input"
+                                        type="text"
+                                        name="name"
+                                        placeholder="Nombre y apellido"
+                                        required
+                                    />
+                                </div>
+                                <div>
+                                    <input
+                                        class="form__input"
+                                        type="text"
+                                        name="tel"
+                                        placeholder="Teléfono"
+                                        required
+                                    />
+                                </div>
+                                <div>
+                                    <textarea
+                                        class="form__input"
+                                        name="message"
+                                        id=""
+                                        cols="20"
+                                        rows="10"
+                                        placeholder="¿Sobre que temática te gustaria brindar un taller? ¿Para qué público?"
+                                        required
+                                    ></textarea>
+                                </div>
+                                <div>
+                                    <input
+                                        class="form__input"
+                                        type="text"
+                                        name="extra"
+                                        placeholder="Otro"
+                                    />
+                                </div>
+                                <div>
+                                    <button class="formButton">
+                                        Enviar
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Footer Starts -->
         <div class="container-fluid creamBg">
             <footer class="_footer row row-cols-md-3">
