@@ -30,21 +30,6 @@
         <!-- Estilos específicos de la página en cuestión -->
     </head>
 
-    <!-- TODO README -->
-    <!-- Usamos el sistema de Grid de Bootstrap para hacer un sistema modular -->
-    <!-- Solo usamos sus propiedades (como "col-2") para acomodar estos módulos en la grilla -->
-    <!-- El body está wrappeado en un contenedor que ocupa 100vw "container-flow" -->
-    <!-- Usamos iconos de Bootstrap en formato SVG. Si hay que modificarlo, lo hacemos localmente mediante una clase nueva -->
-    <!-- Hay un archivo CSS que normaliza estilos y uno general, con estilos del header y footer principalmente -->
-    <!-- Estos dos tienen que estar en todos los archivos HTML -->
-    <!-- Además, cada HTML tiene su archivo CSS con los estilos del contenido particular de la página -->
-    <!-- Hay que tratar de eliminar clases de Bootstrap predefinidas que no nos sirvan y tener bien definidas nuestras clases -->
-    <!-- Se me ocurrió usar un guión bajo adelante para diferenciarlas a simple vista "_nav__wrapper" -->
-    <!-- Así evitamos conflictos con nuestros estilos y el uso del !important ⛔ (prohibido) -->
-    <!-- Como habíamos hablado, diseñamos mobile first -->
-    <!-- Los breakpoints ya los tenemos definidos por Bootstrap y se pueden sacar de styles.css -->
-    <!-- TODO  -->
-
     <body>
         <header class="_header row">
             <nav class="_nav navbar navbar-expand-md">
@@ -213,7 +198,7 @@
         </div>
 
         <div class="container-lg">
-            <div class="accordionItem__container">
+            <div class="accordionItem__container d-flex flex-column">
                 <p class="accordionItem__text mt-4">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Nulla cursus turpis malesuada egestas eget dolor orci,
@@ -265,17 +250,17 @@
                                     class="accordion-button w-100"
                                     type="button"
                                     data-bs-toggle="collapse"
-                                    data-bs-target="#panelsStayOpen-collapseOne"
+                                    data-bs-target="#panelsStayOpen-collapseTwo"
                                     aria-expanded="true"
-                                    aria-controls="panelsStayOpen-collapseOne"
+                                    aria-controls="panelsStayOpen-collapseTwo"
                                 >
                                     Programa Educación emocional
                                 </button>
                             </h2>
                             <div
-                                id="panelsStayOpen-collapseOne"
+                                id="panelsStayOpen-collapseTwo"
                                 class="accordion-collapse collapse show"
-                                aria-labelledby="panelsStayOpen-headingOne"
+                                aria-labelledby="panelsStayOpen-headingTwo"
                             >
                                 <div class="accordion-body">
                                     Info sobre acoso escolar
@@ -363,10 +348,20 @@
                             alentando su formalización en el rubro.
                         </p>
 
-                        <div class="formContainer d-flex flex-column gap-2 w-100">
-                            <h3 class="form__title">¿Estás interesado/a en brindar un taller?</h3>
-                            <p class="form__text">Dejanos tus datos y nos pondremos en contacto</p>
-                            <form action="" class="form" method="POST">
+                        <div
+                            class="formContainer d-flex flex-column gap-2 w-100"
+                        >
+                            <h3 class="form__title">
+                                ¿Estás interesado/a en brindar un taller?
+                            </h3>
+                            <p class="form__text">
+                                Dejanos tus datos y nos pondremos en contacto
+                            </p>
+                            <form
+                                action="https://formspree.io/f/xqkjlogq"
+                                class="form"
+                                method="POST"
+                            >
                                 <div>
                                     <input
                                         class="form__input"
@@ -405,9 +400,7 @@
                                     />
                                 </div>
                                 <div>
-                                    <button class="formButton">
-                                        Enviar
-                                    </button>
+                                    <button class="formButton">Enviar</button>
                                 </div>
                             </form>
                         </div>

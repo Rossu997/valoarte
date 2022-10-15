@@ -35,6 +35,7 @@
     --desktopXl-title-size: 48px;
     --desktopXl-subtitle-size: 38px;
 }
+
 .backImg {
     background-image: url("https://i.postimg.cc/2y12mY3S/quienes-somos-1-2.png");
     background-repeat: no-repeat;
@@ -348,6 +349,11 @@
     font-weight: 600;
 }
 
+.data1__subtitle {
+    font-size: 17px;
+    font-weight: 700;
+}
+
 .data__desc1 {
     margin-top: 10px;
     width: 80%;
@@ -463,6 +469,7 @@
 
     .fourthSection__subtitle {
         font-size: var(--tablet--subtitle-size);
+        font-weight: 700;
     }
     .fourthSection__img2 {
         height: 90px;
@@ -473,6 +480,11 @@
         font-size: calc(var(--tablet-text-size) + 2px);
     }
 
+    .data1__subtitle {
+        font-size: var(--tablet--subtitle-size);
+        font-weight: 800;
+        margin-top: 35px;
+    }
     .data__desc1 {
         font-size: calc(var(--tablet-text-size) - 2px);
     }
@@ -593,6 +605,8 @@
     .data1__container1 {
         width: 50%;
         margin-top: 30px;
+        display: flex;
+        flex-direction: column;
     }
     .data1__title {
         margin-left: 10px;
@@ -602,10 +616,15 @@
         transform: rotate(-12deg);
     }
 
+    .data1__subtitle {
+        font-size: 30px;
+        font-weight: 800;
+        margin-top: 35px;
+    }
     .data1__text {
         font-size: calc(var(--desktop-text-size) - 2px);
         width: 100%;
-        margin-top: 70px;
+        margin-top: 40px;
         font-weight: 400;
     }
 
