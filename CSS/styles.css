@@ -2,7 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mansalva&display=swap");
-
+@font-face {
+    font-family: "OCR A Extended";
+    src: url(../FONTS/OCRAEXT.TTF);
+}
 /* Variables */
 :root {
     /* Colors */
@@ -16,7 +19,27 @@
     /* Fonts */
     --mainFont: "Montserrat", sans-serif;
     --secondaryFont: "Ubuntu", sans-serif;
-    --displayFont: "Mansalva", display;
+    --displayFont: "OCR A Extended", display;
+
+    /* Mobile */
+    --mobile-text-size: 16px;
+    --mobile-title-size: 30px;
+    --mobile--subtitle-size: 25px;
+
+    /* Tablet */
+    --tablet-text-size: 20px;
+    --tablet-title-size: 40px;
+    --tablet--subtitle-size: 30px;
+
+    /* Desktop */
+    --desktop-text-size: 23px;
+    --desktop-title-size: 45px;
+    --desktop-subtitle-size: 35px;
+
+    /* Desktop XL*/
+    --desktopXl-text-size: 26px;
+    --desktopXl-title-size: 48px;
+    --desktopXl-subtitle-size: 38px;
 }
 
 /*******************************************************************/
@@ -50,12 +73,11 @@ html {
 /* Header Styles */
 ._header {
     background-color: var(--violet);
-
 }
-#header{
+#header {
     position: sticky;
     top: 0;
-    z-index:100;
+    z-index: 100;
 }
 ._navBar__brandImage {
     padding-left: 20px;
@@ -180,9 +202,10 @@ html {
     padding: 0.4rem 1rem;
     background-color: var(--violet);
     color: var(--white);
-    border-radius: 10px;
+    border-radius: 1px;
     font-size: 0.8rem;
     font-weight: 600;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
 
 ._sectionColabora__button:hover {

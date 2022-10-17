@@ -31,6 +31,7 @@
     </head>
 
     <body>
+        <!-- Header starts -->
         <header class="_header row">
             <nav class="_nav navbar navbar-expand-md">
                 <div class="_nav__wrapper container-fluid">
@@ -154,23 +155,29 @@
         <div class="container-fluid">
             <div class="container-lg">
                 <div class="accordionItem__container">
-                    <p class="accordionItem__text mt-4">
-                        Si crees que tu organización necesita
-                        <span class="underlined">cambios reales</span>
-                        , contás con nuestros especialistas para hacerlo
-                        posible. Trabajamos desde la
-                        <span class="underlined">educación emocional</span>, los
-                        valores de tu organización. Para que puedas conocer
-                        <span class="underlined">herramientas</span>
-                        sobre productividad personal, crear espacios diversos e
-                        inclusivos, trabajar en equipo, aplicar técnicas de
-                        innovación y mucho más.
-                    </p>
-                    <img
-                        class="accordionItem__img"
-                        src="https://i.postimg.cc/d0vBf1LR/escuela-2.png"
-                        alt=""
-                    />
+                    <div
+                        class="d-flex flex-column justify-content-center align-items-center w-100 flex-xl-row gap-xl-4 mt-xl-4"
+                    >
+                        <p class="width50 accordionItem__text mt-4">
+                            Si crees que tu organización necesita
+                            <span class="underlined">cambios reales</span>
+                            , contás con nuestros especialistas para hacerlo
+                            posible. Trabajamos desde la
+                            <span class="underlined">educación emocional</span>,
+                            los valores de tu organización. Para que puedas
+                            conocer
+                            <span class="underlined">herramientas</span>
+                            sobre productividad personal, crear espacios
+                            diversos e inclusivos, trabajar en equipo, aplicar
+                            técnicas de innovación y mucho más.
+                        </p>
+                        <img
+                            class="accordionItem__img"
+                            src="https://i.postimg.cc/d0vBf1LR/escuela-2.png"
+                            alt=""
+                        />
+                    </div>
+
                     <span class="accordionItem__title">¿Como lo hacemos?</span>
                     <p class="accordionItem__text">
                         Te visitamos, te contamos sobre nuestro trabajo, y
@@ -180,7 +187,6 @@
                         </span>
                         y a tu medida.
                     </p>
-                    <button class="itemAccordion__ctaBtn">Cta</button>
                     <p class="italic">
                         ¡Desde Valo creemos en la mejora continua y te invitamos
                         a que te animes a renovarte!
@@ -210,7 +216,9 @@
                     consectetur adipiscing elit. Nulla cursus turpis malesuada
                     egestas eget dolor orci.
                 </p>
-                <div class="container-fluid mt-4 mb-5">
+                <div
+                    class="w-100 d-flex justify-content-center align-items-center mt-3 mb-4"
+                >
                     <div
                         class="accordion accordion-flush"
                         id="accordionPanelsStayOpenExample"
@@ -321,8 +329,10 @@
 
         <div class="container-fluid pb-5">
             <div class="container-lg">
-                <div class="accordionItem__container">
-                    <div class="accordionItem__container mt-4 w-100">
+                <div class="accordionItem__container mt-4 w-100">
+                    <div
+                        class="d-flex flex-column justify-content-center align-items-center w-100 flex-xl-row gap-xl-4 mt-xl-4"
+                    >
                         <p class="accordionItem__text">
                             ¿Qué tienen en común una actriz, un arquitecto, una
                             chef, un fotógrafo, un creador de videojuegos, una
@@ -342,77 +352,77 @@
                             src="https://i.postimg.cc/15SjgwhS/economianaranja-1.png"
                             alt=""
                         />
-                        <p class="italic">
-                            Desde Valo, a través de actividades de difusión y
-                            capacitación, hacemos posible su perfeccionamiento
-                            alentando su formalización en el rubro.
-                        </p>
+                    </div>
 
-                        <div
-                            class="formContainer d-flex flex-column gap-2 w-100"
-                        >
-                            <div class="article__titleContainer">
-                                <h2 class="article__title">
-                                    ¿Estás interesado/a en brindar un taller? 
-                                </h2>
-                                <h2 class="article__titleUnderlineViolet">
-                                    ¿Estás interesado/a en brindar un taller? 
-                                </h2>
-                            </div>
-                            <p class="form__text">
-                                Dejanos tus datos y nos pondremos en contacto
-                            </p>
-                            <form
-                                action="https://formspree.io/f/xqkjlogq"
-                                class="form"
-                                method="POST"
-                            >
-                                <div>
-                                    <input
-                                        class="form__input"
-                                        type="text"
-                                        name="name"
-                                        placeholder="Nombre y apellido"
-                                        required
-                                    />
-                                </div>
-                                <div>
-                                    <input
-                                        class="form__input"
-                                        type="text"
-                                        name="tel"
-                                        placeholder="Teléfono"
-                                        required
-                                    />
-                                </div>
-                                <div>
-                                    <textarea
-                                        class="form__input"
-                                        name="message"
-                                        id=""
-                                        cols="20"
-                                        rows="10"
-                                        placeholder="¿Sobre que temática te gustaria brindar un taller? ¿Para qué público?"
-                                        required
-                                    ></textarea>
-                                </div>
-                                <div>
-                                    <input
-                                        class="form__input"
-                                        type="text"
-                                        name="extra"
-                                        placeholder="Otro"
-                                    />
-                                </div>
-                                <div>
-                                    <button class="formButton">Enviar</button>
-                                </div>
-                            </form>
+                    <p class="italic mt-5 w-75">
+                        Desde Valo, a través de actividades de difusión y
+                        capacitación, hacemos posible su perfeccionamiento
+                        alentando su formalización en el rubro.
+                    </p>
+
+                    <div class="formContainer d-flex flex-column gap-2">
+                        <div class="article__titleContainer">
+                            <h2 class="article__title">
+                                ¿Estás interesado/a en brindar un taller?
+                            </h2>
+                            <h2 class="article__titleUnderlineViolet">
+                                ¿Estás interesado/a en brindar un taller?
+                            </h2>
                         </div>
+                        <p class="form__text mt-xl-5">
+                            Dejanos tus datos y nos pondremos en contacto
+                        </p>
+                        <form
+                            action="https://formspree.io/f/xqkjlogq"
+                            class="form"
+                            method="POST"
+                        >
+                            <div>
+                                <input
+                                    class="form__input"
+                                    type="text"
+                                    name="name"
+                                    placeholder="Nombre y apellido"
+                                    required
+                                />
+                            </div>
+                            <div>
+                                <input
+                                    class="form__input"
+                                    type="text"
+                                    name="tel"
+                                    placeholder="Teléfono"
+                                    required
+                                />
+                            </div>
+                            <div>
+                                <textarea
+                                    class="form__input"
+                                    name="message"
+                                    id=""
+                                    cols="20"
+                                    rows="10"
+                                    placeholder="¿Sobre que temática te gustaria brindar un taller? ¿Para qué público?"
+                                    required
+                                ></textarea>
+                            </div>
+                            <div>
+                                <input
+                                    class="form__input"
+                                    type="text"
+                                    name="extra"
+                                    placeholder="Otro"
+                                />
+                            </div>
+                            <div>
+                                <button class="formButton">Enviar</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Main ends -->
 
         <!-- Footer Starts -->
         <div class="container-fluid creamBg">

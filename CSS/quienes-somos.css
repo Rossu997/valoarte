@@ -773,7 +773,7 @@
     /* Third section */
 
     .thirdSection__title {
-        width: 70%;
+        width: 50%;
         margin: 0;
         padding: 10px 60px;
         text-align: start;
@@ -826,14 +826,16 @@
 
 .gradient {
     padding-block: 50px;
-    background: rgb(238, 229, 227);
+
     background: linear-gradient(
         0deg,
-        rgba(238, 229, 227, 1) 69%,
-        rgba(238, 224, 232, 1) 100%
+        #eee0e8 91.93%,
+        rgba(238, 224, 232, 0) 100%
     );
 }
-
+.violetBackground {
+    background-color: rgba(238, 224, 232, 100);
+}
 .noBorder {
     border: none;
 }
@@ -880,4 +882,8 @@
 
 .swiper {
     width: 100%;
+}
+
+.footerPadding{
+    height: 10gi0px;
 }
