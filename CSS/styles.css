@@ -6,12 +6,16 @@
     font-family: "OCR A Extended";
     src: url(../FONTS/OCRAEXT.TTF);
 }
+
 /* Variables */
 :root {
     /* Colors */
     --background-color: #f7edda;
+    --background-colorSecondary: #ada8b6;
     --orange: #f17a5e;
+    --orangeSecond: #f2914a;
     --violet: #7b3b8b;
+    --violetSecond: #816797;
     --lightblue: #41d5b8;
     --white: #fff;
     --black: #000;
@@ -19,8 +23,9 @@
     /* Fonts */
     --mainFont: "Montserrat", sans-serif;
     --secondaryFont: "Ubuntu", sans-serif;
-    --displayFont: "OCR A Extended", display;
-
+    --displayFont: "Mansalva", display;
+    --monoFont: "OCR A Extended", display;
+    
     /* Mobile */
     --mobile-text-size: 16px;
     --mobile-title-size: 30px;
@@ -46,10 +51,11 @@
 /* Styles (Mobile First) Extra Small devices (phones, 575px and below) */
 /*******************************************************************/
 
-/* General Styles */
+/********/ /* General Styles */ /********/
 body {
     background-color: var(--background-color);
     font-size: 16px;
+    font-family: var(--mainFont);
 }
 
 body,
@@ -70,15 +76,20 @@ html {
     font-weight: 700;
 }
 
-/* Header Styles */
+._italic {
+    font-style: italic;
+}
+
+._bg-secondary {
+    background-color: var(--background-colorSecondary);
+    width: 100vw;
+}
+
+/********/ /* Header Styles */ /********/
 ._header {
     background-color: var(--violet);
 }
-#header {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
+
 ._navBar__brandImage {
     padding-left: 20px;
     width: 100px;
@@ -139,7 +150,7 @@ html {
     width: fit-content;
 }
 
-/* Footer Styles */
+/********/ /* Footer Styles */ /********/
 ._footer {
     margin-top: 5rem;
     padding-bottom: 3rem;
@@ -222,11 +233,11 @@ html {
 /* Extra small devices (portrait phones, less than 576px) */
 /* No media query for 'xs' since this is the default in Bootstrap */
 
-/* Small devices (landscape phones, 576px and up) */
+/********/ /* Small devices (landscape phones, 576px and up) */ /********/
 @media (min-width: 576px) {
 }
 
-/* Medium devices (tablets, 768px and up) */
+/********/ /* Medium devices (tablets, 768px and up) */ /********/
 @media (min-width: 768px) {
     ._navBar__container {
         justify-content: flex-end;
@@ -247,7 +258,7 @@ html {
     }
 }
 
-/* Large devices (desktops, 992px and up) */
+/********/ /* Large devices (desktops, 992px and up) */ /********/
 @media (min-width: 992px) {
     ._header {
         padding: 0 2rem;
@@ -263,7 +274,7 @@ html {
     }
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
+/********/ /* Extra large devices (large desktops, 1200px and up) */ /********/
 @media (min-width: 1200px) {
     ._header {
         padding: 0 4rem;
