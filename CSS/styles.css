@@ -25,6 +25,26 @@
     --secondaryFont: "Ubuntu", sans-serif;
     --displayFont: "Mansalva", display;
     --monoFont: "OCR A Extended", display;
+    
+    /* Mobile */
+    --mobile-text-size: 16px;
+    --mobile-title-size: 30px;
+    --mobile--subtitle-size: 25px;
+
+    /* Tablet */
+    --tablet-text-size: 20px;
+    --tablet-title-size: 40px;
+    --tablet--subtitle-size: 30px;
+
+    /* Desktop */
+    --desktop-text-size: 23px;
+    --desktop-title-size: 45px;
+    --desktop-subtitle-size: 35px;
+
+    /* Desktop XL*/
+    --desktopXl-text-size: 26px;
+    --desktopXl-title-size: 48px;
+    --desktopXl-subtitle-size: 38px;
 }
 
 /*******************************************************************/
@@ -68,12 +88,6 @@ html {
 /********/ /* Header Styles */ /********/
 ._header {
     background-color: var(--violet);
-}
-
-#header {
-    position: sticky;
-    top: 0;
-    z-index: 100;
 }
 
 ._navBar__brandImage {
@@ -199,9 +213,10 @@ html {
     padding: 0.4rem 1rem;
     background-color: var(--violet);
     color: var(--white);
-    border-radius: 10px;
+    border-radius: 1px;
     font-size: 0.8rem;
     font-weight: 600;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
 
 ._sectionColabora__button:hover {
