@@ -274,7 +274,7 @@
     letter-spacing: -0.015em;
 }
 .form {
-    width: 80%;
+    width: 100%;
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
@@ -283,7 +283,7 @@
 }
 
 .form__input {
-    width: 90%;
+    width: 100%;
     padding: 7px 10px;
     border-start-start-radius: 10px;
     border-start-end-radius: 10px;

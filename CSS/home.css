@@ -10,7 +10,7 @@
 }
 
 ._articleOne__text {
-    font-size: 2rem;
+    font-size: 1.6rem;
     text-align: center;
     margin-bottom: 2rem;
     line-height: 2.5rem;
@@ -40,12 +40,8 @@
 }
 
 /* _articleTwo Styles */
-._carousel__arrowLeft {
-    padding-right: 6rem;
-}
-
-._carousel__arrowRight {
-    padding-left: 6rem;
+.postIg {
+    width: 98vw;
 }
 
 /* _articleTree Styles */
@@ -58,7 +54,7 @@
     font-size: 40px;
     background-color: var(--lightblue);
     width: fit-content;
-    padding: 0 2rem;
+    padding: 0 0.1rem;
 }
 
 ._articleTree__text {
@@ -118,6 +114,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 100px;
 }
 
 ._upperSection__title {
@@ -126,8 +123,9 @@
     transform: rotate(-6deg);
     width: fit-content;
     padding: 0.5rem 3rem;
-    margin-top: 2rem;
-    margin-left: 5rem;
+    margin-top: 0rem;
+    margin-left: 1rem;
+    margin-bottom: 7rem;
 }
 
 ._upperSection__imgage {
@@ -147,6 +145,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    margin-top: 100px;
 }
 
 ._upperSection__ctaButton {
@@ -155,7 +154,7 @@
     background-color: var(--violet);
     color: var(--white);
     border-radius: 10px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
     text-align: center;
 }
@@ -290,7 +289,7 @@
     }
 
     ._articleFour__bottomSection {
-        margin-top: 10rem;
+        margin-top: 20rem;
         height: 400px;
     }
 
@@ -312,6 +311,7 @@
     }
 
     ._articleTree__title {
+        padding: 0.9rem 1.4rem;
         font-size: 60px;
     }
 

@@ -29,27 +29,13 @@
         />
 
         <!-- Stylesheets -->
-        <link rel="stylesheet" href="CSS/normalize.css" />
         <!-- Normaliza algunos estilos por defecto de CSS -->
-        <link rel="stylesheet" href="CSS/styles.css" />
+        <link rel="stylesheet" href="CSS/normalize.css" />
         <!-- Estilos de la plantilla principal -->
-        <link rel="stylesheet" href="CSS/home.css" />
+        <link rel="stylesheet" href="CSS/styles.css" />
         <!-- Estilos específicos de la página en cuestión -->
+        <link rel="stylesheet" href="CSS/home.css" />
     </head>
-
-    <!-- TODO README -->
-    <!-- Usamos el sistema de Grid de Bootstrap para hacer un sistema modular -->
-    <!-- Solo usamos sus propiedades (como "col-2") para acomodar estos módulos en la grilla -->
-    <!-- Usamos iconos de Bootstrap en formato SVG. Si hay que modificarlo, lo hacemos localmente mediante una clase nueva -->
-    <!-- Hay un archivo CSS que normaliza estilos y uno general, con estilos del header y footer principalmente -->
-    <!-- Estos dos tienen que estar en todos los archivos HTML -->
-    <!-- Además, cada HTML tiene su archivo CSS con los estilos del contenido particular de la página -->
-    <!-- Hay que tratar de eliminar clases de Bootstrap predefinidas que no nos sirvan y tener bien definidas nuestras clases -->
-    <!-- Se me ocurrió usar un guión bajo adelante para diferenciarlas a simple vista "_nav__wrapper" -->
-    <!-- Así evitamos conflictos con nuestros estilos y el uso del !important ⛔ (prohibido) -->
-    <!-- Como habíamos hablado, diseñamos mobile first -->
-    <!-- Los breakpoints ya los tenemos definidos por Bootstrap y se pueden sacar de styles.css -->
-    <!-- TODO  -->
 
     <body>
         <!-- Header starts -->
@@ -99,7 +85,7 @@
                             <li class="_navBar__itemList">
                                 <a
                                     class="_navBar__link _currentPage"
-                                    href="#"
+                                    href="./index.html"
                                     aria-current="page"
                                     >Home</a
                                 >
@@ -183,159 +169,12 @@
             </article>
 
             <article class="_articleTwo">
-                <title>Article: Carousel Eventos</title>
+                <title>Post Instagram @valoarteok</title>
                 <div
-                    id="carouselEventosHome"
-                    class="carousel slide"
-                    data-bs-ride="carousel"
-                >
-                    <!-- Indicadores con la posición del carousel (- - -) -->
-                    <div class="carousel-indicators">
-                        <button
-                            type="button"
-                            data-bs-target="#carouselEventosHome"
-                            data-bs-slide-to="0"
-                            class="active"
-                            aria-current="true"
-                            aria-label="Slide 1"
-                        ></button>
-                        <button
-                            type="button"
-                            data-bs-target="#carouselEventosHome"
-                            data-bs-slide-to="1"
-                            aria-label="Slide 2"
-                        ></button>
-                        <button
-                            type="button"
-                            data-bs-target="#carouselEventosHome"
-                            data-bs-slide-to="2"
-                            aria-label="Slide 3"
-                        ></button>
-                    </div>
-
-                    <!-- Divs con contenido del carousel -->
-                    <div class="carousel-inner">
-                        <div
-                            class="carousel-item active"
-                            data-bs-interval="10000"
-                        >
-                            <img
-                                src="./IMG/fondo-eventos.png"
-                                class="d-block w-100"
-                                alt="..."
-                            />
-                            <div class="carousel-caption d-none d-md-block">
-                                <h3 class="_carousel__Title">
-                                    Titulo Primer Evento
-                                </h3>
-                                <p class="_carousel__Text">
-                                    Descripción del evento
-                                </p>
-                            </div>
-                        </div>
-                        <div class="carousel-item" data-bs-interval="10000">
-                            <img
-                                src="./IMG/fondo-eventos.png"
-                                class="d-block w-100"
-                                alt="..."
-                            />
-                            <div class="carousel-caption d-none d-md-block">
-                                <h3 class="_carousel__Title">
-                                    Titulo Segundo Evento
-                                </h3>
-                                <p class="_carousel__Text">
-                                    Descripción del evento
-                                </p>
-                            </div>
-                        </div>
-                        <div class="carousel-item" data-bs-interval="10000">
-                            <img
-                                src="./IMG/fondo-eventos.png"
-                                class="d-block w-100"
-                                alt="..."
-                            />
-                            <div class="carousel-caption d-none d-md-block">
-                                <h3 class="_carousel__Title">
-                                    Titulo Tercer Evento
-                                </h3>
-                                <p class="_carousel__Text">
-                                    Descripción del evento
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Flechas laterales para navegar en el carousel (<- ->) -->
-                    <button
-                        class="_carousel__arrowLeft carousel-control-prev d-none d-md-block"
-                        type="button"
-                        data-bs-target="#carouselEventosHome"
-                        data-bs-slide="prev"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="50"
-                            height="50"
-                            fill="currentColor"
-                            class="bi bi-arrow-bar-left"
-                            viewBox="0 0 16 16"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5zM10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5z"
-                            />
-                        </svg>
-
-                        <!-- <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="50"
-                        height="50"
-                        fill="currentColor"
-                        class="bi bi-arrow-left-short"
-                        viewBox="0 0 16 16"
-                    >
-                        <path
-                            fill-rule="evenodd"
-                            d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"
-                        />
-                    </svg> -->
-                        <!-- <span class="sr-only">Previous</span> -->
-                    </button>
-                    <button
-                        class="_carousel__arrowRight carousel-control-next d-none d-md-block"
-                        type="button"
-                        data-bs-target="#carouselEventosHome"
-                        data-bs-slide="next"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="50"
-                            height="50"
-                            fill="currentColor"
-                            class="bi bi-arrow-bar-right"
-                            viewBox="0 0 16 16"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5z"
-                            />
-                        </svg>
-                        <!-- <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="50"
-                        height="50"
-                        fill="currentColor"
-                        class="bi bi-arrow-right-short"
-                        viewBox="0 0 16 16"
-                    >
-                        <path
-                            fill-rule="evenodd"
-                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                        />
-                    </svg> -->
-                        <!-- <span class="sr-only">Next</span> -->
-                    </button>
-                </div>
+                    class="postIg"
+                    loading="lazy"
+                    data-mc-src="3abccb4a-a903-477c-948b-5bf0ba0fe937#instagram"
+                ></div>
             </article>
 
             <article class="_articleTree container-lg">
@@ -353,7 +192,7 @@
                         <div class="_articleTree__cardWrapper">
                             <img
                                 class="_card__imgage"
-                                src="IMG/card-programas.png"
+                                src="https://i.postimg.cc/ZKkzGNJ0/card-programas1.png"
                                 alt="..."
                             />
                             <div class="_card__descriptionContainer">
@@ -375,7 +214,7 @@
                         <div class="_articleTree__cardWrapper">
                             <img
                                 class="_card__imgage"
-                                src="IMG/card-programas.png"
+                                src="https://i.postimg.cc/59CZSt8J/card-programas2.png"
                                 alt="..."
                             />
                             <div class="_card__descriptionContainer">
@@ -397,7 +236,7 @@
                         <div class="_articleTree__cardWrapper">
                             <img
                                 class="_card__imgage"
-                                src="IMG/card-programas.png"
+                                src="https://i.postimg.cc/KcP0Y3n1/card-programas3.png"
                                 alt="..."
                             />
                             <div class="_card__descriptionContainer">
@@ -442,7 +281,7 @@
                 </section>
 
                 <section
-                    class="_articleFour__bottomSection container row row-cols-lg-2"
+                    class="_articleFour__bottomSection container row row-cols-lg-2" 
                 >
                     <p class="_bottomSection__text col-12">
                         Somos una comunidad creativa. Creemos en la magia de los
@@ -735,9 +574,8 @@
             </section>
         </footer>
         <!-- Footer Ends -->
-
     </body>
-    
+
     <!-- Bootstrap script -->
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
@@ -778,4 +616,11 @@
             },
         });
     </script>
+
+    <!-- WOXO Instagram scipt -->
+    <script
+        src="https://cdn2.woxo.tech/a.js#635d189bd554a582f7cf99a7"
+        async
+        data-usrc
+    ></script>
 </html>
