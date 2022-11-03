@@ -3,48 +3,68 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mansalva&display=swap");
 @font-face {
-    font-family: "OCR A Extended";
-    src: url(../FONTS/OCRAEXT.TTF);
+  font-family: "OCR A Extended";
+  src: url(../FONTS/OCRAEXT.TTF);
 }
 
 /* Variables */
 :root {
-    /* Colors */
-    --background-color: #f7edda;
-    --background-colorSecondary: #ada8b6;
-    --orange: #f17a5e;
-    --orangeSecond: #f2914a;
-    --violet: #7b3b8b;
-    --violetSecond: #816797;
-    --lightblue: #41d5b8;
-    --white: #fff;
-    --black: #000;
+  /* Colors */
+  --background-color: #f7edda;
+  --background-colorSecondary: #ada8b6;
+  --orange: #f17a5e;
+  --orangeSecond: #f2914a;
+  --violet: #7b3b8b;
+  --violetSecond: #816797;
+  --lightblue: #41d5b8;
+  --white: #fff;
+  --black: #000;
 
-    /* Fonts */
-    --mainFont: "Montserrat", sans-serif;
-    --secondaryFont: "Ubuntu", sans-serif;
-    --displayFont: "Mansalva", display;
-    --monoFont: "OCR A Extended", display;
-    
-    /* Mobile */
-    --mobile-text-size: 16px;
-    --mobile-title-size: 30px;
-    --mobile--subtitle-size: 25px;
+  /* Fonts */
+  --mainFont: "Montserrat", sans-serif;
+  --secondaryFont: "Ubuntu", sans-serif;
+  --displayFont: "Mansalva", display;
+  --monoFont: "OCR A Extended", display;
 
-    /* Tablet */
-    --tablet-text-size: 20px;
-    --tablet-title-size: 40px;
-    --tablet--subtitle-size: 30px;
+  /* Mobile */
+  --mobile-text-size: 16px;
+  --mobile-title-size: 32px;
+  --mobile-subtitle-size: 24px;
 
-    /* Desktop */
-    --desktop-text-size: 23px;
-    --desktop-title-size: 45px;
-    --desktop-subtitle-size: 35px;
+  /* Tablet */
+  --tablet-text-size: 18px;
+  --tablet-title-size: 34px;
+  --tablet-subtitle-size: 26px;
 
-    /* Desktop XL*/
-    --desktopXl-text-size: 26px;
-    --desktopXl-title-size: 48px;
-    --desktopXl-subtitle-size: 38px;
+  /* Desktop */
+  --desktop-text-size: 20px;
+  --desktop-title-size: 36px;
+  --desktop-subtitle-size: 28px;
+
+  /* Desktop XL*/
+  --desktopXl-text-size: 22px;
+  --desktopXl-title-size: 38px;
+  --desktopXl-subtitle-size: 30px;
+
+  /* Mobile */
+  /* --mobile-text-size: 16px;
+  --mobile-title-size: 30px;
+  --mobile-subtitle-size: 25px; */
+
+  /* Tablet */
+  /* --tablet-text-size: 20px;
+  --tablet-title-size: 40px;
+  --tablet-subtitle-size: 30px; */
+
+  /* Desktop */
+  /* --desktop-text-size: 23px;
+  --desktop-title-size: 45px;
+  --desktop-subtitle-size: 35px; */
+
+  /* Desktop XL*/
+  /* --desktopXl-text-size: 26px;
+  --desktopXl-title-size: 48px;
+  --desktopXl-subtitle-size: 38px; */
 }
 
 /*******************************************************************/
@@ -53,177 +73,177 @@
 
 /********/ /* General Styles */ /********/
 body {
-    background-color: var(--background-color);
-    font-size: 16px;
-    font-family: var(--mainFont);
+  background-color: var(--background-color);
+  font-size: 16px;
+  font-family: var(--mainFont);
 }
 
 body,
 html {
-    height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 ._main {
-    display: flex;
-    flex-direction: column;
-    gap: 8rem;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
 }
 
 ._bold {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 ._italic {
-    font-style: italic;
+  font-style: italic;
 }
 
 ._bg-secondary {
-    background-color: var(--background-colorSecondary);
-    width: 100vw;
+  background-color: var(--background-colorSecondary);
+  width: 100vw;
 }
 
 /********/ /* Header Styles */ /********/
 ._header {
-    background-color: var(--violet);
+  background-color: var(--violet);
 }
 
 ._navBar__brandImage {
-    padding-left: 20px;
-    width: 100px;
+  padding-left: 20px;
+  width: 100px;
 }
 
 ._navBar__toggler {
-    margin: 0;
-    padding: 0;
-    border: none;
-    color: var(--white);
-    background-color: transparent;
-    padding-right: 20px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: var(--white);
+  background-color: transparent;
+  padding-right: 20px;
 }
 
 ._navBar__container {
-    display: flex;
-    justify-content: flex-start;
-    padding: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem;
 }
 
 ._navBar__list {
-    display: flex;
-    gap: 1rem;
-    align-items: baseline;
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
 }
 
 ._navBar__link:hover {
-    color: var(--white);
-    opacity: 0.6;
-    transition: 0.2s;
+  color: var(--white);
+  opacity: 0.6;
+  transition: 0.2s;
 }
 
 ._navBar__link {
-    color: var(--white);
+  color: var(--white);
 }
 
 ._mr-1 {
-    margin-right: 1rem;
+  margin-right: 1rem;
 }
 
 ._tienda ._navBar__link {
-    color: var(--white);
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    background-color: var(--orange);
-    padding: 8px 16px;
-    border-radius: 8px;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  background-color: var(--orange);
+  padding: 8px 16px;
+  border-radius: 8px;
 }
 
 ._tienda__icon {
-    margin-right: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 ._currentPage {
-    border-bottom: solid 2px var(--white);
-    padding-bottom: 0.25rem;
-    width: fit-content;
+  border-bottom: solid 2px var(--white);
+  padding-bottom: 0.25rem;
+  width: fit-content;
 }
 
 /********/ /* Footer Styles */ /********/
 ._footer {
-    margin-top: 5rem;
-    padding-bottom: 3rem;
-    box-shadow: 0 -5px 10px 2px rgba(0, 0, 0, 0.1);
+  margin-top: 5rem;
+  padding-bottom: 3rem;
+  box-shadow: 0 -5px 10px 2px rgba(0, 0, 0, 0.1);
 }
 
 ._footer__sectionBrand {
-    padding-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 ._socialNav__list {
-    display: flex;
-    gap: 2rem;
+  display: flex;
+  gap: 2rem;
 }
 
 ._socialNav__link,
 ._sectionContacto__link {
-    color: var(--black);
+  color: var(--black);
 }
 
 ._socialNav__link:hover,
 ._sectionContacto__link:hover {
-    color: var(--black);
-    opacity: 0.6;
-    transition: 0.2s;
+  color: var(--black);
+  opacity: 0.6;
+  transition: 0.2s;
 }
 
 ._socialNav__link,
 ._socialNav__link svg {
-    width: 25px;
-    height: auto;
+  width: 25px;
+  height: auto;
 }
 
 ._footer__sectionContacto {
-    padding-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 ._sectionContacto__title,
 ._sectionColabora__title {
-    font-size: 1rem;
-    font-weight: 600;
-    text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
 }
 
 ._footer__sectionColabora {
-    padding-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 ._sectionColabora__button {
-    padding: 0.4rem 1rem;
-    background-color: var(--violet);
-    color: var(--white);
-    border-radius: 1px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  padding: 0.4rem 1rem;
+  background-color: var(--violet);
+  color: var(--white);
+  border-radius: 1px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
 
 ._sectionColabora__button:hover {
-    color: var(--white);
-    background-color: var(--violet);
-    opacity: 0.6;
-    transition: 0.2s;
+  color: var(--white);
+  background-color: var(--violet);
+  opacity: 0.6;
+  transition: 0.2s;
 }
 
 /*******************************************************************/
@@ -239,49 +259,49 @@ html {
 
 /********/ /* Medium devices (tablets, 768px and up) */ /********/
 @media (min-width: 768px) {
-    ._navBar__container {
-        justify-content: flex-end;
-    }
+  ._navBar__container {
+    justify-content: flex-end;
+  }
 
-    ._navBar__brandImage {
-        width: auto;
-    }
+  ._navBar__brandImage {
+    width: auto;
+  }
 
-    ._footer__sectionBrand,
-    ._footer__sectionContacto,
-    ._footer__sectionColabora {
-        align-items: flex-start;
-    }
+  ._footer__sectionBrand,
+  ._footer__sectionContacto,
+  ._footer__sectionColabora {
+    align-items: flex-start;
+  }
 
-    ._sectionColabora__title {
-        text-align: left;
-    }
+  ._sectionColabora__title {
+    text-align: left;
+  }
 }
 
 /********/ /* Large devices (desktops, 992px and up) */ /********/
 @media (min-width: 992px) {
-    ._header {
-        padding: 0 2rem;
-    }
+  ._header {
+    padding: 0 2rem;
+  }
 
-    ._footer {
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
+  ._footer {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 
-    ._navBar__list {
-        gap: 2rem;
-    }
+  ._navBar__list {
+    gap: 2rem;
+  }
 }
 
 /********/ /* Extra large devices (large desktops, 1200px and up) */ /********/
 @media (min-width: 1200px) {
-    ._header {
-        padding: 0 4rem;
-    }
+  ._header {
+    padding: 0 4rem;
+  }
 
-    ._footer {
-        padding-left: 4rem;
-        padding-right: 4rem;
-    }
+  ._footer {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
 }

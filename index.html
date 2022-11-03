@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./IMG/favicon.png" type="image/x-icon" />
-    <title>Inicio | ValoArte</title>
+    <title>Inicio | Fundación Valoarte</title>
 
     <!-- Bootstrap -->
     <link
@@ -23,11 +23,11 @@
 
     <!-- Stylesheets -->
     <!-- Normaliza algunos estilos por defecto de CSS -->
-    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="./CSS/normalize.css" />
     <!-- Estilos de la plantilla principal -->
-    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="stylesheet" href="./CSS/styles.css" />
     <!-- Estilos específicos de la página en cuestión -->
-    <link rel="stylesheet" href="CSS/home.css" />
+    <link rel="stylesheet" href="./CSS/home.css" />
   </head>
 
   <body>
@@ -129,9 +129,8 @@
 
     <!-- Main Starts -->
     <main class="_main">
-      <!-- container-lg -->
       <article class="_articleOne row row-cols-md-2 container-lg">
-        <title>Article: Hero</title>
+        <title>Bienvenidos a Valoarte</title>
         <section class="_articleOne__textContainer col-md-6">
           <h3 class="_articleOne__text">
             Somos una <span class="_bold">fundación</span> dedicada a promover
@@ -139,10 +138,7 @@
             <span class="_bold">igualdad de oportunidades</span> a través de
             dinámicas innovadoras y objetos de diseño.
           </h3>
-          <a
-            class="_articleOne__button"
-            href="https://wa.me/543794769014"
-            target="_blank"
+          <a class="_articleOne__button" href="./pages/quienes-somos.html"
             >¡CONÓCENOS!</a
           >
         </section>
@@ -156,16 +152,37 @@
       </article>
 
       <article class="_articleTwo">
-        <title>Post Instagram @valoarteok</title>
+        <title>Últimos posts de Instagram @valoarteok</title>
         <div
-          class="postIg"
+          class="postIg__initial"
+          loading="lazy"
+          data-mc-src="26ded4b2-a117-4f2f-a8b9-fd9945d9a3e6#instagram"
+        ></div>
+        <div
+          class="postIg__mobile"
           loading="lazy"
           data-mc-src="3abccb4a-a903-477c-948b-5bf0ba0fe937#instagram"
-        ></div>
+        >
+          <div class="postIg__marcaAgua"></div>
+        </div>
+        <div
+          class="postIg__tablet"
+          loading="lazy"
+          data-mc-src="8c22b633-0348-4882-96fb-f70947e892dd#instagram"
+        >
+          <div class="postIg__marcaAgua"></div>
+        </div>
+        <div
+          class="postIg__desktop"
+          loading="lazy"
+          data-mc-src="0f898a08-11dd-4033-826e-73b063241e8d#instagram"
+        >
+          <div class="postIg__marcaAgua"></div>
+        </div>
       </article>
 
       <article class="_articleTree container-lg">
-        <title>Article: #Nuestros Programas</title>
+        <title>Nuestros programas de trabajo comunitario</title>
         <!-- Encabezado del artículo -->
         <h4 class="_articleTree__title">#NuestrosProgramas</h4>
         <p class="_articleTree__text">
@@ -179,7 +196,7 @@
             <div class="_articleTree__cardWrapper">
               <img
                 class="_card__imgage"
-                src="IMG/card-programas1.png"
+                src="https://i.postimg.cc/ZKkzGNJ0/card-programas1.png"
                 alt="..."
               />
               <div class="_card__descriptionContainer">
@@ -198,7 +215,7 @@
             <div class="_articleTree__cardWrapper">
               <img
                 class="_card__imgage"
-                src="IMG/card-programas2.png"
+                src="https://i.postimg.cc/59CZSt8J/card-programas2.png"
                 alt="..."
               />
               <div class="_card__descriptionContainer">
@@ -217,7 +234,7 @@
             <div class="_articleTree__cardWrapper">
               <img
                 class="_card__imgage"
-                src="IMG/card-programas3.png"
+                src="https://i.postimg.cc/KcP0Y3n1/card-programas3.png"
                 alt="..."
               />
               <div class="_card__descriptionContainer">
@@ -580,7 +597,7 @@
   <!-- WOXO Instagram scipt -->
   <script
     src="https://cdn2.woxo.tech/a.js#635d189bd554a582f7cf99a7"
-    async
+    defer
     data-usrc
   ></script>
 </html>
