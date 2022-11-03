@@ -1,4 +1,4 @@
-/* Fonts */
+/* Fonts Import */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mansalva&display=swap");
@@ -20,31 +20,38 @@
   --white: #fff;
   --black: #000;
 
-  /* Fonts */
+  /* Font Families */
   --mainFont: "Montserrat", sans-serif;
   --secondaryFont: "Ubuntu", sans-serif;
   --displayFont: "Mansalva", display;
   --monoFont: "OCR A Extended", display;
 
+  /* Font Sizes */
+  --text-size: 16px;
+  --subtitle-size: 24px;
+  --title-size: 32px;
+
   /* Mobile */
-  --mobile-text-size: 16px;
-  --mobile-title-size: 32px;
+  /* --mobile-text-size: 16px;
   --mobile-subtitle-size: 24px;
+  --mobile-title-size: 32px; */
 
   /* Tablet */
-  --tablet-text-size: 18px;
-  --tablet-title-size: 34px;
+  /* --tablet-text-size: 18px;
   --tablet-subtitle-size: 26px;
+  --tablet-title-size: 34px; */
 
   /* Desktop */
-  --desktop-text-size: 20px;
-  --desktop-title-size: 36px;
+  /* --desktop-text-size: 20px;
   --desktop-subtitle-size: 28px;
+  --desktop-title-size: 36px; */
 
   /* Desktop XL*/
-  --desktopXl-text-size: 22px;
-  --desktopXl-title-size: 38px;
+  /* --desktopXl-text-size: 22px;
   --desktopXl-subtitle-size: 30px;
+  --desktopXl-title-size: 38px; */
+
+  /**/
 
   /* Mobile */
   /* --mobile-text-size: 16px;
@@ -259,6 +266,11 @@ html {
 
 /********/ /* Medium devices (tablets, 768px and up) */ /********/
 @media (min-width: 768px) {
+  :root {
+    --text-size: 18px;
+    --subtitle-size: 26px;
+    --title-size: 34px;
+  }
   ._navBar__container {
     justify-content: flex-end;
   }
@@ -280,6 +292,12 @@ html {
 
 /********/ /* Large devices (desktops, 992px and up) */ /********/
 @media (min-width: 992px) {
+  :root {
+    --text-size: 20px;
+    --subtitle-size: 28px;
+    --title-size: 36px;
+  }
+
   ._header {
     padding: 0 2rem;
   }
@@ -296,6 +314,11 @@ html {
 
 /********/ /* Extra large devices (large desktops, 1200px and up) */ /********/
 @media (min-width: 1200px) {
+  :root {
+    --text-size: 22px;
+    --subtitle-size: 30px;
+    --title-size: 38px;
+  }
   ._header {
     padding: 0 4rem;
   }
