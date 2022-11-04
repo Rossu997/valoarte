@@ -341,7 +341,87 @@
   margin-bottom: 20px;
 }
 
-/* Medium devices (tablets, 768px and up) */
+.lightViolet {
+  padding-block: 50px;
+  background-color: var(--white);
+}
+
+.gradient {
+  padding-block: 50px;
+
+  background: linear-gradient(
+    0deg,
+    #eee0e8 91.93%,
+    rgba(238, 224, 232, 0) 100%
+  );
+}
+.violetBackground {
+  background-color: rgba(238, 224, 232, 100);
+}
+.noBorder {
+  border: none;
+}
+.white {
+  background-color: var(--white);
+}
+
+.lightblue {
+  background-color: var(--lightblue);
+  color: var(--black);
+}
+
+.aliados__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  min-height: 300px;
+}
+
+.aliados__img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.somosParte__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  min-height: 300px;
+}
+
+.somosParte__img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.footerPadding {
+  height: 100px;
+}
+
+/*******************************************************************/
+/* Media Querys - Responsive Breakpoints */
+/*******************************************************************/
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query for 'xs' since this is the default in Bootstrap */
+
+/********/ /* Small devices (landscape phones, 576px and up) */ /********/
+@media (min-width: 576px) {
+}
+
+/********/ /* Medium devices (tablets, 768px and up) */ /********/
 @media (min-width: 768px) {
   .backImg {
     background-image: url("https://i.postimg.cc/2y12mY3S/quienes-somos-1-2.png");
@@ -480,7 +560,7 @@
   }
 }
 
-/* Large devices (desktops, 992px and up) */
+/********/ /* Large devices (desktops, 992px and up) */ /********/
 @media (min-width: 992px) {
   .backImg {
     height: 80vh;
@@ -695,6 +775,7 @@
   }
 }
 
+/********/ /* Extra large devices (large desktops, 1200px and up) */ /********/
 @media (min-width: 1200px) {
   .backImg {
     height: 100vh;
@@ -784,73 +865,4 @@
     height: 80px;
     width: 80px;
   }
-}
-
-.lightViolet {
-  padding-block: 50px;
-  background-color: var(--white);
-}
-
-.gradient {
-  padding-block: 50px;
-
-  background: linear-gradient(
-    0deg,
-    #eee0e8 91.93%,
-    rgba(238, 224, 232, 0) 100%
-  );
-}
-.violetBackground {
-  background-color: rgba(238, 224, 232, 100);
-}
-.noBorder {
-  border: none;
-}
-.white {
-  background-color: var(--white);
-}
-
-.lightblue {
-  background-color: var(--lightblue);
-  color: var(--black);
-}
-
-.aliados__container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  min-height: 300px;
-}
-
-.aliados__img {
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
-}
-
-.somosParte__container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  min-height: 300px;
-}
-
-.somosParte__img {
-  width: 150px;
-  height: 150px;
-  object-fit: contain;
-}
-
-.swiper {
-  width: 100%;
-}
-
-.footerPadding {
-  height: 100px;
 }
