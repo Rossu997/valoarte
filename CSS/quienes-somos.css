@@ -339,6 +339,13 @@
   border: none;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.data__btn:hover {
+  color: var(--white);
+  opacity: 0.6;
+  transition: 0.5s;
 }
 
 .lightViolet {

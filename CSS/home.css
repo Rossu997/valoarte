@@ -119,7 +119,6 @@
 ._articleTree__card:hover {
   cursor: pointer;
   margin-top: 1rem;
-  /* box-shadow: 0px 0px 15px 5px rgba(110, 27, 140, 0.3); */
   outline: solid 6px var(--violet);
   transition: all 0.2s;
 }
@@ -277,7 +276,7 @@
 /* Article Six */
 ._articleSix {
   background-color: var(--white);
-  background-image: url("../IMG/new-testimonios-bg.png");
+  background-image: url("https://i.postimg.cc/sg6RGwtk/new-testimonios-bg.png");
   background-repeat: no-repeat;
   background-size: 110%;
   background-position: 50% 100%;
@@ -295,7 +294,7 @@
 }
 
 .card {
-  background-image: url("../IMG/testimonio-bg.png");
+  background-image: url("https://i.postimg.cc/jdx96yQt/testimonio-bg.png");
   background-repeat: no-repeat;
   background-size: 90% auto;
   background-position: center;
