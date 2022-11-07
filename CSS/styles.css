@@ -125,6 +125,10 @@ p {
   width: 100px;
 }
 
+._navBar__brandImage:hover {
+  opacity: 0.8;
+}
+
 ._navBar__toggler {
   margin: 0;
   padding: 0;
@@ -148,7 +152,7 @@ p {
 
 ._navBar__link:hover {
   color: var(--white);
-  opacity: 0.6;
+  opacity: 0.8;
   transition: 0.2s;
 }
 

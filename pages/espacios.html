@@ -31,6 +31,7 @@
   </head>
 
   <body>
+    <!-- Header Starts -->
     <header class="_header row" id="header">
       <nav class="_nav navbar navbar-expand-md">
         <div class="_nav__wrapper container-fluid">
@@ -131,17 +132,18 @@
         <h3 class="banner__text">¡Promovemos el espacio colaborativo!</h3>
       </div>
       <article class="articleOne container-lg">
+        <title>Espacios para promover el coworking</title>
         <h3 class="article__tag">#COWORKING</h3>
-        <section class="articleOne__coworking">
-          <div class="article__titleContainer">
-            <h2 class="article__title">
-              ¿Por qué promovemos el trabajo coworking?
-            </h2>
-            <h2 class="article__titleUnderlineViolet">
-              ¿Por qué promovemos el trabajo coworking?
-            </h2>
-          </div>
-          <div>
+        <section class="articleOne__wrapper row row-cols-md-2">
+          <div class="articleOne__coworking col-md-6">
+            <div class="article__titleContainer">
+              <h2 class="article__title">
+                ¿Por qué promovemos el trabajo coworking?
+              </h2>
+              <h2 class="article__titleUnderlineViolet">
+                ¿Por qué promovemos el trabajo coworking?
+              </h2>
+            </div>
             <p class="articleOne__paragraph">
               La palabra “coworking” significa en inglés “trabajo colaborativo”
               y se define como un espacio que permite a trabajadores y
@@ -156,37 +158,39 @@
               cumplir sus sueños.
             </p>
           </div>
-        </section>
-        <section class="articleOne__features">
-          <h4 class="article__subTitleOrange">Nuestro espacio cuenta con:</h4>
-          <ul class="features__list">
-            <li class="features__listItem">
-              <span class="features__colored">Ubicación céntrica </span>(Estamos
-              en el corazón del Camba Cua)
-            </li>
-            <li class="features__listItem">
-              <span class="features__colored">WI FI </span>(Pero nos gusta más
-              conectar con el corazón)
-            </li>
-            <li class="features__listItem">
-              <span class="features__colored">Cocina para infusiones </span>(Un
-              tecito, agua para hidratarnos, siempre viene bien)
-            </li>
-            <li class="features__listItem">
-              <span class="features__colored">Ambiente climatizado </span>(Y un
-              pulmoncito verde para respirar)
-            </li>
-            <li class="features__listItem">
-              <span class="features__colored"
-                >Formar parte de nuestra red de profesionales </span
-              >(¡Hagamos comunidad!)
-            </li>
-            <li class="features__listItem">
-              <span class="features__colored"
-                >Trabajo amigable y confortable </span
-              >(¡Queremos verte crecer!)
-            </li>
-          </ul>
+          <div class="articleOne__features col-md-6">
+            <h4 class="article__subTitleOrange">Nuestro espacio cuenta con:</h4>
+            <ul class="features__list">
+              <li class="features__listItem">
+                <span class="features__colored">Ubicación céntrica</span>
+                (Estamos en el corazón del Camba Cua)
+              </li>
+              <li class="features__listItem">
+                <span class="features__colored">WI FI</span> (Pero nos gusta más
+                conectar con el corazón)
+              </li>
+              <li class="features__listItem">
+                <span class="features__colored">Cocina para infusiones</span>
+                (Un tecito, agua para hidratarnos, siempre viene bien)
+              </li>
+              <li class="features__listItem">
+                <span class="features__colored">Ambiente climatizado</span> (Y
+                un pulmoncito verde para respirar)
+              </li>
+              <li class="features__listItem">
+                <span class="features__colored"
+                  >Formar parte de nuestra red de profesionales</span
+                >
+                (¡Hagamos comunidad!)
+              </li>
+              <li class="features__listItem">
+                <span class="features__colored"
+                  >Trabajo amigable y confortable
+                </span>
+                (¡Queremos verte crecer!)
+              </li>
+            </ul>
+          </div>
         </section>
         <section class="articleOne__ourSpaces">
           <div class="article__titleContainer">
@@ -212,7 +216,7 @@
               </div>
 
               <!-- Start: Accordion Reserva -->
-              <div
+              <section
                 class="w-100 d-flex justify-content-center align-items-center mt-3 mb-4"
               >
                 <div
@@ -237,15 +241,81 @@
                       class="accordion-collapse collapse"
                       aria-labelledby="panelsStayOpen-headingOne"
                     >
-                      <div class="accordion-body r">
+                      <div class="accordion-body">
                         <div class="accordionItem__container">
-                          <p>Holis</p>
+                          <!-- Reserva: Paso 1 -->
+                          <div class="accordionItem__step">
+                            <div
+                              class="accordionItem__stepTitle article__titleContainer"
+                            >
+                              <h5 class="article__title">Paso 1</h5>
+                              <h5 class="article__titleUnderlineOrange">
+                                Paso 1
+                              </h5>
+                            </div>
+                            <p class="accordionItem__stepText">
+                              Revisá la disponibilidad y elegí día y horario.
+                            </p>
+                            <div class="cta-container">
+                              <a
+                                class="cta-buttonMini"
+                                href="https://app.simplymeet.me/valoarteedemocional/meraki"
+                                target="_blank"
+                                >Reserva</a
+                              >
+                            </div>
+                          </div>
+                          <!-- Reserva: Paso 2 -->
+                          <div class="accordionItem__step divider">
+                            <div
+                              class="accordionItem__stepTitle article__titleContainer"
+                            >
+                              <h5 class="article__title">Paso 2</h5>
+                              <h5 class="article__titleUnderlineOrange">
+                                Paso 2
+                              </h5>
+                            </div>
+                            <p class="accordionItem__stepText">
+                              Te pedimos un pago parcial para guardar tu lugar.
+                            </p>
+                            <div class="cta-container">
+                              <a
+                                class="cta-buttonMini"
+                                href="https://mpago.la/2oU4qk9"
+                                target="_blank"
+                                >Pago</a
+                              >
+                            </div>
+                          </div>
+                          <!-- Reserva: Paso 3 -->
+                          <div class="accordionItem__step divider">
+                            <div
+                              class="accordionItem__stepTitle article__titleContainer"
+                            >
+                              <h5 class="article__title">Paso 3</h5>
+                              <h5 class="article__titleUnderlineOrange">
+                                Paso 3
+                              </h5>
+                            </div>
+                            <p class="accordionItem__stepText">
+                              Compartí el comprobante de pago para confirmar la
+                              reserva.
+                            </p>
+                            <div class="cta-container">
+                              <a
+                                class="cta-buttonMini"
+                                href="https://wa.me/543794769014"
+                                target="_blank"
+                                >Comprobante</a
+                              >
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </section>
               <!-- End: Accordion Reserva -->
             </div>
 
@@ -265,6 +335,109 @@
                   </p>
                 </div>
               </div>
+
+              <!-- Start: Accordion Reserva -->
+              <section
+                class="w-100 d-flex justify-content-center align-items-center mt-3 mb-4"
+              >
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionPanelsStayOpenExample"
+                >
+                  <div class="accordion-item">
+                    <h5 class="accordion-header" id="panelsStayOpen-headingOne">
+                      <button
+                        class="accordion-button w-100 collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne"
+                        aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne"
+                      >
+                        RESERVALO ACÁ
+                      </button>
+                    </h5>
+                    <div
+                      id="panelsStayOpen-collapseOne"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="panelsStayOpen-headingOne"
+                    >
+                      <div class="accordion-body">
+                        <div class="accordionItem__container">
+                          <!-- Reserva: Paso 1 -->
+                          <div class="accordionItem__step">
+                            <div
+                              class="accordionItem__stepTitle article__titleContainer"
+                            >
+                              <h5 class="article__title">Paso 1</h5>
+                              <h5 class="article__titleUnderlineOrange">
+                                Paso 1
+                              </h5>
+                            </div>
+                            <p class="accordionItem__stepText">
+                              Revisá la disponibilidad y elegí día y horario.
+                            </p>
+                            <div class="cta-container">
+                              <a
+                                class="cta-buttonMini"
+                                href="https://app.simplymeet.me/valoarteedemocional/kaizen"
+                                target="_blank"
+                                >Reserva</a
+                              >
+                            </div>
+                          </div>
+                          <!-- Reserva: Paso 2 -->
+                          <div class="accordionItem__step divider">
+                            <div
+                              class="accordionItem__stepTitle article__titleContainer"
+                            >
+                              <h5 class="article__title">Paso 2</h5>
+                              <h5 class="article__titleUnderlineOrange">
+                                Paso 2
+                              </h5>
+                            </div>
+                            <p class="accordionItem__stepText">
+                              Te pedimos un pago parcial para guardar tu lugar.
+                            </p>
+                            <div class="cta-container">
+                              <a
+                                class="cta-buttonMini"
+                                href="https://mpago.la/1oenK34"
+                                target="_blank"
+                                >Pago</a
+                              >
+                            </div>
+                          </div>
+                          <!-- Reserva: Paso 3 -->
+                          <div class="accordionItem__step divider">
+                            <div
+                              class="accordionItem__stepTitle article__titleContainer"
+                            >
+                              <h5 class="article__title">Paso 3</h5>
+                              <h5 class="article__titleUnderlineOrange">
+                                Paso 3
+                              </h5>
+                            </div>
+                            <p class="accordionItem__stepText">
+                              Compartí el comprobante de pago para confirmar la
+                              reserva.
+                            </p>
+                            <div class="cta-container">
+                              <a
+                                class="cta-buttonMini"
+                                href="https://wa.me/543794769014"
+                                target="_blank"
+                                >Comprobante</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- End: Accordion Reserva -->
             </div>
 
             <!-- CARD Espacio 3 -->
@@ -282,26 +455,128 @@
                   </p>
                 </div>
               </div>
+              <!-- Start: Accordion Reserva -->
+              <section
+                class="w-100 d-flex justify-content-center align-items-center mt-3 mb-4"
+              >
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionPanelsStayOpenExample"
+                >
+                  <div class="accordion-item">
+                    <h5 class="accordion-header" id="panelsStayOpen-headingOne">
+                      <button
+                        class="accordion-button w-100 collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne"
+                        aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne"
+                      >
+                        RESERVALO ACÁ
+                      </button>
+                    </h5>
+                    <div
+                      id="panelsStayOpen-collapseOne"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="panelsStayOpen-headingOne"
+                    >
+                      <div class="accordion-body">
+                        <div class="accordionItem__container">
+                          <!-- Reserva: Paso 1 -->
+                          <div class="accordionItem__step">
+                            <div
+                              class="accordionItem__stepTitle article__titleContainer"
+                            >
+                              <h5 class="article__title">Paso 1</h5>
+                              <h5 class="article__titleUnderlineOrange">
+                                Paso 1
+                              </h5>
+                            </div>
+                            <p class="accordionItem__stepText">
+                              Revisá la disponibilidad y elegí día y horario.
+                            </p>
+                            <div class="cta-container">
+                              <a
+                                class="cta-buttonMini"
+                                href="https://app.simplymeet.me/valoarteedemocional/pulmonverde"
+                                target="_blank"
+                                >Reserva</a
+                              >
+                            </div>
+                          </div>
+                          <!-- Reserva: Paso 2 -->
+                          <div class="accordionItem__step divider">
+                            <div
+                              class="accordionItem__stepTitle article__titleContainer"
+                            >
+                              <h5 class="article__title">Paso 2</h5>
+                              <h5 class="article__titleUnderlineOrange">
+                                Paso 2
+                              </h5>
+                            </div>
+                            <p class="accordionItem__stepText">
+                              Te pedimos un pago parcial para guardar tu lugar.
+                            </p>
+                            <div class="cta-container">
+                              <a
+                                class="cta-buttonMini"
+                                href="https://mpago.la/1ybk9N9"
+                                target="_blank"
+                                >Pago</a
+                              >
+                            </div>
+                          </div>
+                          <!-- Reserva: Paso 3 -->
+                          <div class="accordionItem__step divider">
+                            <div
+                              class="accordionItem__stepTitle article__titleContainer"
+                            >
+                              <h5 class="article__title">Paso 3</h5>
+                              <h5 class="article__titleUnderlineOrange">
+                                Paso 3
+                              </h5>
+                            </div>
+                            <p class="accordionItem__stepText">
+                              Compartí el comprobante de pago para confirmar la
+                              reserva.
+                            </p>
+                            <div class="cta-container">
+                              <a
+                                class="cta-buttonMini"
+                                href="https://wa.me/543794769014"
+                                target="_blank"
+                                >Comprobante</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- End: Accordion Reserva -->
             </div>
           </div>
         </section>
-        <section class="articleOne__features">
+        <section class="articleOne__beneficios">
           <h4 class="article__subTitleViolet">Beneficios planes extendidos:</h4>
           <ul class="features__list">
             <li class="features__listItem">
-              Con la contratación directa de más de 10 horas de trabajo diario o
-              mensual tenés un 15% de descuento.
+              <span class="features__colored">15% de descuento</span>
+              Contratando más de 10 horas de trabajo diario.
             </li>
             <li class="features__listItem">
-              Con la contratación directa de más de 30 horas de trabajo diario o
-              mensual tenés un 30% de descuento.
+              <span class="features__colored">30% de descuento</span> Contatando
+              más de 30 horas de trabajo mensuales.
             </li>
             <li class="features__listItem">
-              Ponemos calco de tu servicio en el lugar.
+              Ponemos calcos de tu servicio en el lugar.
             </li>
             <li class="features__listItem">
-              Descuento del 10% off en todos los talleres y objetos ofrecidos
-              por el espacio.
+              <span class="features__colored">Descuento del 10%</span> en todos
+              los talleres y objetos ofrecidos por el espacio.
             </li>
           </ul>
           <p>
@@ -315,38 +590,67 @@
             plan de trabajo en el caso de planes personalizados.
           </p>
           <p>
-            Las entradas y salidas son a la hora acordada por respeto a todos,
-            en caso de exceso de horas, serán cobradas sin excepción.
+            Las entradas y salidas son a la hora acordada por respeto a todos.
+            En caso de exceso de horas, serán cobradas sin excepción.
           </p>
-          <div>
-            <h1>SIMPLY MEET</h1>
-            <iframe
-              src="https://app.simplymeet.me/juanrusso-997-simplymeet?is_widget=1&view=compact"
-              style="width: 100%; height: 650px"
-              frameborder="0"
-              scrolling="yes"
-            ></iframe>
-          </div>
         </section>
       </article>
       <div class="_bg-secondary">
         <article class="articleTwo container-lg">
+          <title>Cursos y talleres disponibles en Valo</title>
           <h3 class="article__tag">#CURSOS Y TALLERES</h3>
           <section class="articleTwo__section">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-              cursus turpis malesuada egestas eget dolor orci, accumsan aliquet.
-              In mollis morbi amet, turpis quam ac. Interdum integer odio
-              laoreet vitae. Urna vitae ut sem sed quis eget. Lorem ipsum dolor
-              sit amet, consectetur adipiscing elit. Nulla cursus turpis
-              malesuada egestas eget dolor orci.
+              Desde Valo creemos que la educación de calidad y la
+              especialización permanente son herramientas claves para generar
+              transformación social, el crecimiento personal y profesional de
+              las personas. Es por ello que dictamos talleres y cursos con
+              diversas temáticas de interés general que puedan potenciar y
+              mejorar los perfiles profesionales de nuestra comunidad. Por
+              interés social y estudios de mercado, elegimos focalizarnos en
+              estas áreas como principales:
             </p>
+
+            <ul class="features__list">
+              <li class="features__listItem">
+                <span class="features__colored">DESAROLLO PROFESIONAL:</span>
+                Autoestima, asesoramiento de imagen, decoración de espacios,
+                mentorías, y desarrollo de habilidades blandas.
+              </li>
+              <li class="features__listItem">
+                <span class="features__colored">COMUNICACIÓN EFECTIVA:</span>
+                Tradicional, digital, interna y externa, publicidad, marketing,
+                imagen, diseño y edición.
+              </li>
+              <li class="features__listItem">
+                <span class="features__colored"
+                  >RESPONSABILIDAD SOCIAL Y COMUNITARIA:</span
+                >
+                Gestión de residuos, voluntariado corporativo y participación
+                ciudadana.
+              </li>
+              <li class="features__listItem">
+                <span class="features__colored"
+                  >PRODUCTIVIDAD Y DESARROLLO PROFESIONAL:</span
+                >
+                Atención al cliente, vidrierismo, gestión de finanzas y trabajo
+                en red.
+              </li>
+            </ul>
+
+            <p>
+              Todos ellos serán dados a lo largo del año de forma virtual y
+              presencial, con diferente duración. Puedes acceder a la
+              información actualizada a través de nuestras redes sociales o
+              número de contacto.
+            </p>
+
             <div class="article__titleContainer">
               <h2 class="article__title">
-                ¡Conocé nuestros talleres disponibles!
+                ¡Formate! Crecé como persona y profesional
               </h2>
               <h2 class="article__titleUnderlineViolet">
-                ¡Conocé nuestros talleres disponibles!
+                ¡Formate! Crecé como persona y profesional
               </h2>
             </div>
             <div class="cta-container">
@@ -362,6 +666,7 @@
         </article>
       </div>
       <article class="articleTree container-lg">
+        <title>Puntos de venta para emprendedores</title>
         <h3 class="article__tag">#PUNTOS DE VENTA</h3>
         <section class="articleTree__section">
           <div class="article__titleContainer">
@@ -372,22 +677,107 @@
               ¡Tu punto de venta es una realidad en Valo!
             </h2>
           </div>
-          <p>
-            Hemos conocido a través de el armado de ferias y los diversos
-            emprendedores que se acercan a nuestro espacio, que existen un
-            montón de emprendimientos que actualmente no cuentan con un espacio
-            físico para vender sus productos, ya sea por falta de tiempos,
-            costos elevados de mantenimiento y alquiler, a eso sumado la
-            incertidumbre que nos hizo vivir la pandemia que aún seguimos
-            transitando.
+          <section class="row row-cols-md-3">
+            <div class="col-md-6">
+              <p>
+                Hemos conocido a través del armado de ferias y el contacto con
+                diferentes emprendedores que se acercan a nuestro espacio, que
+                existen un montón que actualmente no cuentan con un espacio
+                físico para vender sus productos, ya sea por falta de tiempos,
+                costos elevados de mantenimiento y alquiler, a eso sumado la
+                incertidumbre producida pos pandemia.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <p>
+                Por todo eso, desde Valo buscamos compartir nuestro espacio
+                físico para que les sirva de vidriera y punto de retiro
+                facilitándoles mayores ventas y conocimiento de su marca.
+              </p>
+              <p>
+                Queremos que las personas se dediquen a lo que aman, queremos
+                compartir nuestro lugar con vos.
+              </p>
+            </div>
+          </section>
+          <div class="trabajoColaborativo__imageContainer">
+            <img
+              class="trabajoColaborativo__image"
+              src="../IMG/trabajo-colaborativo.png"
+              alt="Ilustración de una chica trabajando en su escritorio"
+            />
+          </div>
+          <!-- Start: Accordion Tabajo Colaborativo -->
+          <div
+            class="w-100 d-flex justify-content-center align-items-center mt-3 mb-4"
+          >
+            <div
+              class="accordion accordion-flush"
+              id="accordionPanelsStayOpenExample"
+            >
+              <div class="accordion-item">
+                <h5 class="accordion-header" id="panelsStayOpen-headingOne">
+                  <button
+                    class="accordion-button w-100 collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne"
+                    aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne"
+                  >
+                    PAUTAS DE TRABAJO COLABORATIVO
+                  </button>
+                </h5>
+                <div
+                  id="panelsStayOpen-collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingOne"
+                >
+                  <div class="accordion-body r">
+                    <div class="accordionItem__container">
+                      <ul class="features__list">
+                        <li class="features__listItem">
+                          Comenzamos firmando un acuerdo. Luego crearemos un
+                          inventario y un plan de trabajo en conjunto.
+                        </li>
+                        <li class="features__listItem">
+                          Te pediremos tu logo para anunciarte en nuestras redes
+                          y canales a los que te sumaste. También podemos
+                          agregar stickers y folletería con tu marca en la sede.
+                        </li>
+                        <li class="features__listItem">
+                          Necesitaremos características y beneficios de tus
+                          productos para poder ofrecerlos mejor y que sean un
+                          éxito.
+                        </li>
+                        <li class="features__listItem">
+                          Podrás dejar hasta 10 (diez) productos por mes. A
+                          medida que se vendan deberás encargarte de reponer el
+                          stock.
+                        </li>
+                        <li class="features__listItem">
+                          Todos los productos deben tener su precio y su
+                          envoltorio para llevar. ¡La presentación es clave!
+                        </li>
+                        <li class="features__listItem">
+                          Podrás utilizar la sede como punto de retiro de tus
+                          ventas.
+                        </li>
+                        <li class="features__listItem">
+                          Tendrás prioridad para sumarte a nuestras ferias.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End: Accordion Tabajo Colaborativo -->
+          <p class="_bold">
+            ¡Promovamos juntos el desarrollo local y apoyemos la comunidad
+            emprendedora!
           </p>
-          <h6>condiciones?</h6>
-          <p>
-            Por todo eso, desde Valo buscamos compartir nuestro espacio físico
-            para que les sirva de vidriera y punto de retiro facilitándoles
-            mayores ventas y conocimiento de su marca.
-          </p>
-          <p class="_italic">¡Codo a codo podemos!</p>
           <div class="cta-container">
             <p class="cta-text">Este link te redirigirá a Whatsapp:</p>
             <a
@@ -403,7 +793,6 @@
     <!-- Main Ends -->
 
     <!-- Footer Starts -->
-    <!-------------------------------------------------------------------------->
     <footer class="_footer row row-cols-md-3">
       <section class="_footer__sectionBrand col-sm-6">
         <title>Seguinos en las redes</title>
@@ -420,7 +809,7 @@
             <li class="_socialNav__itemList">
               <a
                 class="_socialNav__link"
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/valoarteok/?hl=es-la"
                 target="_blank"
               >
                 <svg
@@ -440,7 +829,7 @@
             <li class="_socialNav__itemList">
               <a
                 class="_socialNav__link"
-                href="https://es-la.facebook.com/"
+                href="https://www.facebook.com/valoarteok/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_transition=0&show_community_review_changes=0&show_community_rollback=0&show_follower_visibility_disclosure=0/"
                 target="_blank"
               >
                 <svg
@@ -460,7 +849,7 @@
             <li class="_socialNav__itemList">
               <a
                 class="_socialNav__link"
-                href="https://www.linkedin.com/login/es"
+                href="https://www.linkedin.com/in/valoarte-educando-al-coraz%C3%B3n-a0b542224/?originalSubdomain=ar"
                 target="_blank"
               >
                 <svg
