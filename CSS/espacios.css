@@ -247,6 +247,7 @@
   font-weight: 600;
   text-align: center;
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.5);
+  transition: 0.2s;
 }
 
 .cta-buttonMini {
@@ -257,7 +258,7 @@
 .cta-buttonMini:hover {
   color: var(--black);
   opacity: 0.6;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 /* Article Tree */
