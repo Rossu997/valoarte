@@ -213,36 +213,12 @@
 .accordionItem__stepText {
   text-align: center;
 }
-/* 
-.accordionItem__img {
-  object-fit: contain;
-  max-width: 300px;
-  max-height: 400px;
-}
-
-.accordionItem__title {
-  margin-top: 20px;
-  font-family: var(--monoFont);
-  font-size: 24px;
-}
-.accordionItem__text {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 24px;
-}
-
-.itemAccordion__ctaBtn {
-  width: 140px;
-  height: 40px;
-  background: #f2914a;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  font-family: var(--monoFont);
-  margin-bottom: 20px;
-  border: none;
-} */
 
 /* Article Two */
+.articleTwo {
+  padding: 0 8px;
+}
+
 .articleTwo__section {
   margin-bottom: 5rem;
   display: flex;
@@ -361,6 +337,11 @@
   /* Accordion */
   .accordionItem__stepTitle {
     height: 3.5rem;
+  }
+
+  /* Article Two */
+  .articleTwo {
+    padding: 0 0;
   }
 }
 
