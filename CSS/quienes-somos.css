@@ -47,7 +47,7 @@
 }
 
 .secondSection {
-  margin-top: 50px;
+  /* margin-top: 50px; */
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -58,15 +58,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--lightblue);
+  padding: 8px 0;
 }
 
 .secondSection__title {
-  width: 100%;
   text-align: center;
-  padding: 10px 15%;
-  background-color: var(--lightblue);
   font-family: var(--displayFont);
   font-size: var(--title-size);
+  margin: 0;
 }
 
 .secondSection__data1 {
@@ -99,7 +99,8 @@
 
 .data1__text {
   font-size: var(--text-size);
-  font-weight: 400;
+  /* font-weight: 400; */
+  margin-top: 1rem;
 }
 
 .data1__imgContainer {
@@ -462,19 +463,15 @@
     color: var(--white);
   }
 
-  .secondSection__title {
-    font-size: var(--title-size);
-  }
-
   .data1__title {
     font-size: var(--subtitle-size);
     margin-bottom: 2px;
   }
 
-  .data1__text {
+  /* .data1__text {
     margin-top: 30px;
     font-size: var(--text-size);
-  }
+  } */
 
   ._articleTree__card {
     padding: 1rem;
@@ -625,23 +622,23 @@
 
   /* Second section */
 
-  .secondSection {
+  /* .secondSection {
     padding-top: 50px;
     width: 100%;
-  }
-
+  } */
+  /* 
   .secondSection__titleContainer {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+  } */
 
-  .secondSection__title {
+  /* .secondSection__title {
     width: 90%;
     font-size: 45px;
     margin-bottom: 15px;
-  }
+  } */
 
   .secondSection__data1 {
     margin-top: 50px;
@@ -675,12 +672,12 @@
     font-weight: 800;
     margin-top: 35px;
   }
-  .data1__text {
+  /* .data1__text {
     font-size: calc(var(--text-size) - 2px);
     width: 100%;
     margin-top: 40px;
     font-weight: 400;
-  }
+  } */
 
   .data1__imgContainer {
     margin: auto;
@@ -811,19 +808,14 @@
 
   /* Second section */
 
-  .secondSection__title {
-    width: 90%;
-    font-size: var(--title-size);
-    margin-bottom: 15px;
-  }
   .data1__title {
     font-size: var(--subtitle-size);
     transform: rotate(-9deg);
   }
 
-  .data1__text {
+  /* .data1__text {
     font-size: calc(var(--text-size) - 2px);
-  }
+  } */
 
   /* Third section */
 

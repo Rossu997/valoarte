@@ -19,12 +19,6 @@
       crossorigin="anonymous"
     />
 
-    <!-- Swiper -->
-    <link rel="stylesheet" href="../CSS/swiper-bundle.min.css" />
-
-    <!-- Animate On Scroll -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../CSS/normalize.css" />
     <!-- Normaliza algunos estilos por defecto de CSS -->
@@ -947,38 +941,4 @@
     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
     crossorigin="anonymous"
   ></script>
-
-  <!-- Animate On Scroll script -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({});
-  </script>
-
-  <!-- Swiper scipt -->
-  <script src="../JS/swiper-bundle.min.js"></script>
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
-      spaceBetween: 5,
-      loop: true,
-      centerSlide: "true",
-      fade: "true",
-      grabCursor: "true",
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      breakpoints: {
-        0: {
-          slidesPerView: 1,
-        },
-        768: {
-          slidesPerView: 2,
-        },
-        1200: {
-          slidesPerView: 3,
-        },
-      },
-    });
-  </script>
 </html>
