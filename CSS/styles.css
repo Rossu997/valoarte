@@ -82,6 +82,7 @@
 body {
   background-color: var(--background-color);
   font-family: var(--mainFont);
+  scroll-behavior: smooth;
 }
 
 body,
